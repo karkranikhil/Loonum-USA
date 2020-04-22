@@ -1,0 +1,33 @@
+@import '../../styles/style.scss';
+.sticker{
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid $bdm_lightgrey;
+    background: $bdm_white;
+    color: $bdm_black;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.send_btn{
+    color: $bdm_white;
+    background: $bdm_blue;
+    border-radius: 2px;
+    height: 25px;
+    width: 170px;
+    text-align: center;
+    margin: 0 1rem;
+    line-height: 25px;
+    cursor: pointer;
+}
+.inputbox{
+    height: 26px;
+    min-width: 225px;
+    margin: 0 1rem;
+}

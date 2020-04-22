@@ -1,0 +1,24 @@
+.wrapper{
+    background: #084E75;
+    color: #fff;
+    .heading{
+    line-height: 53px;
+    font-family: 'GothamLight';
+    font-weight: 300;
+    font-size: 36px;
+    }
+    .subheading{
+        font-size: 24px;
+        font-family: 'GothamLight';
+        max-width: 600px;
+        margin: auto;
+        padding-bottom: 2rem;
+        line-height: 30px;
+    }
+    .paragraph{
+        padding: 2rem 0;
+        max-width: 800px;
+        margin: auto;
+    }
+}
+

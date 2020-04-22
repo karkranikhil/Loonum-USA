@@ -6,5 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: ["gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["GothamLight,GothamMedium"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    }],
 }
