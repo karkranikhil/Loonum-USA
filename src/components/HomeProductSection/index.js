@@ -1,6 +1,6 @@
 
 import React from "react"
-import HomeProductStyle from './HomeProductSection.module.scss'
+import HomeProductStyle from './homeProductSection.module.scss'
 import WEBSITE_IMAGE from '../../images/Home_Page/website.png'
 import DASHBOARD_IMAGE from '../../images/Home_Page/dashboard.png'
 import INVENTORY_IMAGE from '../../images/Home_Page/inventory.png'
@@ -29,7 +29,7 @@ const HomeProductSection = () => {
                 <div className={HomeProductStyle.subheading}>three products system interaction for your peace of mind</div>
                 <div className="row">
                     {CARD_DETAILS.map(item => (
-                        <div className="col-4" key={item.name}>
+                        <div className="col-12 col-md-4 mb-3" key={item.name}>
                             <div className="bg-white p-3">
                             <div className={HomeProductStyle.card_heading}>{item.name}</div>
                             <img src={item.image} alt={item.name} />

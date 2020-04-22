@@ -7,12 +7,11 @@
   border: 1px solid $bdm_lightgrey;
     background: $bdm_white;
     color: $bdm_black;
-    height: 40px;
-    line-height: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     
 }
 .send_btn{
@@ -30,4 +29,18 @@
     height: 26px;
     min-width: 225px;
     margin: 0 1rem;
+}
+@media screen and (max-width: 769px) {
+  .sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    .emailtext{
+        text-align: initial;
+    }
+  }
+  .send_btn,.inputbox{
+    width: auto;
+    margin-top: 10px;
+  }
 }
