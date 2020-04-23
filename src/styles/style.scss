@@ -8,7 +8,9 @@ $bdm_cyan:#084E75;
 /***Fonts****/
 
 $bdm_font15:'15px';
-
+.text-black{
+  color:$bdm_black;
+}
 .bg-darkgrey{
   background:$bdm_darkgrey
 }
@@ -22,6 +24,7 @@ $bdm_font15:'15px';
 }
 body, html {
   height: 100%;
+  background: #F2F2F2;
 }
 ul {
   list-style-type: none;

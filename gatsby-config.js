@@ -11,7 +11,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["GothamLight,GothamMedium"],
+          families: ["GothamLight,GothamMedium","GothamBook"],
           urls: ["/fonts/fonts.css"],
         },
       },

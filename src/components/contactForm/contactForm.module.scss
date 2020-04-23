@@ -1,0 +1,29 @@
+
+.wrapper{
+    background:#fff;
+    font-family: 'GothamLight'
+}
+.privacy_text{
+    font-family: 'GothamLight';
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    color: #084E75;
+}
+.get_in_touch_wrapper{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'GothamLight';
+    color: #084E75;
+}
+.heading{
+        font-size: 36px;
+    line-height: 43px;
+}
+.subheading{
+    max-width: 390px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 30px;
+}

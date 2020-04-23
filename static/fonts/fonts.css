@@ -7,3 +7,8 @@
     font-family: GothamMedium;
     src: url('./GothamMedium.ttf');
 }
+@font-face {
+    font-family: GothamBook;
+    src: url('./GothamBook.ttf');
+}
+

@@ -1,11 +1,11 @@
 import React from "react"
-
+import Layout from "../components/Layout/index"
+import SmallBusiness from '../components/SmallBusiness/index'
 const Product = () => {
     return (
-        <div>
-            <h1>Product page</h1>
-            <h2>I'm Ibas, a teacher and a Gatsby.js developer</h2>
-        </div>
+        <Layout>
+            <SmallBusiness />
+        </Layout>
     )
 }
 

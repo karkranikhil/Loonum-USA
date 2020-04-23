@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/index"
-const Services = () => {
+
+const Idea = () => {
     return (
         <Layout>
             <h1>Services page</h1>
@@ -9,4 +10,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Idea
