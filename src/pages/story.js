@@ -1,11 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout/index"
 import ContactForm from '../components/contactForm/index'
-import RoadMap from '../components/RoadMap/index'
+import Founders from '../components/Founders/index'
+import RoadMap from '../components/Roadmap/index'
 import FINANCIAL_LOGO from '../images/Our_Story_Page/Financial_Management.png'
 import SUPLY_CHAIN_LOGO from '../images/Our_Story_Page/Supply_Chain_Management.png'
 import COLLABORATIVE_LOGO from '../images/Our_Story_Page/Collaborative _tools_icon.png'
-
+import PageJumbotron from '../components/PageJumbotron/index'
+const STORY_JUMBO_DATA = {
+    heading: 'This is our story',
+    subtext: 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+}
 
 const ROAD_MAP_DATA = [
     {
@@ -24,9 +29,14 @@ const ROAD_MAP_DATA = [
         text: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
 ]
+
 const Story = () => {
     return (
         <Layout>
+            <section className="pt-5">
+                <PageJumbotron {...STORY_JUMBO_DATA} />
+            </section>
+            <Founders />
             <RoadMap ROAD_MAP_DATA={ROAD_MAP_DATA} />
             <ContactForm />
         </Layout>

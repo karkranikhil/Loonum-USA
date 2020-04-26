@@ -1,10 +1,18 @@
 import React from "react"
 import Layout from "../components/Layout/index"
+import PageJumbotron from '../components/PageJumbotron/index'
+import ContactForm from '../components/contactForm/index'
+const SERVICE_JUMBO_DATA = {
+    heading: 'This is what we do',
+    subtext: 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+}
 const Services = () => {
     return (
         <Layout>
-            <h1>Services page</h1>
-            <h2>I'm Ibas, a teacher and a Gatsby.js developer</h2>
+            <section className="pt-5">
+                <PageJumbotron {...SERVICE_JUMBO_DATA} />
+            </section>
+            <ContactForm />
         </Layout>
     )
 }

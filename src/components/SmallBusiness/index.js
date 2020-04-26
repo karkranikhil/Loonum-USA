@@ -1,7 +1,8 @@
 
 
 import React from "react"
-import RoadMap from '../RoadMap/index'
+import RoadMap from '../Roadmap/index.js'
+import Card from '../Card/index.js'
 import smallBusinessStyle from './smallBusiness.module.scss'
 import PRODUCT_LOGO from '../../images/Products_Page/product_logo.png'
 import DIGITAL_LOGO from '../../images/Products_Page/Digital_representation_icon.png'
@@ -50,32 +51,7 @@ const SmallBusiness = () => {
     return (
         <section className={smallBusinessStyle.wrapper}>
             <div className="container pt-5 pb-5">
-                <div className="row pb-5">
-                    <div className="col text-center">
-                        <img src={PRODUCT_LOGO} alt="Products_Page" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col text-center">
-                        <h2 className={smallBusinessStyle.page_heading}>A product set curated just for Small Businesses. </h2>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col mt-4 mb-4 text-center">
-                        <h5 >It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
-                    </div>
-                </div>
-                <div className="row text-center text-black">
-                    {SMALL_BUSINESSE.map(item => (
-                        <div className="col-12 col-md-4 mb-3" key={item.name}>
-                            <div className="bg-white pt-5 pb-5 pl-4 pr-3">
-                                <img src={item.logo} alt={item.name} className="mb-5" />
-                                <h5 className={smallBusinessStyle.card_heading}>{item.name}</h5>
-                                <div className={smallBusinessStyle.card_text}>{item.text}</div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                <Card data={SMALL_BUSINESSE} />
             </div>
             <section className="bg-white">
                 <div className="container pt-5 pb-5">
@@ -95,7 +71,7 @@ const SmallBusiness = () => {
                     </div>
                 </div>
             </section>
-            <RoadMap type="BLUE" ROAD_MAP_DATA={ROAD_MAP_DATA}/>
+            <RoadMap type="BLUE" ROAD_MAP_DATA={ROAD_MAP_DATA} />
 
         </section>
     )

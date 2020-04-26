@@ -1,5 +1,8 @@
 @import '../../styles/style.scss';
 
+.location{
+  font-family: 'GothamBook';
+}
 .location_bar{
     height:40px;
     color:$bdm_white;
@@ -15,14 +18,22 @@
     line-height: 80px; 
     font-family: 'GothamMedium';
     font-weight: 500;
+    nav{
+          height: 80px;
+    }
    ul{
-       list-style:none;
-       display:flex;
+      list-style: none;
+      display: flex;
+      margin: 0px;
+      height: inherit;
        li{
             padding: 0 12px;
             a{
            color:$bdm_white;
-        }
+            }
+            span{
+           color:$bdm_white;
+            }
        }
    }
 }
@@ -34,4 +45,14 @@
         display: none;
     }
   }
+}
+.active_menu_item {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #F8E71C;
+}
+
+.fixed_header{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
 }

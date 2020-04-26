@@ -29,3 +29,25 @@ body, html {
 ul {
   list-style-type: none;
 }
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrowIcon {
+    border: solid #979797;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px
+}
+
+.rightIcon {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: transparent;
+}

@@ -1,29 +1,8 @@
 
 
 import React from "react"
-import RoadMapStyle from './roadMap.module.scss'
-import FINANCIAL_LOGO from '../../images/Products_Page/Financial_Management.png'
-import SUPLY_CHAIN_LOGO from '../../images/Products_Page/Supply_Chain_Management.png'
-import COLLABORATIVE_LOGO from '../../images/Products_Page/Collaborative_tool_icon.png'
+import RoadMapStyle from './roadmap.module.scss'
 
-
-const ROAD_MAP_DATA = [
-    {
-        logo: FINANCIAL_LOGO,
-        name: 'Fianancial Management',
-        text: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    },
-    {
-        logo: SUPLY_CHAIN_LOGO,
-        name: 'Supply Chain Management ',
-        text: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    },
-    {
-        logo: COLLABORATIVE_LOGO,
-        name: 'Collaborative Tools',
-        text: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    }
-]
 const RoadMap = (props) => {
     const { ROAD_MAP_DATA } = props
     return (
