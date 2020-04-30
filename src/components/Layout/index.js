@@ -8,7 +8,9 @@ const Layout = props => {
         <div>
             <Header />
             {props.children}
-            <EmailSticker />
+            <div class="d-none d-md-flex">
+                <EmailSticker />
+            </div>
             <Footer/>
         </div>
     )

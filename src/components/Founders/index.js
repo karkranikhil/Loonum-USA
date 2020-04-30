@@ -22,22 +22,26 @@ const FOUNDER_DATA = [
 const FoundersCard = (item) => {
     return (
         <>
-            <div>
+            <div className="col-12 col-md-6 pl-5 pr-5 pb-5">
                 <img src={item.img} alt={item.firstname} />
-                <div>{item.firstname}</div>
-                <div>{item.lastname}</div>
-                <div>{item.designation}</div>
+                <div className={foundersStyles.firstname}>{item.firstname}</div>
+                <div className={foundersStyles.lastname}>{item.lastname}</div>
+                <div className={foundersStyles.designation}>{item.designation}</div>
+                <div>{item.description}</div>
             </div>
-            <div>{item.description}</div>
+            
         </>
     )
 }
 const Founders = () => {
     return (
-        <section>
-            <div className="container pt-5 pb-5">
+        <section className={`bg-white ${foundersStyles.wrapper}`}>
+            <div className="container pt-5 pb-5 text-center">
                 <h2>Co-Founders</h2>
-                {FOUNDER_DATA.map(item => <FoundersCard {...item} />)}
+                <div className="row">
+                    {FOUNDER_DATA.map(item => <FoundersCard {...item} />)}
+                </div>
+                
             </div>
         </section>
     )

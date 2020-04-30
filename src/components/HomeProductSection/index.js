@@ -24,7 +24,7 @@ const CARD_DETAILS = [
 const HomeProductSection = () => {
     return (
         <section className={HomeProductStyle.section_wrapper}>
-            <div className="container text-center pt-5 pb-5">
+            <div className="container text-center p-4">
                 <h2 className={HomeProductStyle.heading}>Simple and easy to use experience </h2>
                 <div className={HomeProductStyle.subheading}>three products system interaction for your peace of mind</div>
                 <div className="row">

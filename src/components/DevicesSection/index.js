@@ -5,7 +5,7 @@ import DEVICE_IMG from '../../images/Home_Page/Mac_devices.png'
 const DevicesSection = () => {
     return (
         <section className={DevicesStyle.wrapper}>
-            <div className="container text-center pt-5 pb-5">
+            <div className="container text-center p-4">
                 <h2 className={DevicesStyle.heading}>One system multiple devices</h2>
                 <div className={DevicesStyle.subheading}>With Xxx Business Design Platform you will have 360 complete transparency Anytime Anywhere</div>
                 <img src={DEVICE_IMG} alt="DEVICE_IMG" className={DevicesStyle.imagestyle}/>

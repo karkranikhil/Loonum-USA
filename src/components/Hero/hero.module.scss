@@ -18,6 +18,13 @@
 }
 .heroImg__text_heading{
     font-family: 'GothamLight';
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: normal;
+    text-align: center;
+}
+.heroImg__text_heading_desktop{
+    font-family: 'GothamLight';
     font-size: 40px;
     line-height: 53px;
     letter-spacing: normal;
@@ -28,4 +35,15 @@
     height: 157px;
     margin-top: 2rem;
     font-family: 'GothamLight';
+    text-align: center;
 }
+.heroImg__text_description_desktop{
+    font-size: 16px;
+    line-height: 25px;
+    height: 157px;
+    margin-top: 2rem;
+    font-family: 'GothamLight';
+    
+}
+
+
