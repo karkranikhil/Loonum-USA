@@ -33,12 +33,12 @@ const ROAD_MAP_DATA = [
 const Story = () => {
     return (
         <Layout>
-            <section className="pt-5">
+            <section className="pt-5 pb-5">
                 <PageJumbotron {...STORY_JUMBO_DATA} />
             </section>
             <Founders />
             <RoadMap ROAD_MAP_DATA={ROAD_MAP_DATA} />
-            <ContactForm />
+            <ContactForm color="WHITE"/>
         </Layout>
     )
 }

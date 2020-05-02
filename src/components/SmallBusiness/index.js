@@ -3,8 +3,10 @@
 import React from "react"
 import RoadMap from '../Roadmap/index.js'
 import Card from '../Card/index.js'
+import NewWayWorking from '../NewWayWorking/index.js'
 import smallBusinessStyle from './smallBusiness.module.scss'
-import PRODUCT_LOGO from '../../images/Products_Page/product_logo.png'
+// import PRODUCT_LOGO from '../../images/Products_Page/product_logo.png'
+import Tabs from '../Tabs/index.js'
 import DIGITAL_LOGO from '../../images/Products_Page/Digital_representation_icon.png'
 import CONTENT_LOGO from '../../images/Products_Page/Content_management_icon.png'
 import INVENTORY_LOGO from '../../images/Products_Page/Inventory_Management.png'
@@ -12,6 +14,7 @@ import FINANCIAL_LOGO from '../../images/Products_Page/Financial_Management.png'
 import SUPLY_CHAIN_LOGO from '../../images/Products_Page/Supply_Chain_Management.png'
 import COLLABORATIVE_LOGO from '../../images/Products_Page/Collaborative_tool_icon.png'
 import ECORMMERCE_WORKING_IMG from '../../images/Products_Page/Ecommerce_new_way_of_working_icon.png'
+
 
 const SMALL_BUSINESSE = [
     {
@@ -47,30 +50,63 @@ const ROAD_MAP_DATA = [
         text: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
 ]
+const DUMMY_TEXT = "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+const NEW_WAY_WORKING_DATA = {
+    heading: 'Get started with your website for the new way of working',
+    image: ECORMMERCE_WORKING_IMG,
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+
+}
 const SmallBusiness = () => {
     return (
         <section className={smallBusinessStyle.wrapper}>
-            <div className="container pt-5 pb-5">
-                <Card data={SMALL_BUSINESSE} />
+
+            <div className="container pt-5 pb-5 mt-5">
+                <Tabs>
+                    <div label="FOR SMALL BUSINESS">
+                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
+                            <div className="col mt-4 mb-5 text-center">
+                                <h5>{DUMMY_TEXT}</h5>
+                            </div>
+                        </div>
+                        <Card data={SMALL_BUSINESSE} />
+                    </div>
+                    <div label="FOR MEDIUM ENTERPRISE">
+                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
+                            <div className="col mt-4 mb-5 text-center">
+                                <h5>{DUMMY_TEXT}</h5>
+                            </div>
+                        </div>
+                        <Card data={SMALL_BUSINESSE} />
+                    </div>
+                    <div label="WEBSITES">
+                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
+                            <div className="col mt-4 mb-5 text-center">
+                                <h5>{DUMMY_TEXT}</h5>
+                            </div>
+                        </div>
+                        <Card data={SMALL_BUSINESSE} />
+                    </div>
+                    <div label="CMS DASHBOARD">
+                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
+                            <div className="col mt-4 mb-5 text-center">
+                                <h5>{DUMMY_TEXT}</h5>
+                            </div>
+                        </div>
+                        <Card data={SMALL_BUSINESSE} />
+                    </div>
+                    <div label="INVENORY MANAGEMENT">
+                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
+                            <div className="col mt-4 mb-5 text-center">
+                                <h5>{DUMMY_TEXT}</h5>
+                            </div>
+                        </div>
+                        <Card data={SMALL_BUSINESSE} />
+                    </div>
+                </Tabs>
+
             </div>
-            <section className="bg-white">
-                <div className="container pt-5 pb-5">
-                    <div className="row">
-                        <div className="col-12 col-md-8">
-                            <h2 className={smallBusinessStyle.heading}>Get started with your website for the
-                            new way of working</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-3">
-                            <h5 className={smallBusinessStyle.h5_subtext}></h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </div>
-                        <div className="col-md-9 text-center">
-                            <img src={ECORMMERCE_WORKING_IMG} alt="Ecommerce_new_way_of_working_icon" className={smallBusinessStyle.ecommerce_image} />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <NewWayWorking {...NEW_WAY_WORKING_DATA} />
             <RoadMap type="BLUE" ROAD_MAP_DATA={ROAD_MAP_DATA} />
 
         </section>

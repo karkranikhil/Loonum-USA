@@ -1,6 +1,7 @@
 .wrapper{
     font-family: "GothamLight";
-    color:#084E75
+    color:#084E75;
+    background:#fff;
 }
 .page_heading{
     font-size: 36px;
@@ -30,16 +31,12 @@
     font-size: 14px;
     
 }
-.h5_subtext{
-    line-height: 30px;
-    font-size: 20px;
-}
-.ecommerce_image{
-    text-align: center;
-    margin-top: -60px;
-    width: inherit;
-}
+
 .roadmap_section{
     background:#084E75;
     color:white;
+}
+.page_sub_heading{
+    max-width: 931px;
+    margin: auto;
 }

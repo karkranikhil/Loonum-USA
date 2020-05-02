@@ -4,14 +4,16 @@ import "../../styles/style.scss"
 import EmailSticker from '../EmailSticker/index'
 import Footer from "../Footer/footer"
 const Layout = props => {
+    console.log(props)
     return (
         <div>
             <Header />
-            {props.children}
-            <div class="d-none d-md-flex">
-                <EmailSticker />
+            <div style={{ marginTop: '120px' }}>
+                {props.children}
             </div>
-            <Footer/>
+            {window.location.pathname.includes('location') ? null : <EmailSticker />}
+
+            <Footer />
         </div>
     )
 }

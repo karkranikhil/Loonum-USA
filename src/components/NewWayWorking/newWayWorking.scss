@@ -1,0 +1,21 @@
+.heading{
+        line-height: 53px;
+        font-weight: 300;
+        font-size: 36px;
+}
+.h5_subtext{
+    line-height: 30px;
+    font-size: 20px;
+}
+.ecommerce_image{
+    text-align: center;
+    width: inherit;
+}
+.mobile{
+    flex-direction: column-reverse;
+}
+@media only screen and (min-width: 768px) {
+    .mobile{
+        flex-direction: row;
+    }
+}

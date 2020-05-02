@@ -1,0 +1,12 @@
+@import './variables.scss';
+.location_box{
+    justify-content: flex-end;
+    background: #4A4A4A;
+    display: flex;
+    height: 40px;
+    color: $lnm_white;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    font-size: $lnm_font15;
+}
