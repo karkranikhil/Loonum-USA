@@ -1,16 +1,36 @@
 @import '../../styles/style.scss';
 
+// .location_bar {
+//     display: none;
+// }
 .location_bar {
-    display: none;
+    height: 32px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    background: #4A4A4A;
+    font-size: 14px;
+}
+.mobile_nav_header{
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  align-items: center;
 }
 .custom_navbar{
   background-color: $lnm_blue;
   color:  $lnm_white;
-  height: 80px;
+  height: 60px;
+  line-height: 60px;
   font-weight: 500;
-      .container>nav{
+      .container{
+        min-width:100%;
+        >nav{
         background-color: $lnm_blue !important;
       }
+      }
+      
   }
 
   header{
@@ -19,26 +39,47 @@
     position: fixed;
     width: 100%;
   }
+  .hemburgerIcon{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    }
+  .mobile_nav_list_wrapper{
+    background: #FFFFFF;
+    color: #979797;
+    >a{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.25);
+      width: 100%;
+      >div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: #979797 !important;
+      }
+    }
+    
+  }
 
-@media only screen and (min-width: 768px) {
-  .location_bar{
-    height:40px;
-    color:$lnm_white;
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
+
+@media only screen and (min-width: 992px) {
+ .location_bar{
     padding-right: 3rem; 
-    font-size: $lnm_font15;
-    background: $lnm_darkgrey;
   }
   .custom_navbar{
     background-color: $lnm_blue;
     color:  $lnm_white;
-    line-height: 40px;
     font-weight: 500;
-        .container>nav{
-          background-color: $lnm_blue !important;
-        }
+    .container{
+        min-width:auto;
+        >nav{
+        background-color: $lnm_blue !important;
+        height: 60px;
+      }
+      }
     }
     .active_menu_item {
       padding-bottom: 0;
@@ -46,6 +87,9 @@
     }
     .container .navbar-expand-md .navbar-nav .nav-link {
         margin: 0px 1rem;
+        padding: 0;
+        height: 45px;
+        line-height: 45px;
     }
 
     .nav-item>.nav-link{

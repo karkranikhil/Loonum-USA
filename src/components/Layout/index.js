@@ -8,11 +8,12 @@ const Layout = props => {
     return (
         <div>
             <Header />
-            <div style={{ marginTop: '120px' }}>
+            <div style={{ marginTop: '90px' }}>
                 {props.children}
             </div>
-            {window.location.pathname.includes('location') ? null : <EmailSticker />}
-
+            <div className="d-none d-md-block">
+                {props.hideEmail ? null : <EmailSticker />}
+            </div>
             <Footer />
         </div>
     )

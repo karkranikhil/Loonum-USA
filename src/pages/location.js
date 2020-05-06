@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/index"
-import ContactForm from '../components/ContactForm/index'
+import ContactForm from '../components/contactForm/index'
 import PageJumbotron from '../components/PageJumbotron/index'
 const LOCATION_JUMBO_DATA = {
     heading: 'Where we create collobaorative futures',
@@ -8,7 +8,7 @@ const LOCATION_JUMBO_DATA = {
 }
 const Location = () => {
     return (
-        <Layout>
+        <Layout hideEmail>
             <section className="pt-5 pb-5">
                 <PageJumbotron {...LOCATION_JUMBO_DATA} />
             </section>

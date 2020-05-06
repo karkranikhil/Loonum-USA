@@ -18,12 +18,13 @@
     color: $lnm_white;
     background: $lnm_blue;
     border-radius: 2px;
-    height: 25px;
+    height: 30px;
     width: 170px;
     text-align: center;
     margin: 0 1rem;
-    line-height: 25px;
+    // line-height: 25px;
     cursor: pointer;
+    border: transparent;
 }
 .inputbox{
     height: 26px;

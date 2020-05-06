@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/index"
 import SmallBusiness from '../components/SmallBusiness/index'
 import PageJumbotron from '../components/PageJumbotron/index'
@@ -10,10 +11,13 @@ const PRODUCT_JUMBO_DATA = {
 const Product = () => {
     return (
         <Layout>
+            <Helmet>
+                <title>Loonum products</title>
+            </Helmet>
             <section className="pt-5">
                 <PageJumbotron {...PRODUCT_JUMBO_DATA} />
             </section>
-           
+
             <SmallBusiness />
         </Layout>
     )
