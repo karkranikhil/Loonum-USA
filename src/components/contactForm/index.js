@@ -52,7 +52,8 @@ const ContactForm = ({ color }) => {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 mt-3 mt-sm-none">
-                        <form action="POST" data-netlify="true">
+                        <form netlify-honeypot="bot-field" data-netlify="true">
+                            <input type="hidden" name="bot-field" />
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
                                     <input type="text" className="form-control" id="FNAME" placeholder="First Name" name="FNAME" value={formData.FNAME} onChange={formHandler} />
