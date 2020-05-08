@@ -43,18 +43,18 @@ const ContactForm = ({ color }) => {
         // Do not submit form via HTTP, since we're doing that via XHR request.
         event.preventDefault()
         const axiosOptions = {
-            url: window.location.pathname,
+            url: formRef.current.action,
             method: "post",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),
         }
         axios(axiosOptions)
             .then(response => {
-                this.formRef.current.reset()
+                formRef.current.reset()
                 console.log("success", response)
             })
             .catch(err =>
-                console.log("error")
+                console.log("error", err)
             )
     }
     const formHandler = e => {
