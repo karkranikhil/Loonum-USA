@@ -5,6 +5,15 @@
 /***Fonts****/
 
 $lnm_font15:'15px';
+.color-grey{
+  color:$lnm_darkgrey;
+}
+.color-blue{
+  color:$lnm_blue;
+}
+.color-cyan{
+  color:$lnm_cyan;
+}
 .text-black{
   color:$lnm_black;
 }
@@ -12,7 +21,10 @@ $lnm_font15:'15px';
   background:$lnm_darkgrey
 }
 .bg_blue{
-  background:$lnm_lightgrey
+  background:$lnm_blue;
+}
+.bg_white{
+  background:$lnm_white;
 }
 * {
   box-sizing: border-box;
@@ -102,4 +114,10 @@ h2.heading{
   animation: fadeIn 1000ms ease;
   -webkit-animation: fadeIn 1000ms ease;
   
+}
+
+@media (min-width: 1300px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width:80%;
+    }
 }

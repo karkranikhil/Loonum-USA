@@ -1,0 +1,33 @@
+@import '../../styles/style.scss';
+footer{
+    background: $lnm_darkgrey;
+    color: $lnm_white;
+    
+}
+.small_text{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+.lightgrey{
+    color: $lnm_lightgrey;
+}
+.small_text a {
+    color: $lnm_lightgrey !important;
+}
+.footer_heading{
+    border-top: 2px solid $lnm_white;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 14px;
+    padding-top: 5px;
+}
+.border_top{
+    border-top: 2px solid $lnm_white;
+}
+.l-height-26{
+    line-height: 26px;
+}
