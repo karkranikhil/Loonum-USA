@@ -1,14 +1,18 @@
 
 import React from "react"
-import DevicesStyle from './devicesSection.module.scss'
-const DevicesSection = ({ HEADING, SUB_HEADING, PARAGRAPH, IMAGE }) => {
+import './devicesSection.scss'
+
+const DevicesSection = ({ HEADING, SUB_HEADING, PARAGRAPH, DEVICE_SECTION_MOBILE, DEVICE_SECTION_WEB }) => {
     return (
-        <section className={DevicesStyle.wrapper}>
+        <section className="device_wrapper">
             <div className="container text-center pt-5 pb-5 pl-3 pr-3">
-                <h2 className={DevicesStyle.heading}>{HEADING}</h2>
-                <div className={DevicesStyle.subheading}>{SUB_HEADING}</div>
-                <img src={IMAGE} alt="DEVICE_IMG" className={DevicesStyle.imagestyle}/>
-                <div className={DevicesStyle.paragraph}>{PARAGRAPH}</div>
+                <h2 className="heading mb-3">{HEADING}</h2>
+                <div className="subheading">{SUB_HEADING}</div>
+                <div className="col-12 text-center">
+                    <img src={DEVICE_SECTION_WEB} alt="DEVICE_IMG" className="imagestyle d-none d-lg-block m-auto" />
+                    <img src={DEVICE_SECTION_MOBILE} alt="DEVICE_IMG" className="imagestyle d-block d-lg-none m-auto" />
+                </div>
+                <div className="paragraph">{PARAGRAPH}</div>
             </div>
         </section>
     )

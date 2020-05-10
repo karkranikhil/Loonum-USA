@@ -15,7 +15,7 @@ const Layout = props => {
     return (
         <div>
             <Header {...HEADER_DATA.HEADER} />
-            <div style={{ marginTop: '90px' }}>
+            <div style={{ marginTop: '120px' }}>
                 {props.children}
             </div>
             {/* <div className="d-none d-md-block">

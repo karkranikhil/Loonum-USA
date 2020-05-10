@@ -67,13 +67,13 @@ const ContactForm = ({ color }) => {
         <section className={color === 'WHITE' ? "bg-white" : ''}>
             <div className={`${contactFormStyle.wrapper} container text-center pt-5 pb-5`}>
                 <div className="row">
-                    <div className={`col-12 col-sm-6 ${contactFormStyle.get_in_touch_wrapper}`}>
+                    <div className={`col-12 col-md-4 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
                         <h2 className={contactFormStyle.heading}>Get in touch</h2>
                         <div>
                             <div className={contactFormStyle.subheading}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-6 mt-3 mt-sm-none">
+                    <div className="col-12 col-md-8 col-lg-6 mt-3 mt-sm-none">
                         <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                             <input type="hidden" name="bot-field" />
                             <div className="row">

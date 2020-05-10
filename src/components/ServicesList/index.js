@@ -2,6 +2,7 @@
 
 import React from "react"
 import Card from '../Card/index.js'
+import ResponsiveTabs from '../ResponsiveTabs/index'
 import NewWayWorking from '../NewWayWorking/index.js'
 import './servicesList.scss'
 import ECORMMERCE_WORKING_IMG from '../../images/Products_Page/Ecommerce_new_way_of_working_icon.png'
@@ -33,46 +34,81 @@ const SERVICES_TYPES = [
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
     }
 ]
+const TAB_LIST = ['Consulting', 'Design & Build', 'Digital marketing', 'Support']
+const getTabs = () => (<>
+    <div label="Consulting">
+        <div class="d-block d-md-none responsive_header">Consulting</div>
+        <div className='row page_sub_heading'>
+            <div className="col mt-4 mb-5 text-center">
+                <h5>{DUMMY_TEXT}</h5>
+            </div>
+        </div>
+        <Card data={SERVICES_TYPES} />
+    </div>
+    <div label="Design & Build">
+        <div class="d-block d-md-none responsive_header">Design & Build</div>
+        <div className='row page_sub_heading'>
+            <div className="col mt-4 mb-5 text-center">
+                <h5>{DUMMY_TEXT}</h5>
+            </div>
+        </div>
+        <Card data={SERVICES_TYPES} />
+    </div>
+    <div label="Digital marketing">
+        <div class="d-block d-md-none responsive_header">Digital marketing</div>
+        <div className='row page_sub_heading'>
+            <div className="col mt-4 mb-5 text-center">
+                <h5>{DUMMY_TEXT}</h5>
+            </div>
+        </div>
+        <Card data={SERVICES_TYPES} />
+    </div>
+    <div label="Support">
+        <div class="d-block d-md-none responsive_header">Support</div>
+        <div className='row page_sub_heading'>
+            <div className="col mt-4 mb-5 text-center">
+                <h5>{DUMMY_TEXT}</h5>
+            </div>
+        </div>
+        <Card data={SERVICES_TYPES} />
+    </div></>
+)
+
 const ServicesList = () => {
     return (
         <section className='wrapper'>
 
             <div className="container pt-5 pb-5 mt-5">
-                <Tabs>
-                    <div label="Consulting">
-                        <div className='row page_sub_heading'>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
+                <div className="d-block d-lg-none">
+                    <ResponsiveTabs>
+                        {TAB_LIST.map(item => (
+                            <div label={item} key={item}>
+                                <div class="d-block d-lg-none responsive_header">{item}</div>
+                                <div className='row page_sub_heading'>
+                                    <div className="col mt-4 mb-5 text-center">
+                                        <h5>{DUMMY_TEXT}</h5>
+                                    </div>
+                                </div>
+                                <Card data={SERVICES_TYPES} />
                             </div>
-                        </div>
-                        <Card data={SERVICES_TYPES} />
-                    </div>
-                    <div label="Design & Build">
-                        <div className='row page_sub_heading'>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
+                        ))}
+                    </ResponsiveTabs>
+                </div>
+                <div className="d-none d-lg-block">
+                    <Tabs>
+                        {TAB_LIST.map(item => (
+                            <div label={item} key={item}>
+                                <div class="d-block d-lg-none responsive_header">{item}</div>
+                                <div className='row page_sub_heading'>
+                                    <div className="col mt-4 mb-5 text-center">
+                                        <h5>{DUMMY_TEXT}</h5>
+                                    </div>
+                                </div>
+                                <Card data={SERVICES_TYPES} />
                             </div>
-                        </div>
-                        <Card data={SERVICES_TYPES} />
-                    </div>
-                    <div label="Digital marketing">
-                        <div className='row page_sub_heading'>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
-                            </div>
-                        </div>
-                        <Card data={SERVICES_TYPES} />
-                    </div>
-                    <div label="Support">
-                        <div className='row page_sub_heading'>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
-                            </div>
-                        </div>
-                        <Card data={SERVICES_TYPES} />
-                    </div>
-                </Tabs>
-
+                        ))}
+                    </Tabs>
+                </div>
             </div>
             <NewWayWorking {...NEW_WAY_WORKING_DATA} />
         </section>

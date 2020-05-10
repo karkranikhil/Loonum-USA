@@ -13,6 +13,7 @@ const Services = () => {
             <section className="pt-5">
                 <PageJumbotron {...SERVICE_JUMBO_DATA} />
             </section>
+            
             <ServicesList />
             <ContactForm />
         </Layout>

@@ -38,12 +38,12 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
     }
     return (
         <React.Fragment>
-            {<div className={`d-none d-md-flex sticker ${isSuccess ? 'success_sticky' : 'new_sticky'}`}>
+            {<div className={`d-none d-lg-flex sticker ${isSuccess ? 'success_sticky' : 'new_sticky'}`}>
                 {!isSuccess ? <div className="d-flex justify-content-between w-100">
                     <div className="container_wrapper m-auto">
                         <div className="emailtext">{MESSAGE}</div>
                         <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-                            <input type="email" required="true" placeholder={PLACHOLDER} className="inputbox" value={formState} onChange={changeHandler} />
+                            <input type="email" required={true} placeholder={PLACHOLDER} className="inputbox" value={formState} onChange={changeHandler} />
                             <button type="submit" className="send_btn">{BTN_TEXT}</button>
                         </form>
                     </div>

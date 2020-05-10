@@ -1,11 +1,14 @@
-.wrapper{
-    background: #084E75;
-    color: #fff;
+@import '../../styles/style.scss';
+.device_wrapper{
+    background: $lnm_lightblue;
+    color: $lnm_white;
     .heading{
-    line-height: 53px;
-    font-family: 'GothamLight';
-    font-weight: 300;
-    font-size: 36px;
+        line-height: 53px;
+        font-family: 'GothamLight';
+        font-weight: 300;
+        font-size: 36px;
+         color: $lnm_white;
+        
     }
     .subheading{
         font-size: 24px;
@@ -17,7 +20,7 @@
     }
     .imagestyle{
         width: 100%;
-        max-width: fit-content;
+        max-width: 500px;
     }
     .paragraph{
         padding: 2rem 0;

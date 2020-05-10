@@ -4,7 +4,8 @@ import React from "react"
 import RoadMap from '../Roadmap/index.js'
 import Card from '../Card/index.js'
 import NewWayWorking from '../NewWayWorking/index.js'
-import smallBusinessStyle from './smallBusiness.module.scss'
+import ResponsiveTabs from '../ResponsiveTabs/index.js'
+import './smallBusiness.scss'
 // import PRODUCT_LOGO from '../../images/Products_Page/product_logo.png'
 import Tabs from '../Tabs/index.js'
 import DIGITAL_LOGO from '../../images/Products_Page/Digital_representation_icon.png'
@@ -57,53 +58,43 @@ const NEW_WAY_WORKING_DATA = {
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 
 }
+const TAB_LIST = ["FOR SMALL BUSINESS", "FOR MEDIUM ENTERPRISE", "WEBSITES", "CMS DASHBOARD", "INVENORY MANAGEMENT"]
 const SmallBusiness = () => {
     return (
-        <section className={smallBusinessStyle.wrapper}>
+        <section className="wrapper">
 
             <div className="container pt-5 pb-5 mt-5">
-                <Tabs>
-                    <div label="FOR SMALL BUSINESS">
-                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
+
+                <div className="d-block d-lg-none">
+                    <ResponsiveTabs>
+                        {TAB_LIST.map(item => (
+                            <div label={item} key={item}>
+                                <div className="d-block d-lg-none responsive_header">{item}</div>
+                                <div className="row page_sub_heading">
+                                    <div className="col mt-4 mb-5 text-center">
+                                        <h5>{DUMMY_TEXT}</h5>
+                                    </div>
+                                </div>
+                                <Card data={SMALL_BUSINESSE} />
                             </div>
-                        </div>
-                        <Card data={SMALL_BUSINESSE} />
-                    </div>
-                    <div label="FOR MEDIUM ENTERPRISE">
-                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
+                        ))}
+                    </ResponsiveTabs>
+                </div>
+                <div className="d-none d-lg-block">
+                    <Tabs>
+                        {TAB_LIST.map(item => (
+                            <div label={item} key={item}>
+                                <div className="d-block d-lg-none responsive_header">{item}</div>
+                                <div className="row page_sub_heading">
+                                    <div className="col mt-4 mb-5 text-center">
+                                        <h5>{DUMMY_TEXT}</h5>
+                                    </div>
+                                </div>
+                                <Card data={SMALL_BUSINESSE} />
                             </div>
-                        </div>
-                        <Card data={SMALL_BUSINESSE} />
-                    </div>
-                    <div label="WEBSITES">
-                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
-                            </div>
-                        </div>
-                        <Card data={SMALL_BUSINESSE} />
-                    </div>
-                    <div label="CMS DASHBOARD">
-                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
-                            </div>
-                        </div>
-                        <Card data={SMALL_BUSINESSE} />
-                    </div>
-                    <div label="INVENORY MANAGEMENT">
-                        <div className={`row ${smallBusinessStyle.page_sub_heading}`}>
-                            <div className="col mt-4 mb-5 text-center">
-                                <h5>{DUMMY_TEXT}</h5>
-                            </div>
-                        </div>
-                        <Card data={SMALL_BUSINESSE} />
-                    </div>
-                </Tabs>
+                        ))}
+                    </Tabs>
+                </div>
 
             </div>
             <NewWayWorking {...NEW_WAY_WORKING_DATA} />
