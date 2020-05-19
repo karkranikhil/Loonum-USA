@@ -2,23 +2,22 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/index"
 import SmallBusiness from '../components/SmallBusiness/index'
-import PageJumbotron from '../components/PageJumbotron/index'
-// import PRODUCT_LOGO from '../images/Products_Page/product_logo.png'
-const PRODUCT_JUMBO_DATA = {
-    heading: 'A product set curated just for Small Businesses.',
-    subtext: 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-}
+import PAGE_DATA from '../Content/productPageData'
+import Hero from '../components/Hero/index'
 const Product = () => {
     return (
         <Layout>
             <Helmet>
                 <title>Loonum products</title>
             </Helmet>
-            <section className="pt-5">
-                <PageJumbotron {...PRODUCT_JUMBO_DATA} />
-            </section>
+            <Hero {...PAGE_DATA.HERO_DATA} />
+            {/* <section className="pt-5">
 
-            <SmallBusiness />
+                <PageJumbotron {...PRODUCT_JUMBO_DATA} />
+            </section> */}
+
+            <SmallBusiness {...PAGE_DATA.SMALL_BUSINESS}/>
+           
         </Layout>
     )
 }

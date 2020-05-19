@@ -1,49 +1,58 @@
 
 import React from "react"
-import foundersStyles from './founders.module.scss'
-import NIKHIL_IMG from '../../images/Our_Story_Page/Nikhil.png'
-import DANANJAYA_IMG from '../../images/Our_Story_Page/Dananjaya.png'
-const FOUNDER_DATA = [
-    {
-        img: DANANJAYA_IMG,
-        firstname: 'Dananjaya',
-        lastname: 'Perera',
-        designation: 'Designer',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    },
-    {
-        img: NIKHIL_IMG,
-        firstname: 'Nikhil',
-        lastname: 'Karkra',
-        designation: 'Developer',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    }
-]
+import './founders.scss'
+
+const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION }) => {
+    return (
+        <>
+            <div className="container pt-5 pb-5">
+                <div className="row pr-3 pl-3">
+                    <div className="hero_wrapper">
+                        <div className='firstname hero_heading_text'>{lOGO_HEADING}</div>
+                        <img src={LOGO} alt={lOGO_HEADING} />
+                        <div className='hero_subheading'>{SUB_HEADING}</div>
+                    </div>
+                </div>
+                <div className="row pr-3 pl-3">
+                    <div className="hero_description mt-4">{DESCRIPTION}</div>
+                </div>
+            </div>
+        </>
+    )
+}
 const FoundersCard = (item) => {
     return (
         <>
             <div className="col-12 col-md-6 pl-5 pr-5 pb-5">
-                <img src={item.img} alt={item.firstname} />
-                <div className={foundersStyles.firstname}>{item.firstname}</div>
-                <div className={foundersStyles.lastname}>{item.lastname}</div>
-                <div className={foundersStyles.designation}>{item.designation}</div>
-                <div>{item.description}</div>
+                <div className="founder_wrapper ml-auto mr-auto">
+                    <img src={item.img} alt={item.firstname} />
+                    <div className="ml-sm-4">
+                        <div className='firstname'>{item.firstname}</div>
+                        <div className='lastname'>{item.lastname}</div>
+                        <div className='designation'>{item.designation}</div>
+                    </div>
+                </div>
+                <div className='founder_description'>{item.description1}</div>
+                <div className='founder_description mt-4'>{item.description2}</div>
             </div>
-            
+
         </>
     )
 }
-const Founders = () => {
+const Founders = ({ HERO_DATA, FOUNDER_DATA }) => {
     return (
-        <section className={`bg-white ${foundersStyles.wrapper}`}>
-            <div className="container pt-5 pb-5 text-center">
-                <h2>Co-Founders</h2>
-                <div className="row">
-                    {FOUNDER_DATA.map(item => <FoundersCard {...item} />)}
+        <>
+            <HERO_CARD {...HERO_DATA} />
+            <section className='bg-white wrapper'>
+                <div className="container pt-5 pb-5 text-center">
+                    <h2>Co-Founders</h2>
+                    <div className="row">
+                        {FOUNDER_DATA.map((item, index) => <FoundersCard {...item} key={index}/>)}
+                    </div>
+
                 </div>
-                
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 

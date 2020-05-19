@@ -2,14 +2,12 @@
 
 import React from "react"
 import './newWayWorking.scss'
-
-
 const NewWayWorking = ({ image, heading, description }) => {
     return (
         <section className="bg-white">
             <div className="container pt-5 pb-5">
                 <div className="row mb-3">
-                    <div className="col-12">
+                    <div className="col-12 col-lg-7">
                         <h2 className='heading'>{heading}</h2>
                     </div>
                 </div>

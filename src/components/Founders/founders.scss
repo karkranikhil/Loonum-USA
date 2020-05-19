@@ -1,0 +1,79 @@
+.wrapper{
+    color: #084E75;
+}
+ .firstname{
+        font-size: 30px;
+        line-height: 36px;
+        padding-top: 1rem;
+        font-family: 'gothambook';
+    }
+    .lastname{
+        font-size: 30px;
+        line-height: 36px;
+        font-family: 'gothambook';
+    }
+    .designation{
+        font-size: 18px;
+        line-height: 36px;
+        font-family: 'gothamlight';
+    }
+.hero_heading_text{
+    position: absolute;
+    top: -15px;
+    left: 55px;
+}
+.hero_wrapper{
+    position: relative;
+    color: #084E75;
+    margin: auto;
+}
+.hero_description{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GothamLight';
+}
+.hero_subheading{
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    color: #084E75;
+    line-height: 36px;
+    font-family: 'gothambook';
+}
+.founder_description{
+    text-align: justify;
+    max-width: 600px;
+    margin: auto;
+    color:#000;
+}
+.founder_wrapper{
+        text-align: justify;
+    max-width: 600px;
+        display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+  .hero_heading_text{
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 0;
+    position: initial;
+  }
+  .hero_heading_text+img{
+        text-align: center;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .hero_subheading{
+        font-size: 14px;
+    }
+  .founder_wrapper{
+      flex-direction: column;
+        text-align: center;
+        align-items: center;
+  }
+}

@@ -1,6 +1,6 @@
 import HERO_IMAGE from '../images/Home_Page/HERO_IMG.png'
 import WEBSITE_IMAGE from '../images/Home_Page/website.png'
-import DASHBOARD_IMAGE from '../images/Home_Page/dashboard.png'
+import CMS_IMAGE from '../images/Home_Page/CMS.png'
 import INVENTORY_IMAGE from '../images/Home_Page/inventory.png'
 import STICKY_WHITE_CROSS from '../images/Home_Page/STICKY_WHITE_CROSS.png'
 import STICKY_GREY_CROSS from '../images/Home_Page/STICKY_GREY_CROSS.png'
@@ -12,17 +12,17 @@ export const CARD_DETAILS = [
     {
         name: 'Website',
         image: WEBSITE_IMAGE,
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        text: "We design and build your website to improve credibility, increase enquiries and generate revenue. Our strategists, UX designers and developers will create features and functionalities visually desires your customers."
     },
     {
-        name: 'Dashboard',
-        image: DASHBOARD_IMAGE,
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        name: 'CMS',
+        image: CMS_IMAGE,
+        text: "You don’t need to adapt to a Content Management System like before. We will design your CMS according to your business process to and align the dashboard to your activities so its seamless to you BAU tasks."
     },
     {
         name: 'Inventory',
         image: INVENTORY_IMAGE,
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+        text: "After understanding your product range and storing method Loonum will design a system for your business rather waste time and cost with training yourself and staff for an off-the-shelve product."
     }
 ]
 export default {

@@ -51,19 +51,13 @@ const ROAD_MAP_DATA = [
         text: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
 ]
-const DUMMY_TEXT = "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-const NEW_WAY_WORKING_DATA = {
-    heading: 'Get started with your website for the new way of working',
-    image: ECORMMERCE_WORKING_IMG,
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 
-}
 const TAB_LIST = ["FOR SMALL BUSINESS", "FOR MEDIUM ENTERPRISE", "WEBSITES", "CMS DASHBOARD", "INVENORY MANAGEMENT"]
-const SmallBusiness = () => {
+const SmallBusiness = ({ Description, SMALL_BUSINESS_CARDS, NEW_WAY_WORKING_DATA }) => {
     return (
         <section className="wrapper">
 
-            <div className="container pt-5 pb-5 mt-5">
+            <div className="container pt-5 pb-5">
 
                 <div className="d-block d-lg-none">
                     <ResponsiveTabs>
@@ -72,10 +66,10 @@ const SmallBusiness = () => {
                                 <div className="d-block d-lg-none responsive_header">{item}</div>
                                 <div className="row page_sub_heading">
                                     <div className="col mt-4 mb-5 text-center">
-                                        <h5>{DUMMY_TEXT}</h5>
+                                        <h5>{Description}</h5>
                                     </div>
                                 </div>
-                                <Card data={SMALL_BUSINESSE} />
+                                <Card data={SMALL_BUSINESS_CARDS} />
                             </div>
                         ))}
                     </ResponsiveTabs>
@@ -83,14 +77,14 @@ const SmallBusiness = () => {
                 <div className="d-none d-lg-block">
                     <Tabs>
                         {TAB_LIST.map(item => (
-                            <div label={item} key={item}>
+                            <div DEFAULT={TAB_LIST[0]}label={item} key={item}>
                                 <div className="d-block d-lg-none responsive_header">{item}</div>
                                 <div className="row page_sub_heading">
                                     <div className="col mt-4 mb-5 text-center">
-                                        <h5>{DUMMY_TEXT}</h5>
+                                        <h5>{Description}</h5>
                                     </div>
                                 </div>
-                                <Card data={SMALL_BUSINESSE} />
+                                <Card data={SMALL_BUSINESS_CARDS} />
                             </div>
                         ))}
                     </Tabs>

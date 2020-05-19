@@ -33,12 +33,12 @@ form .form-control{
 }
 .submit_btn{
     border-radius: 17.5px;
-    background-color: #D86600;
+    background-color: #D86600 !important;
     font-size: 19px;
     width: 140px;
     line-height: 30px;
     border: none;
-    color: #fff;
+    color: #fff !important;
 }
 .custom-control-label::before {
     top: .25rem;

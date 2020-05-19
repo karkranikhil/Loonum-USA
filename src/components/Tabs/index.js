@@ -7,7 +7,7 @@ import Tab from './tab';
 
 const Tabs = (props) => {
     let label = props.children && props.children[0].props.label ? props.children[0].props.label : ''
-    const [activeTab, setActiveTab] = useState(props.children[0].props.label);
+    const [activeTab, setActiveTab] = useState(props.children[0].props.DEFAULT);
 
     const onClickTabItem = (tab) => {
         setActiveTab(tab)

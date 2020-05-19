@@ -29,9 +29,14 @@
     .blue_wrapper{
         background:#084E75;
         color:white;
-            font-family: 'GothamLight'
+        font-family: 'GothamLight'
     }
     .grey_wrapper{
         color:#4A4A4A;
-            font-family: 'GothamLight'
+        font-family: 'GothamLight'
+    }
+    .image_cover{
+        background-image: url("../../images/Products_Page/WORLD_MAP.png");
+        background-repeat: no-repeat;
+        background-position: center;
     }

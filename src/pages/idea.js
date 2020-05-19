@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout/index"
-
+import SimpleIdea from '../components/SimpleIdea/index'
+import ContactForm from '../components/contactForm/index'
 const Idea = () => {
     return (
         <Layout>
-            <div className="idea_fullpage">
-                <h1 className="idea_text">coming soon</h1>
-            </div>
+            <SimpleIdea />
+            <ContactForm />
         </Layout>
     )
 }

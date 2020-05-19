@@ -8,19 +8,24 @@ import FOOTER_LOGO from '../images/Home_Page/FOOTER_LOGO.png'
 
 export const SOCIAL_MEDIA = [
     {
-        image: TWITTER
+        image: TWITTER,
+        Links: '#'
     },
     {
-        image: LINKED_IN
+        image: LINKED_IN,
+        Links: 'https://www.linkedin.com/company/42815767/admin/'
     },
     {
-        image: FACEBOOK
+        image: FACEBOOK,
+        Links: 'https://www.facebook.com/Loonum-102425771465986/?modal=admin_todo_tour'
     },
     {
-        image: YOUTUBE
+        image: YOUTUBE,
+        Links: 'https://www.youtube.com/channel/UC9x_iJEjM2Iu5MOozn8JfXw?view_as=subscriber'
     },
     {
-        image: LOCATION
+        image: LOCATION,
+        Links: '#'
     },
 ]
 export default {

@@ -14,8 +14,17 @@
 .mobile{
     flex-direction: column-reverse;
 }
+.ecommerce_image{
+        max-height: 500px;
+    }
 @media only screen and (min-width: 768px) {
     .mobile{
         flex-direction: row;
+    }
+    .ecommerce_image{
+        max-height: 500px;
+        margin-top: -50px;
+        height: 400px;
+        max-width: 800px;
     }
 }

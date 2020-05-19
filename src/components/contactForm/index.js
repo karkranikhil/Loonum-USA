@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react"
 // import addToMailchimp from 'gatsby-plugin-mailchimp'
 import axios from "axios"
 import * as qs from "query-string"
+import Modal from '../Modal/index'
 import contactFormStyle from './contactForm.module.scss'
 const PRIVACY_TEXT = 'By checking this box and clicking submit, I hereby consent that Loonum sends me via email marketing related information with regard to products and services of Loonum. I understand that, in order to opt-out from receiving such emails in the future, I can use the opt-out mechanism that is described in each such email. Privacy Policy | GDPR'
 const FORM_DATA = {
@@ -18,7 +19,23 @@ const FORM_DATA = {
     description: '',
     privacyAccepted: false
 }
-const ContactForm = ({ color }) => {
+const ContactUsDescription = () => {
+    return (<>
+        <h2 className={`${contactFormStyle.heading} pb-3 mb-3`}>Go ahead and talk to us</h2>
+        <div>
+            <div className={`${contactFormStyle.subheading} pb-3 mb-3`}>Want to know more about how we can help? Have a question?</div>
+            <div className={`${contactFormStyle.subheading} pb-3 mb-3`}>Simply fill in the form and I will get back to you within 24 hrs.</div>
+            <div className={`${contactFormStyle.subheading} pb-3`}>- Donna</div>
+        </div>
+    </>)
+}
+const OtherDescription = () => {
+    return (<><h2 className={contactFormStyle.heading}>Get in touch</h2>
+        <div>
+            <div className={contactFormStyle.subheading}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div></>)
+}
+const ContactForm = ({ color, TYPE }) => {
     const [formData, setFormData] = useState(FORM_DATA)
     const formRef = useRef(null)
     // const _handleSubmit = e => {
@@ -67,13 +84,10 @@ const ContactForm = ({ color }) => {
         <section className={color === 'WHITE' ? "bg-white" : ''}>
             <div className={`${contactFormStyle.wrapper} container text-center pt-5 pb-5`}>
                 <div className="row">
-                    <div className={`col-12 col-md-4 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
-                        <h2 className={contactFormStyle.heading}>Get in touch</h2>
-                        <div>
-                            <div className={contactFormStyle.subheading}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                        </div>
+                    <div className={`col-12 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
+                        {TYPE === 'CONTACT' ? <ContactUsDescription /> : <OtherDescription />}
                     </div>
-                    <div className="col-12 col-md-8 col-lg-6 mt-3 mt-sm-none">
+                    <div className="col-12  col-lg-6 mt-3 mt-sm-none">
                         <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                             <input type="hidden" name="bot-field" />
                             <div className="row">
@@ -131,6 +145,7 @@ const ContactForm = ({ color }) => {
                     </div>
                 </div>
             </div>
+            <Modal />
         </section>
     )
 }

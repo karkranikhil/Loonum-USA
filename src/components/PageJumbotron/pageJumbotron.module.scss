@@ -1,12 +1,27 @@
 .wrapper{
     font-family: "GothamLight";
-    color:#084E75
+    color:#084E75;
+    position: relative;
+    min-height: 135px;
 }
 .page_heading{
     font-size: 36px;
     line-height: 43px;
 }
-.page_sub_heading{
-    max-width: 931px;
-    margin: auto;
+.page_sub_heading h5{
+    // max-width: 931px;
+    // margin: auto;
+      font-size: 20px;
+      font-weight: 700;
+}
+.img_icon{
+    position: absolute;
+    right: 55px;
+    top: -20px;
+}
+@media only screen and (max-width: 720px) {
+    .page_heading, .page_sub_heading{
+         text-align: center;
+    }
+   
 }

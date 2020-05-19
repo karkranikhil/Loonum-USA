@@ -1,0 +1,66 @@
+// .border_dash{
+//     border-top: 2px dashed #fff;
+    
+// border-radius: 2px;
+// }
+.year{
+    font-size: 24px;
+font-weight: 500;
+letter-spacing: 0.04px;
+line-height: 24px;
+text-align: center;
+}
+.timeline_wrapper{
+    color:#fff;
+    margin-top:200px;
+}
+.timeline_grey_wrapper{
+    color: #4A4A4A;
+    margin-top:200px;
+}
+.timeline_wrapper_mobile{
+    color:#fff;
+}
+.icon_roadmap{
+    position: absolute;
+       
+        top: -150px;
+    width: inherit;
+    z-index: 99;
+    text-align: center;
+        margin: 0 -15px;
+}
+.heading_text{
+    font-size: 20px;
+    font-weight: 300;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.p-relative{
+        position: relative;
+}
+/***Mobile**/
+.mobile_arrow_img{
+    position: absolute;
+    left: -182%;
+    transform: rotate(90deg);
+    top: 51%;
+}
+.mobile_circle{
+    position: absolute;
+    transform: rotate(90deg);
+    left: -33px;
+    top: 38px;
+}
+@media only screen and (min-width: 1025px) {
+    .icon_roadmap{
+         top: -158px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    .icon_roadmap{
+         top: -150px;
+    }
+}
