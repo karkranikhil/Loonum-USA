@@ -4,32 +4,25 @@
 import React, { useState, useEffect } from 'react';
 
 import Tab from './tab';
-export function debounce(func, wait = 20, immediate = true) {
-    let timeout;
-    return function () {
-        const context = this;
-        const args = arguments;
-        const later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
+let scrollValue = null
+if (typeof window !== 'undefined') {
+    scrollValue = window.scrollY
 }
 
 const Tabs = (props) => {
-    const [scrollY, setScrollY] = useState(window.scrollY);
+    const [scrollY, setScrollY] = useState(scrollValue);
 
     useEffect(
         () => {
-            const handleScroll = () => setScrollY(window.scrollY);
+            const handleScroll = () => {
+                if (typeof window !== 'undefined') {
+                    setScrollY(window.scrollY)
+                }
+            };
             window.addEventListener("scroll", handleScroll);
             return () => window.removeEventListener("scroll", handleScroll);
         },
-        [debounce] // If you remove this, things go 🍌🍌🍌
+        [] 
     );
 
     const [activeTab, setActiveTab] = useState(props.children[0].props.DEFAULT);
