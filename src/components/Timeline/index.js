@@ -2,7 +2,9 @@
 import React from "react"
 import './Timeline.scss'
 import ROAD_MAP from '../../images/Products_Page/ROAD_MAP.png'
+import ROAD_MAP_GREY from '../../images/Products_Page/ROAD_MAP_GREY.png'
 import ARROW_LINE from '../../images/Products_Page/ARROW_LINE.svg'
+import ARROW_LINE_GREY from '../../images/Products_Page/ARROW_LINE_GREY.svg'
 
 const TIME_LINE_DATA = [
     {
@@ -32,20 +34,22 @@ const Timeline = ({ Type }) => {
             <div className={`container-fluid d-none d-md-flex ${Type === 'BLUE' ? 'timeline_wrapper' : 'timeline_grey_wrapper'}`}>
                 <div className="d-flex h-100 justify-content-between">
                     <div className="row">
-                        <img src={ARROW_LINE} alt="line" className="responsive" />
+                        {Type === 'BLUE' ? <img src={ARROW_LINE} alt="line" className="responsive" /> :
+                            <img src={ARROW_LINE_GREY} alt="line" className="responsive" />}
+
                         {TIME_LINE_DATA.map(item => (
                             <div className="col-md-3  border_dash text-center">
                                 <div className="icon_roadmap" >
                                     <div className="heading_text">
-                                        {item.HEADINGS.map(i => <div>{i}</div>)}
+                                        {item.HEADINGS.map(i => <div key={i}>{i}</div>)}
                                     </div>
-                                    <img src={ROAD_MAP} alt="milestone" />
+                                    <img src={Type === 'BLUE' ? ROAD_MAP : ROAD_MAP_GREY} alt="milestone" />
                                 </div>
 
                                 <div className="col-12 pt-5">
                                     <div className="year">{item.year}</div>
                                     <div className="pt-4">
-                                        {item.description.map(i => <div>{i}</div>)}
+                                        {item.description.map(i => <div key={i}>{i}</div>)}
                                     </div>
                                 </div>
 
@@ -54,34 +58,40 @@ const Timeline = ({ Type }) => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid timeline_wrapper_mobile d-md-none">
+            <div className={`container-fluid  d-md-none p-relative  ${Type === 'BLUE' ? `mobile_arrow_img timeline_wrapper_mobile` : `mobile_arrow_img_grey timeline_wrapper_grey`}`}>
                 <div className="d-flex h-100 justify-content-between">
                     <div className="row p-relative">
-                        <div className="mobile_arrow_img">
-                            <img src={ARROW_LINE} alt="line" className="" width="1300px" />
-                        </div>
                         {TIME_LINE_DATA.map((item, index) =>
                             <div key={index} className="text-center w-100 mt-5">
-                                <div className="col-10 ml-auto" >
-                                    <div className="heading_text mb-3">
-                                        {item.HEADINGS.map(i => <div>{i}</div>)}
+                                <div className="row">
+                                    <div className="col-1  p-relative">
                                     </div>
-                                    <img src={ROAD_MAP} alt="milestone" className="mobile_circle" />
-                                </div>
-                                <div className="col-10  ml-auto">
-                                    <div className="year">{item.year}</div>
-                                    <div className="pt-4">
-                                        {item.description.map(i => <div>{i}</div>)}
+                                    <div className="col-11">
+                                        <div className="ml-auto" >
+                                            <div className="heading_text mb-3">
+                                                {item.HEADINGS.map(i => <div key={i}>{i}</div>)}
+                                            </div>
+                                            <img src={Type === 'BLUE' ? ROAD_MAP : ROAD_MAP_GREY} alt="milestone" className="mobile_circle" />
+                                        </div>
+                                        <div className="ml-auto">
+                                            <div className="year_mobile">{item.year}</div>
+                                            <div className="pt-4">
+                                                {item.description.map(i => <div key={i}>{i}</div>)}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         )}
 
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
 
 export default Timeline
+
+

@@ -29,18 +29,14 @@ export const SOCIAL_MEDIA = [
         Links: '#'
     }
 ]
-const Modal = props => {
-    const [closeEmailBox, setCloseEmailBox] = useState(false)
-    console.log(props)
-    const emailStickerHandler = () => {
-        setCloseEmailBox(true)
-    }
+const Modal = ({ closeHandler }) => {
+
     return (
-        <div class="modal_wrapper">
+        <div className="modal_wrapper">
             <div className="custom_modal-content">
-                <div className="text-right"><img src={CROSS_LARGE} alt="close modal" /></div>
+                <div className="text-right" ><img src={CROSS_LARGE} alt="close modal" onClick={closeHandler} /></div>
                 <div className="row">
-                    <div className="col-sm-6 vertical_fix">
+                    <div className="col-12 col-md-6 vertical_fix">
                         <div className="row msg_heading">
                             <div className="col-12">
                                 Thank you !
@@ -60,16 +56,16 @@ const Modal = props => {
                         </div>
                         <div className="row text-center">
                             <div className="col-12">
-                                {SOCIAL_MEDIA.map(item => <a href={item.Links} className="social_icon"><img src={item.image} /></a>)}
+                                {SOCIAL_MEDIA.map((item, index) => <a href={item.Links} className="social_icon" key={index}><img src={item.image} /></a>)}
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-12 text-center">
-                                <button className="btn btn-lg done_button">Done</button>
+                                <button className="btn btn-lg done_button" onClick={closeHandler}>Done</button>
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 text-center">
+                    <div className="d-none d-md-flex col-md-6 text-center">
                         <img src={THANK_YOU_CHARACTER} alt="THANK_YOU_CHARACTER" className="responsive_img" />
                     </div>
                 </div>

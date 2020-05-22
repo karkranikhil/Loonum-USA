@@ -13,10 +13,14 @@ const Tab = (props) => {
     }
     const { activeTab, label } = props;
 
-    let className = 'tab-list-item';
-
+    let className = '';
+    let imageName = ''
     if (activeTab === label) {
-        className += ' tab-list-active';
+        className += 'tab-list-active';
+        imageName = props.tabData.image_active
+    } else {
+        className = 'tab-list-item'
+        imageName = props.tabData.image
     }
 
     return (
@@ -25,7 +29,17 @@ const Tab = (props) => {
             onClick={onClick}
             onKeyDown={handleKeyDown}
         >
-            {label}
+            <div className="col-12 d-md-none">
+                <img src={imageName} alt={props.tabData.mobileLabel} height='30px' />
+                {/* <br />
+                <span>{props.tabData.mobileLabel}</span> */}
+            </div>
+            <div className="d-none d-md-block">
+                <div>{props.tabData.mobileLabel}</div>
+                {/* <br />
+                <span>{props.tabData.mobileLabel}</span> */}
+            </div>
+
         </li>
     );
 }

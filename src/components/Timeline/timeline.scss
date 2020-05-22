@@ -1,11 +1,7 @@
-// .border_dash{
-//     border-top: 2px dashed #fff;
-    
-// border-radius: 2px;
-// }
+
 .year{
     font-size: 24px;
-font-weight: 500;
+font-weight: 600;
 letter-spacing: 0.04px;
 line-height: 24px;
 text-align: center;
@@ -20,6 +16,9 @@ text-align: center;
 }
 .timeline_wrapper_mobile{
     color:#fff;
+}
+.timeline_wrapper_grey{
+    color:#4A4A4A;
 }
 .icon_roadmap{
     position: absolute;
@@ -42,16 +41,32 @@ text-align: center;
         position: relative;
 }
 /***Mobile**/
-.mobile_arrow_img{
+
+.mobile_arrow_img::before{
+    content: '';
     position: absolute;
-    left: -182%;
-    transform: rotate(90deg);
-    top: 51%;
+    top: 43px;
+    left: 10px;
+    height: 90%;
+    width: 4px;
+    background: white;
+
 }
+.mobile_arrow_img_grey::before{
+    content: '';
+    position: absolute;
+    top: 43px;
+    left: 10px;
+    height: 90%;
+    width: 4px;
+    background: #9b9b9b;
+
+}
+
 .mobile_circle{
     position: absolute;
     transform: rotate(90deg);
-    left: -33px;
+        left: 0;
     top: 38px;
 }
 @media only screen and (min-width: 1025px) {
@@ -63,4 +78,12 @@ text-align: center;
     .icon_roadmap{
          top: -150px;
     }
+}
+
+.year_mobile{
+    font-size: 24px;
+font-weight: 700;
+letter-spacing: 0.04px;
+line-height: 24px;
+text-align: center;
 }

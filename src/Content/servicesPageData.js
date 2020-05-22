@@ -3,6 +3,15 @@ import UX_UI_icon from '../images/Services_Page/UX_UI.png'
 import Development_icon from '../images/Services_Page/Development.png'
 import Deployment_icon from '../images/Services_Page/Deployment.png'
 import LET_US_HELP from '../images/Services_Page/LET_US_HELP.png'
+
+import Consulting_fill from '../images/Tab_Icons/Consulting_fill.svg'
+import Consulting_outline from '../images/Tab_Icons/Consulting_outline.svg'
+import Design_and_Build_fill from '../images/Tab_Icons/Design_and_Build_fill.svg'
+import Design_and_Build_outline from '../images/Tab_Icons/Design_and_Build_outline.svg'
+import digital_marketing_fill from '../images/Tab_Icons/digital_marketing_fill.svg'
+import digital_marketing_outline from '../images/Tab_Icons/digital_marketing_outline.svg'
+import suppport_fill from '../images/Tab_Icons/suppport_fill.svg'
+import suppport_outline from '../images/Tab_Icons/suppport_outline.svg'
 export default {
     HERO_DATA: {
         HERO_HEADING: 'This is what we do',
@@ -31,7 +40,30 @@ export default {
                 }
             ]
         },
-        TAB_LIST:['Consulting', 'Design & Build', 'Digital marketing', 'Support'],
+        TAB_LIST:[
+            {
+                label: 'Consulting',
+                mobileLabel: 'Consulting',
+                image: Consulting_outline,
+                image_active: Consulting_fill
+            },
+            {
+                label: 'Design & Build',
+                mobileLabel: 'Design & Build',
+                image: Design_and_Build_outline,
+                image_active: Design_and_Build_fill
+            },
+            {
+                label: 'Digital marketing',
+                mobileLabel: 'Digital marketing',
+                image: digital_marketing_outline,
+                image_active: digital_marketing_fill
+            }, {
+                label: 'Support',
+                mobileLabel: 'Support',
+                image: suppport_outline,
+                image_active: suppport_fill
+            }],
         NEW_WAY_WORKING_DATA: {
             heading: 'Let us help you to simplify your business challenges so you can serve your customers and increase revenue',
             image: LET_US_HELP,

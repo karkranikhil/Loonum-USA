@@ -37,6 +37,7 @@ const OtherDescription = () => {
 }
 const ContactForm = ({ color, TYPE }) => {
     const [formData, setFormData] = useState(FORM_DATA)
+    const [showModal, setModal] = useState(false)
     const formRef = useRef(null)
     // const _handleSubmit = e => {
     //     e.preventDefault();
@@ -67,7 +68,8 @@ const ContactForm = ({ color, TYPE }) => {
         }
         axios(axiosOptions)
             .then(response => {
-                formRef.current.reset()
+                setFormData(FORM_DATA)
+                setModal(true)
                 console.log("success", response)
             })
             .catch(err =>
@@ -79,7 +81,9 @@ const ContactForm = ({ color, TYPE }) => {
         let updatedData = { ...formData, [name]: value }
         setFormData(updatedData)
     }
-
+    const closeHandler = e => {
+        setModal(false)
+    }
     return (
         <section className={color === 'WHITE' ? "bg-white" : ''}>
             <div className={`${contactFormStyle.wrapper} container text-center pt-5 pb-5`}>
@@ -145,7 +149,7 @@ const ContactForm = ({ color, TYPE }) => {
                     </div>
                 </div>
             </div>
-            <Modal />
+            {showModal && <Modal closeHandler={closeHandler} />}
         </section>
     )
 }

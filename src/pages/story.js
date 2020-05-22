@@ -6,7 +6,6 @@ import RoadMap from '../components/Roadmap/index'
 import FINANCIAL_LOGO from '../images/Our_Story_Page/Financial_Management.png'
 import SUPLY_CHAIN_LOGO from '../images/Our_Story_Page/Supply_Chain_Management.png'
 import COLLABORATIVE_LOGO from '../images/Our_Story_Page/Collaborative _tools_icon.png'
-import PageJumbotron from '../components/PageJumbotron/index'
 import PAGE_DATA from '../Content/ourStoryData'
 
 const ROAD_MAP_DATA = [
@@ -30,12 +29,9 @@ const ROAD_MAP_DATA = [
 const Story = () => {
     return (
         <Layout>
-            {/* <section className="pt-5 pb-5">
-                <PageJumbotron {...STORY_JUMBO_DATA} />
-            </section> */}
-            <Founders {...PAGE_DATA.OUR_STORY_DATA}/>
+            <Founders {...PAGE_DATA.OUR_STORY_DATA} />
             <RoadMap ROAD_MAP_DATA={ROAD_MAP_DATA} />
-            <ContactForm color="WHITE"/>
+            <ContactForm color="WHITE" />
         </Layout>
     )
 }

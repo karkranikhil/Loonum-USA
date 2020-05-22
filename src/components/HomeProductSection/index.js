@@ -10,7 +10,7 @@ const HomeProductSection = ({ CARD_DETAILS, HEADING, SUB_HEADING }) => {
                 <div className="row">
                     {CARD_DETAILS.map(item => (
                         <div className="col-12 col-md-4 mb-3" key={item.name}>
-                            <div className="bg-white p-3">
+                            <div className="bg-white p-3 h-100">
                                 <div className={`gothamBook ${HomeProductStyle.card_heading}`}>{item.name}</div>
                                 <img src={item.image} alt={item.name} />
                                 <div className={HomeProductStyle.card_text}>{item.text}</div>

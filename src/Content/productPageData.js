@@ -6,12 +6,47 @@ import FINANCIAL_LOGO from '../images/Products_Page/Financial_Management.png'
 import SUPLY_CHAIN_LOGO from '../images/Products_Page/Supply_Chain_Management.png'
 import COLLABORATIVE_LOGO from '../images/Products_Page/Collaborative_tool_icon.png'
 import ECORMMERCE_WORKING_IMG from '../images/Products_Page/Ecommerce-new-way-of-working.png'
+
+
+import Inventory_fill from '../images/Tab_Icons/Inventory_fill.svg'
+import Inventory_outline from '../images/Tab_Icons/Inventory_outline.svg'
+import SMS_fill from '../images/Tab_Icons/SMS_fill.svg'
+import SMS_outline from '../images/Tab_Icons/SMS_outline.svg'
+import Small_business_fill from '../images/Tab_Icons/Small_business_fill.svg'
+import Small_business_outlilne from '../images/Tab_Icons/Small_business_outlilne.svg'
+import Website_fill from '../images/Tab_Icons/Website_fill.svg'
+import Website_outline from '../images/Tab_Icons/Website_outline.svg'
+
 export default {
     HERO_DATA: {
         HERO_HEADING: 'A product set curated just for Small Businesses.',
         HERO_SUBHEADING: "With over 15 years of extensive web solution experience Loonum offers a end-to-end design led approach to product design, development and implimentation. Our years of experience will ensure to focus on, defining right problems and aligning user friendly products to your customers.",
         HERO_IMAGE: HERO_IMAGE
     },
+    TAB_LIST: [
+        {
+            label: 'FOR SMALL BUSINESS',
+            mobileLabel:'SMALL BUSINESS',
+            image: Small_business_outlilne,
+            image_active: Small_business_fill
+        },
+        {
+            label: 'WEBSITES',
+            mobileLabel: 'WEBSITES',
+            image: Website_outline,
+            image_active: Website_fill
+        },
+        {
+            label: 'CMS DASHBOARD',
+            mobileLabel: 'CMS',
+            image: SMS_outline,
+            image_active: SMS_fill
+        }, {
+            label: 'INVENORY MANAGEMENT',
+            mobileLabel: 'INVENTORY',
+            image: Inventory_outline,
+            image_active: Inventory_fill
+        }],
     SMALL_BUSINESS: {
         Description: 'The three pillar digital solution package for small businesses to ensure value where a website, CMS and an inventory management system puts you on the path to support change, scale and achieve sustainable growth.',
         SMALL_BUSINESS_CARDS: [
@@ -31,7 +66,7 @@ export default {
                 text: "Loonum inventory software let you keep track of your stock levels and values on a daily basis. This simple platform is carefully designed for independent small businesses (retail & wholesale) and service providers."
             }
         ],
-        NEW_WAY_WORKING_DATA : {
+        NEW_WAY_WORKING_DATA: {
             heading: 'Get started with your website for the new way of working',
             image: ECORMMERCE_WORKING_IMG,
             description: "With ever changing world of digital, the current climate has given opportunities to reimagine the way we engage with our customers and how we operate as a business.At Loonum we approach with empathy and speed to action which fast track your digital representation come to life so your customers can continue to engage with your business. "

@@ -9,6 +9,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4);
+    z-index: 100;
 }
 /* Modal Content */
 .custom_modal-content {
@@ -16,7 +17,7 @@
     background-color: #FFFFFF;
     box-shadow: 0 0 20px 11px rgba(0,0,0,0.05);
     padding: 10px 2rem 2rem 2rem; 
-    top: 50%;
+    top: 55%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -60,6 +61,13 @@
     width: 200px;
     margin-top: 2rem;
 }
+.text-center .done_button:hover{
+    border-radius: 17.5px;
+    background-color: #D87821;
+    color: white;
+    width: 200px;
+    margin-top: 2rem;
+}
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
@@ -69,4 +77,10 @@
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
+}
+
+@media only screen and (max-width: 763px) {
+  .custom_modal-content{
+     min-width: 325px;
+  }
 }

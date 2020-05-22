@@ -11,13 +11,8 @@ const Product = () => {
                 <title>Loonum products</title>
             </Helmet>
             <Hero {...PAGE_DATA.HERO_DATA} />
-            {/* <section className="pt-5">
+            <SmallBusiness TAB_LIST={PAGE_DATA.TAB_LIST} {...PAGE_DATA.SMALL_BUSINESS} />
 
-                <PageJumbotron {...PRODUCT_JUMBO_DATA} />
-            </section> */}
-
-            <SmallBusiness {...PAGE_DATA.SMALL_BUSINESS}/>
-           
         </Layout>
     )
 }

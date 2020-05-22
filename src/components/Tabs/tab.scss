@@ -1,9 +1,14 @@
+
+
+
+
+
 .tab-list {
   border-bottom: 1px solid #ccc;
   padding-left: 0;
   text-align: center;
+  list-style: none;
 }
-
 .tab-list-item {
       display: inline-block;
     list-style: none;
@@ -14,10 +19,87 @@
     font-family: 'gothamMedium';
     cursor: pointer;
 }
-
 .tab-list-active {
     border-bottom: 4px solid #0C7DBA;
     color: #084E75;
     font-size: 18px;
     font-family: 'gothamMedium';
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+  display:flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding-left: 0;
+  text-align: center;
+}
+  .tab-list-fixed {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+  display:flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  position: fixed;
+    z-index: 1000;
+    background: #fff;
+    top: 120px;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100%;
+}
+
+.tab-list-item {
+    font-family: 'gothamMedium';
+    width: 100%;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 0.5rem 1rem;
+    color: #9B9B9B;
+    font-size: 10px;
+    font-family: 'gothamMedium';
+    cursor: pointer;
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+        min-width: 87px;
+
+    img{
+      margin-bottom: 5px;
+    }
+}
+.tab-list-active{
+    background-color: #27A9E0;
+    border-bottom:none;
+    color: #fff;
+    font-size: 10px;
+     padding: 0.5rem 1rem;
+    font-family: 'gothamMedium';
+    width: 100%;
+    list-style: none;
+    margin-bottom: -1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+        min-width: 87px;
+
+    img{
+      margin-bottom: 5px;
+    }
+}
+}
+
+.fixed_margin-50px{
+      margin-top: 50px;
 }

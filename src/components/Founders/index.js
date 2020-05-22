@@ -5,7 +5,7 @@ import './founders.scss'
 const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION }) => {
     return (
         <>
-            <div className="container pt-5 pb-5">
+            <div className="container pt-5 pb-5 foundersWrapper">
                 <div className="row pr-3 pl-3">
                     <div className="hero_wrapper">
                         <div className='firstname hero_heading_text'>{lOGO_HEADING}</div>
@@ -43,11 +43,11 @@ const Founders = ({ HERO_DATA, FOUNDER_DATA }) => {
     return (
         <>
             <HERO_CARD {...HERO_DATA} />
-            <section className='bg-white wrapper'>
+            <section className='bg-white wrapper foundersWrapper'>
                 <div className="container pt-5 pb-5 text-center">
                     <h2>Co-Founders</h2>
                     <div className="row">
-                        {FOUNDER_DATA.map((item, index) => <FoundersCard {...item} key={index}/>)}
+                        {FOUNDER_DATA.map((item, index) => <FoundersCard {...item} key={index} />)}
                     </div>
 
                 </div>

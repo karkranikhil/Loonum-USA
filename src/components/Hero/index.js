@@ -11,7 +11,7 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH }) => {
                         <div className="col-12 col-lg-6">
                             <div className="gothamLight hero_heading text-center">{HERO_HEADING}</div>
                             <div className="gothamBook hero_subheading mt-4 text-center">{HERO_SUBHEADING}</div>
-                            {PARAGRAPH && <div className="gothamBook hero_subheading mt-4">{PARAGRAPH}</div>}
+                            {PARAGRAPH && <div className="gothamBook hero_subheading mt-4 text-center">{PARAGRAPH}</div>}
                         </div>
                         <div className="d-none d-md-block col-lg-6 text-md-center text-lg-right">
                             <div className="row">

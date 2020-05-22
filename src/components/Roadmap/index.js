@@ -9,7 +9,7 @@ const RoadMap = (props) => {
     const { ROAD_MAP_DATA } = props
     return (
         <section className={props.type === 'BLUE' ? RoadMapStyle.blue_wrapper : RoadMapStyle.grey_wrapper}>
-            <div className={`container pt-5 pb-5 ${RoadMapStyle.image_cover}`}>
+            <div className={`container pt-5 pb-5 ${props.type === 'BLUE' ? RoadMapStyle.image_cover : RoadMapStyle.image_cover_grey}`}>
                 <div className="row">
                     <div className="col text-center">
                         <h2 className={`mt-4 mb-4 ${RoadMapStyle.roadmap_heading}`}>Our Roadmap</h2>

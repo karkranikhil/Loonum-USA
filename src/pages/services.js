@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout/index"
-import PageJumbotron from '../components/PageJumbotron/index'
 import ContactForm from '../components/contactForm/index'
 import ServicesList from '../components/ServicesList/index'
 import Hero from '../components/Hero/index'

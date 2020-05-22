@@ -17,8 +17,8 @@ const Header = ({ LOGO_MOBILE, LOGO_WEB, NAV_LIST, RIGHT_ARROW, HAMBERGER, CLOSE
         setIsOpen(!isOpen)
     }
     const getMobileNavList = (NAV_LIST) => {
-        return NAV_LIST.map(item => <div className="container-fluid mobile_navbar" onClick={toggleHandler} >
-            <div className="container h-100" key={item.name}>
+        return NAV_LIST.map(item => <div className="container-fluid mobile_navbar" onClick={toggleHandler} key={item.name}>
+            <div className="container h-100">
                 <Link to={item.url} className="w-100">
                     <div className="d-flex justify-content-between h-100 color-cyan align-items-center">
                         <div>{item.name}</div>
