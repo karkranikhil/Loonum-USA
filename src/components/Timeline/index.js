@@ -1,6 +1,6 @@
 
 import React from "react"
-import './Timeline.scss'
+import './timeline.scss'
 import ROAD_MAP from '../../images/Products_Page/ROAD_MAP.png'
 import ROAD_MAP_GREY from '../../images/Products_Page/ROAD_MAP_GREY.png'
 import ARROW_LINE from '../../images/Products_Page/ARROW_LINE.svg'

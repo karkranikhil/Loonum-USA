@@ -4,7 +4,7 @@ import TWITTER from '../../images/Icons/twitter_blue.png'
 import YOUTUBE from '../../images/Icons/youtube_blue.png'
 import LINKEDIN from '../../images/Icons/linkedin_blue.png'
 import FACEBOOK from '../../images/Icons/facebook_blue.png'
-import INSTAGRAM from '../../images/Icons/instagram_blue.svg'
+import INSTAGRAM from '../../images/Icons/Instagram_blue.svg'
 import THANK_YOU_CHARACTER from '../../images/Icons/THANK_YOU_CHARACTER.png'
 import CROSS_LARGE from '../../images/Icons/CROSS_LARGE.png'
 export const SOCIAL_MEDIA = [
