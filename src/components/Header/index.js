@@ -44,7 +44,7 @@ const Header = ({ LOGO_MOBILE, LOGO_WEB, NAV_LIST, RIGHT_ARROW, HAMBERGER, CLOSE
                 <div className="container-fluid header_navbar_wrapper pt-3 pb-3">
                     <div className="container d-none  d-lg-flex h-100 align-items-center">
                         <Link to="/">
-                            <img src={LOGO_WEB} alt="logo" height="30px" />
+                            <img src={LOGO_WEB} alt="logo" className="Web_logo" />
                         </Link>
                         <ul className="d-flex m-auto nav-list gothamMedium">
                             {getNavList(NAV_LIST)}
@@ -52,7 +52,7 @@ const Header = ({ LOGO_MOBILE, LOGO_WEB, NAV_LIST, RIGHT_ARROW, HAMBERGER, CLOSE
                     </div>
                     <div className="container d-flex d-lg-none h-100 align-items-center m-auto">
                         <Link to="/">
-                            <img src={LOGO_MOBILE} alt="logo" />
+                            <img src={LOGO_MOBILE} alt="logo" className="mobile_logo" />
                         </Link>
                         {isOpen ?
                             <img src={CLOSE_ARROW} alt="logo" className="ml-auto" onClick={toggleHandler} /> : <img src={HAMBERGER} alt="logo" className="ml-auto" onClick={toggleHandler} />}

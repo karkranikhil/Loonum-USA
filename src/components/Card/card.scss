@@ -14,9 +14,12 @@
     font-size: 14px;
     
 }
+.card_padding{
+    padding: 38px;
+}
 .card_border>img{
-    min-width: 170px;
-    max-width: 170px;
+    min-width: 159px;
+    max-width: 159px;
     height: 120px;
 }
 @media only screen and (min-width: 767px) {

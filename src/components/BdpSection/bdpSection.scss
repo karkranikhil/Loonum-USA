@@ -1,5 +1,9 @@
 @import '../../styles/style.scss';
 .bdp_section {
+    height: 404px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 .heading{
     color: #084E75;
     line-height: 53px;
@@ -19,8 +23,13 @@
 .paragraph{
     line-height: 25px;
     color: black;
-    max-width: 940px;
+    max-width: 892px;
     margin: auto;
     font-family: 'GothamLight';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 25px;
+    text-align: center;
 }
 }

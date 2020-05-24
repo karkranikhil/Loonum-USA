@@ -13,19 +13,28 @@
     .subheading{
         font-size: 24px;
         font-family: 'GothamLight';
-        max-width: 640px;
+        max-width: 728px;
         margin: auto;
         padding-bottom: 2rem;
         line-height: 30px;
     }
     .imagestyle{
         width: 100%;
-        max-width: 500px;
+    }
+    .imagestyle_web{
+        max-height: 270px;
+        max-width: 455px;
     }
     .paragraph{
         padding: 2rem 0;
-        max-width: 800px;
         margin: auto;
+            font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 25px;
+        text-align: center;
+        font-family: 'GothamLight';
+        max-width: 800px;
     }
 }
 

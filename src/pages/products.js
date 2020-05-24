@@ -11,7 +11,7 @@ const Product = () => {
                 <title>Loonum products</title>
             </Helmet>
             <Hero {...PAGE_DATA.HERO_DATA} />
-            <SmallBusiness TAB_LIST={PAGE_DATA.TAB_LIST} {...PAGE_DATA.SMALL_BUSINESS} />
+            <SmallBusiness TAB_LIST={PAGE_DATA.TAB_LIST} NEW_WAY_WORKING_DATA= {PAGE_DATA.NEW_WAY_WORKING_DATA} />
 
         </Layout>
     )

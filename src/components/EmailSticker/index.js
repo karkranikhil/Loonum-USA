@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react"
 import axios from "axios"
 import * as qs from "query-string"
 import './emailSticker.scss'
+
 const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICKY_GREY_CROSS, SUCCESS_MESSAGE, emailStickerHandler }) => {
     const [formState, setFormState] = useState('')
     const [isSuccess, setSuccess] = useState(false)

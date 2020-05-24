@@ -1,6 +1,7 @@
 @import '../../styles/style';
 .heroImg_Wrapper{
-    height: calc(100vh - 172px);
+    // height: calc(100vh - 172px);
+    height: 543px;
     background: linear-gradient(270deg, #F0F0F0 , #FFFFFF);
 }
 .heroImg_container_center{
@@ -9,7 +10,7 @@
     transform: translate(-50%, -50%)
 }
 .hero_heading{
-    color: $lnm_blue;
+    color: $lnm_cyan;
     font-size: 40px;
     font-weight: 300;
     letter-spacing: 0;
@@ -26,7 +27,27 @@
     width: 100%;
     height: auto;
 }
+.hero_img{
+    max-width: 500px;
+}
+.hero_page_container{
+    .hero-margin-top{
+        margin-top:160px;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+.hero_page_container{
+    .hero-margin-top{
+        margin-top:2rem;
+    }
+}
+}
 @media only screen and (max-width: 600px) {
+    .hero_page_container{
+    .hero-margin-top{
+        margin-top:3rem;
+    }
+}
   .hero_heading, .hero_subheading{
       text-align:center
   }

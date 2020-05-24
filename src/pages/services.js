@@ -9,7 +9,7 @@ const Services = () => {
     return (
         <Layout>
             <Hero {...PAGE_DATA.HERO_DATA} />
-            <ServicesList {...PAGE_DATA.SERVICE_LIST}/>
+            <ServicesList {...PAGE_DATA.SERVICE_LIST} NEW_WAY_WORKING_DATA= {PAGE_DATA.NEW_WAY_WORKING_DATA}/>
             <ContactForm />
         </Layout>
     )

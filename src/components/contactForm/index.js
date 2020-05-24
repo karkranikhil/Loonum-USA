@@ -58,7 +58,6 @@ const ContactForm = ({ color, TYPE }) => {
     //         })
     // }
     const handleSubmit = (event) => {
-        // Do not submit form via HTTP, since we're doing that via XHR request.
         event.preventDefault()
         const axiosOptions = {
             url: formRef.current.action,
@@ -96,10 +95,10 @@ const ContactForm = ({ color, TYPE }) => {
                             <input type="hidden" name="bot-field" />
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} />
+                                    <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required />
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="last_name" placeholder="Last Name" name="last_name" value={formData.last_name} onChange={formHandler} />
+                                    <input type="text" className="form-control" id="last_name" placeholder="Last Name" name="last_name" value={formData.last_name} onChange={formHandler} required />
                                 </div>
                             </div>
                             <div className="row">
@@ -112,10 +111,10 @@ const ContactForm = ({ color, TYPE }) => {
                             </div>
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="email" className="form-control" id="email" placeholder="Work email" name="email" value={formData.email} onChange={formHandler} />
+                                    <input type="email" className="form-control" id="email" placeholder="Work email" name="email" value={formData.email} onChange={formHandler} required />
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="phone" placeholder="Phone" name="phone" value={formData.phone} onChange={formHandler} />
+                                    <input type="text" className="form-control" id="phone" placeholder="Phone" name="phone" value={formData.phone} onChange={formHandler} required />
                                 </div>
                             </div>
                             <div className="row">
@@ -135,7 +134,7 @@ const ContactForm = ({ color, TYPE }) => {
                             <div className="row">
                                 <div className={`col ${contactFormStyle.privacy_text}`}>
                                     <div className="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="privacyAccepted" checked={formData.privacyAccepted} onChange={formHandler} />
+                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="privacyAccepted" checked={formData.privacyAccepted} value={formData.privacyAccepted} onClick={formHandler} required />
                                         <label className="custom-control-label" htmlFor="customCheck">{PRIVACY_TEXT}</label>
                                     </div>
                                 </div>

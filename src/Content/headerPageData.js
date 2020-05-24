@@ -24,7 +24,7 @@ export const NAV_LIST = [
     },
     {
         name: 'CONTACT US',
-        url: '/location/'
+        url: '/contact/'
     }
 ]
 export default {

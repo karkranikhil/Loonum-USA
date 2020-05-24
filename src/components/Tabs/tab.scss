@@ -3,7 +3,7 @@
 
 
 
-.tab-list {
+.tab-list-fixed, .tab-list {
   border-bottom: 1px solid #ccc;
   padding-left: 0;
   text-align: center;
@@ -30,6 +30,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
+
 @media only screen and (max-width: 767px) {
   .tab-list {
   border-bottom: 1px solid #ccc;
@@ -98,8 +99,8 @@
       margin-bottom: 5px;
     }
 }
-}
-
 .fixed_margin-50px{
       margin-top: 50px;
 }
+}
+

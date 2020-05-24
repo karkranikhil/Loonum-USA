@@ -14,13 +14,13 @@ const Tabs = (props) => {
 
     useEffect(
         () => {
-            const handleScroll = () => {
-                if (typeof window !== 'undefined') {
+            if (typeof window !== 'undefined') {
+                const handleScroll = () => {
                     setScrollY(window.scrollY)
-                }
-            };
-            window.addEventListener("scroll", handleScroll);
-            return () => window.removeEventListener("scroll", handleScroll);
+                };
+                window.addEventListener("scroll", handleScroll);
+                return () => window.removeEventListener("scroll", handleScroll);
+            }
         },
         [] 
     );
@@ -32,7 +32,6 @@ const Tabs = (props) => {
     }
 
     const { children } = props;
-    console.log(scrollY)
     return (
         <div className={`container pt-5 pb-5 ${scrollY > 450 ? 'fixed_margin-50px':''}`}>
             <div className="tabs">

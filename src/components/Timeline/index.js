@@ -37,8 +37,8 @@ const Timeline = ({ Type }) => {
                         {Type === 'BLUE' ? <img src={ARROW_LINE} alt="line" className="responsive" /> :
                             <img src={ARROW_LINE_GREY} alt="line" className="responsive" />}
 
-                        {TIME_LINE_DATA.map(item => (
-                            <div className="col-md-3  border_dash text-center">
+                        {TIME_LINE_DATA.map((item,index) => (
+                            <div className="col-md-3  border_dash text-center" key={index}>
                                 <div className="icon_roadmap" >
                                     <div className="heading_text">
                                         {item.HEADINGS.map(i => <div key={i}>{i}</div>)}

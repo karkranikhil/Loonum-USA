@@ -21,7 +21,6 @@ const ResponsiveTabs = (props) => {
         speed: 2000,
         cssEase: "linear"
     };
-    console.log(props.children)
     return (
         <div className="slider_wrapper">
             <Slider ref={sliderRef} {...settings}>

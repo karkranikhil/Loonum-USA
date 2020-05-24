@@ -31,13 +31,9 @@ const Tab = (props) => {
         >
             <div className="col-12 d-md-none">
                 <img src={imageName} alt={props.tabData.mobileLabel} height='30px' />
-                {/* <br />
-                <span>{props.tabData.mobileLabel}</span> */}
             </div>
             <div className="d-none d-md-block">
-                <div>{props.tabData.mobileLabel}</div>
-                {/* <br />
-                <span>{props.tabData.mobileLabel}</span> */}
+                <div>{props.tabData.label}</div>
             </div>
 
         </li>

@@ -7,8 +7,7 @@ import NewWayWorking from '../NewWayWorking/index.js'
 import './servicesList.scss'
 import Tabs from '../Tabs/index.js'
 
-const ServicesList = ({ TAB_LIST, BUILD_DESIGN, NEW_WAY_WORKING_DATA }) => {
-    console.log('TAB_LIST', TAB_LIST)
+const ServicesList = ({ TAB_LIST, NEW_WAY_WORKING_DATA }) => {
     return (
         <section className='wrapper'>
             <Tabs>
@@ -17,10 +16,10 @@ const ServicesList = ({ TAB_LIST, BUILD_DESIGN, NEW_WAY_WORKING_DATA }) => {
                         <div className="d-block d-md-none responsive_header">{item.label}</div>
                         <div className='row page_sub_heading'>
                             <div className="col mt-4 mb-5 text-center">
-                                <h5>{BUILD_DESIGN.HEADING}</h5>
+                                <h5>{item.Description}</h5>
                             </div>
                         </div>
-                        <Card data={BUILD_DESIGN.SERVICES_TYPES} />
+                        <Card data={item.CARDS} />
                     </div>
                 ))}
             </Tabs>

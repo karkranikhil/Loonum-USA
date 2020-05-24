@@ -32,13 +32,15 @@ export default {
         HERO_IMAGE: HERO_IMAGE
     },
     BDP_SECTION: {
-        HEADING: "What is BDP",
-        SUB_HEADING: "Business Design Platform",
+        HEADING: "What is Business & Digital Design Solutions",
         PARAGRAPH: "At Loonum we don’t build digital products so business can use them. We help our clients to understand their businesses and find where it needs the digital channel to support growth. In the process of our services we collaborate with our clients to build what their customers desire. When you work with us, you are the one who designing your business platform as you know your customers better than anyone else. That’s why we call this is Business Design Platform. "
     },
     DEVICE_SECTION: {
-        HEADING: "One system multiple devices",
-        SUB_HEADING: "With Loonum Business Design Platform you will have 360 complete transparency Anytime Anywhere",
+        HEADING: "One solution multiple devices",
+        SUB_HEADING:{
+            One:'With Loonum Business & Digital Design Solutions',
+            Two:' you will have 360 complete transparency Anytime Anywhere'
+        },
         PARAGRAPH: "The markets our evolving at the speed of thought and innovating towards mobility is the way to stay on top of the competition. We see revolutionary developments in small business mobility and remote engagement trends, and we know digital transformation is the most significant adaptation for small businesses to gain competitive advantage. Loonum make sure your customers can access you on all channels and devices.",
         DEVICE_SECTION_MOBILE: DEVICE_SECTION_MOBILE,
         DEVICE_SECTION_WEB: DEVICE_SECTION_WEB

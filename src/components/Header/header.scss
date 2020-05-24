@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 9999;
 }
 .header_location_bar{
   height: 40px;
@@ -16,6 +16,14 @@
     background-color: #FFFFFF;
     box-shadow: 0 1px 7px 2px rgba(0,0,0,0.13);
     height: 80px;
+    .Web_logo{
+      min-height: 38px;
+      min-width: 176px;
+    }
+    .mobile_logo{
+      min-height: 28px;
+      min-width: 127px;
+    }
 }
 ul.nav-list{
       font-size: 15px;
