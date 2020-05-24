@@ -43,7 +43,9 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
                 {!isSuccess ? <div className="d-flex justify-content-between w-100">
                     <div className="container_wrapper m-auto">
                         <div className="emailtext">{MESSAGE}</div>
-                        <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                        <form ref={formRef} name="fixed_email" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                            <input type="hidden" name="bot-field" />
+                            <input type="hidden" name="form-name" value="fixed_email" />
                             <input type="email" required={true} placeholder={PLACHOLDER} className="inputbox" value={formState} onChange={changeHandler} />
                             <button type="submit" className="send_btn">{BTN_TEXT}</button>
                         </form>
