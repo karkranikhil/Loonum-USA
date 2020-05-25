@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/index"
 import ContactForm from '../components/contactForm/index'
 import PageJumbotron from '../components/PageJumbotron/index'
@@ -11,6 +12,13 @@ const LOCATION_JUMBO_DATA = {
 const Contact = () => {
     return (
         <Layout hideEmail>
+            <Helmet>
+                <title>Loonum | Contact</title>
+                <meta
+                    name="description"
+                    content="Where we create collobaorative futures. Go ahead and talk to us Want to know more about how we can help? Have a question? Simply fill in the form and I will get back to you within 24 hrs."
+                />
+            </Helmet>
             <section className="pt-5 pb-5">
                 <PageJumbotron {...LOCATION_JUMBO_DATA} />
             </section>

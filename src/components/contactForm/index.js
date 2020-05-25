@@ -95,46 +95,47 @@ const ContactForm = ({ color, TYPE, url }) => {
                             <input type="hidden" name="form-name" value="Contact Form" />
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required />
+                                    <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required aria-labelledby="First Name"/>
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="last_name" placeholder="Last Name" name="last_name" value={formData.last_name} onChange={formHandler} required />
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="company" placeholder="Company" name="company" value={formData.company} onChange={formHandler} />
-                                </div>
-                                <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="job_title" placeholder="Job title" name="job_title" value={formData.job_title} onChange={formHandler} />
+                                    <input type="text" className="form-control" id="last_name" placeholder="Last Name" name="last_name" value={formData.last_name} onChange={formHandler} required aria-labelledby="Last Name"/>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="email" className="form-control" id="email" placeholder="Work email" name="email" value={formData.email} onChange={formHandler} required />
+                                    <input type="text" className="form-control" id="company" placeholder="Company" name="company" value={formData.company} onChange={formHandler} aria-labelledby="Company" />
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="phone" placeholder="Phone" name="phone" value={formData.phone} onChange={formHandler} required />
+                                    <input type="text" className="form-control" id="job_title" placeholder="Job title" name="job_title" value={formData.job_title} onChange={formHandler} aria-labelledby="Job title"/>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="country" placeholder="Country" name="country" value={formData.country} onChange={formHandler} />
+                                    <input type="email" className="form-control" id="email" placeholder="Work email" name="email" value={formData.email} onChange={formHandler} required aria-labelledby="Work email"/>
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="businesstype" placeholder="Business type or Industry" name="businesstype" value={formData.businesstype} onChange={formHandler} />
+                                    <input type="text" className="form-control" id="phone" placeholder="Phone" name="phone" value={formData.phone} onChange={formHandler} required 
+                                        aria-labelledby="Phone"/>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-12 col-sm-6 mb-3">
+                                    <input type="text" className="form-control" id="country" placeholder="Country" name="country" value={formData.country} onChange={formHandler} aria-labelledby="Country"/>
+                                </div>
+                                <div className="col-12 col-sm-6 mb-3">
+                                    <input type="text" className="form-control" id="businesstype" placeholder="Business type or Industry" name="businesstype" value={formData.businesstype} onChange={formHandler} aria-labelledby="Business type or Industry"/>
                                 </div>
                             </div>
 
                             <div className="row">
                                 <div className="col mb-3">
-                                    <textarea className='form-control' rows="5" id="description" placeholder="How can we help you" name="description" value={formData.description} onChange={formHandler} />
+                                    <textarea className='form-control' rows="5" id="description" placeholder="How can we help you" name="description" value={formData.description} onChange={formHandler} aria-labelledby="How can we help you"/>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className={`col ${contactFormStyle.privacy_text}`}>
                                     <div className="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="privacyAccepted" checked={formData.privacyAccepted} value={formData.privacyAccepted} onClick={formHandler} required />
+                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="privacyAccepted" checked={formData.privacyAccepted} value={formData.privacyAccepted} onClick={formHandler} required aria-labelledby="privacyAccepted"/>
                                         <label className="custom-control-label" htmlFor="customCheck">{PRIVACY_TEXT}</label>
                                     </div>
                                 </div>

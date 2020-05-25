@@ -10,7 +10,11 @@ const Index = () => {
     return (
         <Layout>
             <Helmet>
-                <title>Loonum</title>
+                <title>Loonum | Home</title>
+                <meta
+                    name="description"
+                    content="Loonum offers a complete 360 product set for small business’s digital transformation and process. Our unique blend of user-centric digital products and ROI focused business design approach will deliver meaningful success for customers."
+                />
             </Helmet>
             <Hero {...PAGE_DATA.HERO_DATA} />
             <BdpSection {...PAGE_DATA.BDP_SECTION} />

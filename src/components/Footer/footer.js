@@ -19,7 +19,7 @@ const Footer = (props) => {
                                 <div className="footer_heading">{NEW_TO_LOONUM}</div>
                                 {PRODUCT_LIST.map(item => (
                                     <div className="small_text gothamLight pt-1" key={item.name}>
-                                        <Link to={item.url}>{item.name}</Link>
+                                        <Link to={item.url} aria-label={item.name} >{item.name}</Link>
                                     </div>
 
                                 ))}
@@ -28,7 +28,7 @@ const Footer = (props) => {
                                 <div className="footer_heading">{WHY_LOONUM}</div>
                                 {WHY_LOONUM_LIST.map(item => (
                                     <div className="small_text gothamLight pt-1" key={item.name}>
-                                        <Link to={item.url} state={{"tabLabel": item.state}}>{item.name}</Link>
+                                        <Link to={item.url} aria-label={item.name} state={{"tabLabel": item.state}}>{item.name}</Link>
                                     </div>
 
                                 ))}
@@ -39,7 +39,7 @@ const Footer = (props) => {
                                 <div className="footer_heading">{FIND_US}</div>
                                 <div className="d-flex">
                                     {SOCIAL_MEDIA.map(item => (
-                                        <a href={item.Links} key={item.image} target="_blank" className="small_text gothamLight pr-3 pt-3" key={item.image}><img src={item.image} /></a>
+                                        <a href={item.Links} aria-label={item.Links} key={item.image} target="_blank" className="small_text gothamLight pr-3 pt-3" key={item.image}><img src={item.image} alt={item.Links}/></a>
 
                                     ))}
                                     <span className="small_text gothamLight pr-3 pt-3 l-height-26">37.8136° S | 144.9631° E</span>

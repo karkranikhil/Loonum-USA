@@ -2,6 +2,16 @@
 @import './variables.scss';
 @import './fonts.scss';
 @import './global.scss';
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: 'GothamLight', url('../../static/fonts/GothamLight.ttf') format('ttf');
+ ;
+  font-display: swap;
+}
+
 /***Fonts****/
 
 $lnm_font15:'15px';
