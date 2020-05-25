@@ -91,9 +91,8 @@ const ContactForm = ({ color, TYPE }) => {
                         {TYPE === 'CONTACT' ? <ContactUsDescription /> : <OtherDescription />}
                     </div>
                     <div className="col-12  col-lg-6 mt-3 mt-sm-none">
-                        <form ref={formRef} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"  onSubmit={handleSubmit}>
-                            <input type="hidden" name="bot-field" />
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="Contact Form" />
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
                                     <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required />
