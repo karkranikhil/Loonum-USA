@@ -35,7 +35,7 @@ const OtherDescription = () => {
             <div className={contactFormStyle.subheading}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         </div></>)
 }
-const ContactForm = ({ color, TYPE }) => {
+const ContactForm = ({ color, TYPE, url }) => {
     const [formData, setFormData] = useState(FORM_DATA)
     const [showModal, setModal] = useState(false)
     const formRef = useRef(null)
@@ -60,7 +60,7 @@ const ContactForm = ({ color, TYPE }) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         const axiosOptions = {
-            url: formRef.current.action,
+            url: url || formRef.current.action,
             method: "post",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),

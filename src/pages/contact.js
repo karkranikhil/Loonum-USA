@@ -8,15 +8,15 @@ const LOCATION_JUMBO_DATA = {
     subtext: '37.8136° S | 144.9631° E',
     image: LOCATION_IMAGE
 }
-const Location = () => {
+const Contact = () => {
     return (
         <Layout hideEmail>
             <section className="pt-5 pb-5">
                 <PageJumbotron {...LOCATION_JUMBO_DATA} />
             </section>
-            <ContactForm color="WHITE" TYPE='CONTACT' />
+            <ContactForm color="WHITE" TYPE='CONTACT' url='/contact'/>
         </Layout>
     )
 }
 
-export default Location
+export default Contact

@@ -14,7 +14,7 @@ const Location = () => {
             <section className="pt-5 pb-5">
                 <PageJumbotron {...LOCATION_JUMBO_DATA} />
             </section>
-            <ContactForm color="WHITE" TYPE='CONTACT' />
+            <ContactForm color="WHITE" TYPE='CONTACT' url='/idea'/>
         </Layout>
     )
 }

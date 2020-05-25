@@ -20,9 +20,13 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
             title: 'Request for Get in touch',
             email: formState
         }
+        let url = null
+        if (typeof window !== 'undefined') {
+            url = window.location.pathname
+        }
         event.preventDefault()
         const axiosOptions = {
-            url: formRef.current.action,
+            url: url|| formRef.current.action,
             method: "post",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),

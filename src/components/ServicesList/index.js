@@ -7,12 +7,15 @@ import NewWayWorking from '../NewWayWorking/index.js'
 import './servicesList.scss'
 import Tabs from '../Tabs/index.js'
 
-const ServicesList = ({ TAB_LIST, NEW_WAY_WORKING_DATA }) => {
+const ServicesList = (props) => {
+    const { TAB_LIST, NEW_WAY_WORKING_DATA } = props
+    let defaultTab = props.location.state.tabLabel || TAB_LIST[1].label
+    console.log("defaultTab", defaultTab)
     return (
         <section className='wrapper'>
             <Tabs>
                 {TAB_LIST.map(item => (
-                    <div DEFAULT={TAB_LIST[1].label} label={item.label} key={item.label} data={item}>
+                    <div DEFAULT={defaultTab} label={item.label} key={item.label} data={item}>
                         <div className="d-block d-md-none responsive_header">{item.label}</div>
                         <div className='row page_sub_heading'>
                             <div className="col mt-4 mb-5 text-center">

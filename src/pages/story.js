@@ -31,7 +31,7 @@ const Story = () => {
         <Layout>
             <Founders {...PAGE_DATA.OUR_STORY_DATA} />
             <RoadMap ROAD_MAP_DATA={ROAD_MAP_DATA} />
-            <ContactForm color="WHITE" />
+            <ContactForm color="WHITE" url='/story'/>
         </Layout>
     )
 }

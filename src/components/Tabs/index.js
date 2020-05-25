@@ -22,18 +22,22 @@ const Tabs = (props) => {
                 return () => window.removeEventListener("scroll", handleScroll);
             }
         },
-        [] 
+        []
     );
 
     const [activeTab, setActiveTab] = useState(props.children[0].props.DEFAULT);
-
+    useEffect(() => {
+        loadDataOnlyOnce();
+    }, [props.children[0].props.DEFAULT]);
     const onClickTabItem = (tab) => {
         setActiveTab(tab)
     }
-
+    const loadDataOnlyOnce = () => {
+        setActiveTab(props.children[0].props.DEFAULT);
+    }
     const { children } = props;
     return (
-        <div className={`container pt-5 pb-5 ${scrollY > 450 ? 'fixed_margin-50px':''}`}>
+        <div className={`container pt-5 pb-5 ${scrollY > 450 ? 'fixed_margin-50px' : ''}`}>
             <div className="tabs">
                 <ol className={scrollY > 450 ? "tab-list-fixed" : "tab-list"}>
                     {children.map((child) => {

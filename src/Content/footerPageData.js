@@ -40,15 +40,18 @@ export default {
         WHY_LOONUM_LIST: [
             {
                 name: 'Consulting',
-                url: '/products/'
+                url: '/services/',
+                state:'CONSULTING'
             },
             {
                 name: 'Design & Build',
-                url: '/products/'
+                url: '/services/',
+                state: 'DESIGN & BUILD'
             },
             {
                 name: 'Support',
-                url: '/products/'
+                url: '/services/',
+                state: 'SUPPORT'
             }
         ],
         FIND_US: 'Find us',

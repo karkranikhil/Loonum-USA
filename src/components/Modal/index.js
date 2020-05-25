@@ -66,7 +66,7 @@ const Modal = ({ closeHandler }) => {
                         </div>
                     </div>
                     <div className="d-none d-md-flex col-md-6 text-center">
-                        <img src={THANK_YOU_CHARACTER} alt="THANK_YOU_CHARACTER" className="responsive_img" />
+                        <img src={THANK_YOU_CHARACTER} alt="THANK_YOU_CHARACTER" className="responsive_img m-auto" />
                     </div>
                 </div>
             </div>

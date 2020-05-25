@@ -5,12 +5,12 @@ import ServicesList from '../components/ServicesList/index'
 import Hero from '../components/Hero/index'
 import PAGE_DATA from '../Content/servicesPageData'
 
-const Services = () => {
+const Services = (props) => {
     return (
         <Layout>
             <Hero {...PAGE_DATA.HERO_DATA} />
-            <ServicesList {...PAGE_DATA.SERVICE_LIST} NEW_WAY_WORKING_DATA= {PAGE_DATA.NEW_WAY_WORKING_DATA}/>
-            <ContactForm />
+            <ServicesList {...PAGE_DATA.SERVICE_LIST} NEW_WAY_WORKING_DATA={PAGE_DATA.NEW_WAY_WORKING_DATA} {...props} />
+            <ContactForm url='/services' />
         </Layout>
     )
 }

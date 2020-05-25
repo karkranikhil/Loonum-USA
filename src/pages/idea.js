@@ -6,7 +6,7 @@ const Idea = () => {
     return (
         <Layout>
             <SimpleIdea />
-            <ContactForm />
+            <ContactForm url='/idea'/>
         </Layout>
     )
 }
