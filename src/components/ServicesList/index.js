@@ -2,7 +2,6 @@
 
 import React from "react"
 import Card from '../Card/index.js'
-import ResponsiveTabs from '../ResponsiveTabs/index'
 import NewWayWorking from '../NewWayWorking/index.js'
 import './servicesList.scss'
 import Tabs from '../Tabs/index.js'
