@@ -28,11 +28,11 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["GothamLight,GothamMedium","GothamBook"],
+          families: ["GothamLight,GothamMedium", "GothamBook"],
           urls: ["/fonts/fonts.css"],
         },
       },
-    },{
+    }, {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint: 'https://loonum.us18.list-manage.com/subscribe/post?u=1c79d007adc2c9959db6ad063&amp;id=45a7acc02d', // add your MC list endpoint here; see instructions below
@@ -59,6 +59,20 @@ module.exports = {
       options: {
         trackingId: "UA-167611854-1",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ["GothamLight", "GothamMedium", "GothamBook"]
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-minify`,
+      options: {
+        removeAttributeQuotes: true
+      }
     }
   ],
 }

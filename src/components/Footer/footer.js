@@ -39,7 +39,7 @@ const Footer = (props) => {
                                 <div className="footer_heading">{FIND_US}</div>
                                 <div className="d-flex">
                                     {SOCIAL_MEDIA.map(item => (
-                                        <a href={item.Links} aria-label={item.Links} key={item.image} target="_blank" className="small_text gothamLight pr-3 pt-3" key={item.image}><img src={item.image} alt={item.Links}/></a>
+                                        <a rel="noreferrer noopener" href={item.Links} aria-label={item.Links} key={item.image} target="_blank" className="small_text gothamLight pr-3 pt-3" key={item.image}><img src={item.image} alt={item.Links}/></a>
 
                                     ))}
                                     <span className="small_text gothamLight pr-3 pt-3 l-height-26">37.8136° S | 144.9631° E</span>

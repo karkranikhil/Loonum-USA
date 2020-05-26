@@ -56,7 +56,7 @@ const Modal = ({ closeHandler }) => {
                         </div>
                         <div className="row text-center">
                             <div className="col-12">
-                                {SOCIAL_MEDIA.map((item, index) => <a href={item.Links} aria-label={item.Links}  className="social_icon" key={index}><img src={item.image} alt={item.Links} /></a>)}
+                                {SOCIAL_MEDIA.map((item, index) => <a href={item.Links} aria-label={item.Links} className="social_icon" key={index} rel="noreferrer noopener"><img src={item.image} alt={item.Links} /></a>)}
                             </div>
                         </div>
                         <div className="row">
