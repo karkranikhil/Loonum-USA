@@ -1,7 +1,7 @@
 @import '../../styles/style';
 .heroImg_Wrapper{
     // height: calc(100vh - 172px);
-    height: 543px;
+    min-height: 543px;
     background: linear-gradient(270deg, #F0F0F0 , #FFFFFF);
 }
 .heroImg_container_center{

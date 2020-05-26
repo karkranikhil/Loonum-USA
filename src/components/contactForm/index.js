@@ -77,8 +77,9 @@ const ContactForm = ({ color, TYPE, url }) => {
             )
     }
     const formHandler = e => {
-        const { name, value } = e.target
-        let updatedData = { ...formData, [name]: value }
+        const { name, value, checked } = e.target
+        let result = name === 'privacyAccepted' ? checked :value
+        let updatedData = { ...formData, [name]: result }
         setFormData(updatedData)
     }
     const closeHandler = e => {
@@ -137,7 +138,7 @@ const ContactForm = ({ color, TYPE, url }) => {
                             <div className="row">
                                 <div className={`col ${contactFormStyle.privacy_text}`}>
                                     <div className="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="privacyAccepted" checked={formData.privacyAccepted} value={formData.privacyAccepted} onClick={formHandler} required aria-labelledby="privacyAccepted"/>
+                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="privacyAccepted" checked={formData.privacyAccepted} value={formData.privacyAccepted} onChange={formHandler} required aria-labelledby="privacyAccepted"/>
                                         <label className="custom-control-label" htmlFor="customCheck">{PRIVACY_TEXT}</label>
                                     </div>
                                 </div>

@@ -1,11 +1,10 @@
-import HERO_IMAGE from '../images/Products_Page/HERO_IMG.png'
-import DIGITAL_LOGO from '../images/Products_Page/digital_logo.png'
-import CONTENT_LOGO from '../images/Products_Page/content_management_logo.png'
-import INVENTORY_LOGO from '../images/Products_Page/inventory_logo.png'
-import FINANCIAL_LOGO from '../images/Products_Page/Financial_Management.png'
-import SUPLY_CHAIN_LOGO from '../images/Products_Page/Supply_Chain_Management.png'
-import COLLABORATIVE_LOGO from '../images/Products_Page/Collaborative_tool_icon.png'
-import ECORMMERCE_WORKING_IMG from '../images/Products_Page/Ecommerce-new-way-of-working.png'
+import ImageList from './imagesData'
+
+// import HERO_IMAGE from '../images/Products_Page/HERO_IMG.png'
+// import DIGITAL_LOGO from '../images/Products_Page/digital_logo.png'
+// import CONTENT_LOGO from '../images/Products_Page/content_management_logo.png'
+// import INVENTORY_LOGO from '../images/Products_Page/inventory_logo.png'
+// import ECORMMERCE_WORKING_IMG from '../images/Products_Page/Ecommerce-new-way-of-working.png'
 
 
 import Inventory_fill from '../images/Tab_Icons/Inventory_fill.svg'
@@ -16,7 +15,7 @@ import Small_business_fill from '../images/Tab_Icons/Small_business_fill.svg'
 import Small_business_outlilne from '../images/Tab_Icons/Small_business_outlilne.svg'
 import Website_fill from '../images/Tab_Icons/Website_fill.svg'
 import Website_outline from '../images/Tab_Icons/Website_outline.svg'
-
+const { HERO_IMAGE, DIGITAL_LOGO, CONTENT_LOGO, INVENTORY_LOGO, ECORMMERCE_WORKING_IMG  } = ImageList.PRODUCT_PAGE_IMAGES
 export default {
     HERO_DATA: {
         HERO_HEADING: 'A product set curated just for Small Businesses.',
@@ -26,27 +25,27 @@ export default {
     TAB_LIST: [
         {
             label: 'FOR SMALL BUSINESS',
-            mobileLabel:'SMALL BUSINESS',
+            mobileLabel: 'SMALL BUSINESS',
             image: Small_business_outlilne,
             image_active: Small_business_fill,
             Description: 'The three pillar digital solution package for small businesses to ensure value where a website, CMS and an inventory management system puts you on the path to support change, scale and achieve sustainable growth.',
             CARDS: [
-            {
-                logo: DIGITAL_LOGO,
-                name: 'Digital Representation',
-                text: "Loonum believes, the first footprint of digital transformation is to have a user centric website which is your digital representation where customers understands who you are & what you offer."
-            },
-            {
-                logo: CONTENT_LOGO,
-                name: 'Content Management',
-                text: "Loonum CMS is simple and easy to use for everyday small businesses. We didn’t build so you have to learn how to use it. Also sets a easy integration to grow with the business."
-            },
-            {
-                logo: INVENTORY_LOGO,
-                name: 'Inventory Management',
-                text: "Loonum inventory software let you keep track of your stock levels and values on a daily basis. This simple platform is carefully designed for independent small businesses (retail & wholesale) and service providers."
-            }
-        ]
+                {
+                    logo: DIGITAL_LOGO,
+                    name: 'Digital Representation',
+                    text: "Loonum believes, the first footprint of digital transformation is to have a user centric website which is your digital representation where customers understands who you are & what you offer."
+                },
+                {
+                    logo: CONTENT_LOGO,
+                    name: 'Content Management',
+                    text: "Loonum CMS is simple and easy to use for everyday small businesses. We didn’t build so you have to learn how to use it. Also sets a easy integration to grow with the business."
+                },
+                {
+                    logo: INVENTORY_LOGO,
+                    name: 'Inventory Management',
+                    text: "Loonum inventory software let you keep track of your stock levels and values on a daily basis. This simple platform is carefully designed for independent small businesses (retail & wholesale) and service providers."
+                }
+            ]
         },
         {
             label: 'WEBSITES',
@@ -119,9 +118,9 @@ export default {
                 }
             ]
         }],
-        NEW_WAY_WORKING_DATA: {
-            heading: 'Get started with your website for the new way of working',
-            image: ECORMMERCE_WORKING_IMG,
-            description: "With ever changing world of digital, the current climate has given opportunities to reimagine the way we engage with our customers and how we operate as a business.At Loonum we approach with empathy and speed to action which fast track your digital representation come to life so your customers can continue to engage with your business. "
-        }
+    NEW_WAY_WORKING_DATA: {
+        heading: 'Get started with your website for the new way of working',
+        image: ECORMMERCE_WORKING_IMG,
+        description: "With ever changing world of digital, the current climate has given opportunities to reimagine the way we engage with our customers and how we operate as a business.At Loonum we approach with empathy and speed to action which fast track your digital representation come to life so your customers can continue to engage with your business. "
+    }
 }

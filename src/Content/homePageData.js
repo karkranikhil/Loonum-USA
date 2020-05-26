@@ -1,13 +1,14 @@
-import HERO_IMAGE from '../images/Home_Page/HERO_IMG.png'
-import WEBSITE_IMAGE from '../images/Home_Page/website.png'
-import CMS_IMAGE from '../images/Home_Page/CMS.png'
-import INVENTORY_IMAGE from '../images/Home_Page/inventory.png'
+import ImageList from './imagesData'
+// import HERO_IMAGE from '../images/Home_Page/HERO_IMG.png'
+// import WEBSITE_IMAGE from '../images/Home_Page/website.png'
+// import CMS_IMAGE from '../images/Home_Page/CMS.png'
+// import INVENTORY_IMAGE from '../images/Home_Page/inventory.png'
 import STICKY_WHITE_CROSS from '../images/Home_Page/STICKY_WHITE_CROSS.png'
 import STICKY_GREY_CROSS from '../images/Home_Page/STICKY_GREY_CROSS.png'
-import DEVICE_SECTION_WEB from '../images/Home_Page/DEVICE_SECTION_WEB.png'
-import DEVICE_SECTION_MOBILE from '../images/Home_Page/DEVICE_SECTION_MOBILE.png'
+// import DEVICE_SECTION_WEB from '../images/Home_Page/DEVICE_SECTION_WEB.png'
+// import DEVICE_SECTION_MOBILE from '../images/Home_Page/DEVICE_SECTION_MOBILE.png'
 
-
+const { HERO_IMAGE, DEVICE_SECTION_WEB, DEVICE_SECTION_MOBILE, WEBSITE_IMAGE, CMS_IMAGE, INVENTORY_IMAGE } = ImageList.HOME_PAGE_IMAGES
 export const CARD_DETAILS = [
     {
         name: 'Website',
@@ -37,9 +38,9 @@ export default {
     },
     DEVICE_SECTION: {
         HEADING: "One solution multiple devices",
-        SUB_HEADING:{
-            One:'With Loonum Business & Digital Design Solutions',
-            Two:' you will have 360 complete transparency Anytime Anywhere'
+        SUB_HEADING: {
+            One: 'With Loonum Business & Digital Design Solutions',
+            Two: ' you will have 360 complete transparency Anytime Anywhere'
         },
         PARAGRAPH: "The markets our evolving at the speed of thought and innovating towards mobility is the way to stay on top of the competition. We see revolutionary developments in small business mobility and remote engagement trends, and we know digital transformation is the most significant adaptation for small businesses to gain competitive advantage. Loonum make sure your customers can access you on all channels and devices.",
         DEVICE_SECTION_MOBILE: DEVICE_SECTION_MOBILE,

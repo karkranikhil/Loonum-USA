@@ -17,6 +17,7 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
     const formRef = useRef(null)
     const handleSubmit = (event) => {
         let formData = {
+            "form-name": "Sticky Email",
             title: 'Request for Get in touch',
             email: formState
         }
@@ -26,8 +27,8 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
         }
         event.preventDefault()
         const axiosOptions = {
-            url: url|| formRef.current.action,
-            method: "post",
+            url: url || formRef.current.action,
+            method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),
         }
@@ -47,9 +48,9 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
                 {!isSuccess ? <div className="d-flex justify-content-between w-100">
                     <div className="container_wrapper m-auto">
                         <div className="emailtext">{MESSAGE}</div>
-                        <form ref={formRef} name="fixed_email" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-                            <input type="hidden" name="bot-field" aria-labelledby="bot-field"/>
-                            <input type="hidden" name="form-name" value="fixed_email" aria-labelledby="form-name"/>
+                        <form ref={formRef} data-netlify="true"
+                            data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="Sticky Email" />
                             <input type="email" required={true} placeholder={PLACHOLDER} className="inputbox" value={formState} onChange={changeHandler} aria-labelledby="Email box"/>
                             <button type="submit" className="send_btn">{BTN_TEXT}</button>
                         </form>

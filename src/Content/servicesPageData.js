@@ -1,8 +1,9 @@
-import HERO_IMAGE from '../images/Services_Page/WHAT_WE_DO.png'
-import UX_UI_icon from '../images/Services_Page/UX_UI.png'
-import Development_icon from '../images/Services_Page/Development.png'
-import Deployment_icon from '../images/Services_Page/Deployment.png'
-import LET_US_HELP from '../images/Services_Page/LET_US_HELP.png'
+import ImageList from './imagesData'
+// import HERO_IMAGE from '../images/Services_Page/WHAT_WE_DO.png'
+// import UX_UI_icon from '../images/Services_Page/UX_UI.png'
+// import Development_icon from '../images/Services_Page/Development.png'
+// import Deployment_icon from '../images/Services_Page/Deployment.png'
+// import LET_US_HELP from '../images/Services_Page/LET_US_HELP.png'
 
 import Consulting_fill from '../images/Tab_Icons/Consulting_fill.svg'
 import Consulting_outline from '../images/Tab_Icons/Consulting_outline.svg'
@@ -13,19 +14,8 @@ import digital_marketing_outline from '../images/Tab_Icons/digital_marketing_out
 import suppport_fill from '../images/Tab_Icons/suppport_fill.svg'
 import suppport_outline from '../images/Tab_Icons/suppport_outline.svg'
 
-import { graphql } from 'gatsby';
+const { HERO_IMAGE, UX_UI_icon, Development_icon, Deployment_icon, LET_US_HELP } = ImageList.SERVICES_PAGE_IMAGES
 
-export const query = graphql`
-  query HomePageQuery {
-    file(relativePath: { eq: "images/Home_Page/CMS.png" }) {
-        childImageSharp {
-            fixed(width: 500) {
-              ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;
 export default {
     HERO_DATA: {
         HERO_HEADING: 'This is what we do',

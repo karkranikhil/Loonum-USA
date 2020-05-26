@@ -5,7 +5,7 @@ import Image from '../Image/image'
 const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH }) => {
     return (
         <>
-            <div className="hero_container container-fluid heroImg_Wrapper">
+            <div className="hero_container container-fluid heroImg_Wrapper align-items-center d-flex">
                 <div className="container d-flex h-100 justify-content-between">
                     <div className="row align-items-center">
                         <div className="col-12 col-lg-6">
@@ -18,7 +18,7 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH }) => {
                         <div className="d-none d-md-block col-lg-6 text-md-center text-lg-right">
                             <div className="row">
                                 <div className="col-10 ml-auto">
-                                    <Image filename="images/Home_Page/HERO_IMG.png" alt="hero image" className="responsive hero_img" />
+                                    <Image filename={HERO_IMAGE} alt="hero image" className="responsive hero_img" />
                                 </div>
                             </div>
                         </div>
