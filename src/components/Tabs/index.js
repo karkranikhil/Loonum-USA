@@ -28,7 +28,8 @@ const Tabs = (props) => {
     const [activeTab, setActiveTab] = useState(props.children[0].props.DEFAULT);
     useEffect(() => {
         loadDataOnlyOnce();
-    }, [props.children[0].props.DEFAULT]);
+    }, [props.children[0].props.DEFAULT]);// eslint-disable-line react-hooks/exhaustive-deps
+    
     const onClickTabItem = (tab) => {
         setActiveTab(tab)
     }

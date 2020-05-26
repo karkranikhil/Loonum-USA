@@ -12,6 +12,20 @@ import digital_marketing_fill from '../images/Tab_Icons/digital_marketing_fill.s
 import digital_marketing_outline from '../images/Tab_Icons/digital_marketing_outline.svg'
 import suppport_fill from '../images/Tab_Icons/suppport_fill.svg'
 import suppport_outline from '../images/Tab_Icons/suppport_outline.svg'
+
+import { graphql } from 'gatsby';
+
+export const query = graphql`
+  query HomePageQuery {
+    file(relativePath: { eq: "images/Home_Page/CMS.png" }) {
+        childImageSharp {
+            fixed(width: 500) {
+              ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
 export default {
     HERO_DATA: {
         HERO_HEADING: 'This is what we do',

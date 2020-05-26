@@ -7,6 +7,7 @@ import Modal from '../Modal/index'
 import contactFormStyle from './contactForm.module.scss'
 const PRIVACY_TEXT = 'By checking this box and clicking submit, I hereby consent that Loonum sends me via email marketing related information with regard to products and services of Loonum. I understand that, in order to opt-out from receiving such emails in the future, I can use the opt-out mechanism that is described in each such email. Privacy Policy | GDPR'
 const FORM_DATA = {
+    "form-name": "contact",
     title: 'Request for Get in touch',
     first_name: '',
     last_name: '',
@@ -61,7 +62,7 @@ const ContactForm = ({ color, TYPE, url }) => {
         event.preventDefault()
         const axiosOptions = {
             url: url || formRef.current.action,
-            method: "post",
+            method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             data: qs.stringify(formData),
         }
@@ -91,8 +92,9 @@ const ContactForm = ({ color, TYPE, url }) => {
                         {TYPE === 'CONTACT' ? <ContactUsDescription /> : <OtherDescription />}
                     </div>
                     <div className="col-12  col-lg-6 mt-3 mt-sm-none">
-                        <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-                            <input type="hidden" name="form-name" value="Contact Form" />
+                        <form ref={formRef}  data-netlify="true"
+                            data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="contact" />
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
                                     <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required aria-labelledby="First Name"/>
