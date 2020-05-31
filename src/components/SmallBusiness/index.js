@@ -26,7 +26,7 @@ const SmallBusiness = ({NEW_WAY_WORKING_DATA, TAB_LIST }) => {
                             </div>
                         ))}
                     </Tabs>
-            <NewWayWorking {...NEW_WAY_WORKING_DATA} />
+            <NewWayWorking {...NEW_WAY_WORKING_DATA} TYPE="PRODUCTS" />
             <RoadMap type="BLUE" />
 
         </section>

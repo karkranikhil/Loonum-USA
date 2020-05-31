@@ -3,7 +3,18 @@
     .roadmap_heading{
             line-height: 43px;
             font-size: 36px;
-            font-family: "GothamMedium"   
+            font-family: "GothamMedium";  
+            min-height: 80px;
+            line-height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+                margin: 0;
+    }
+    .roadmap_wrapper_padding{
+        padding-top: 44px !important;
+        padding-bottom: 79px !important;
     }
     .roadmap_subheading{
         font-size: 36px;

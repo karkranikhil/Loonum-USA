@@ -2,8 +2,18 @@
 .device_wrapper{
     background: $lnm_lightblue;
     color: $lnm_white;
+    .vertical_center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .padding-tb-64{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
     .heading{
-        line-height: 53px;
+        line-height: 43px;
+         min-height: 80px;
         font-family: 'GothamLight';
         font-weight: 300;
         font-size: 36px;
@@ -11,11 +21,12 @@
         
     }
     .subheading{
+        min-height:58px;
         font-size: 24px;
         font-family: 'GothamLight';
         max-width: 728px;
         margin: auto;
-        padding-bottom: 2rem;
+        padding-bottom: 30px;
         line-height: 30px;
     }
     .imagestyle{
@@ -26,15 +37,34 @@
         max-width: 455px;
     }
     .paragraph{
-        padding: 2rem 0;
+        padding-top: 32px;
         margin: auto;
-            font-size: 16px;
+        font-size: 16px;
         font-weight: 300;
         letter-spacing: 0;
         line-height: 25px;
         text-align: center;
         font-family: 'GothamLight';
-        max-width: 800px;
+        max-width: 780px;
+        min-height: 132px;
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .device_wrapper{
+    .padding-tb-64{
+        padding-top: 38px;
+    padding-bottom: 38px;
+    }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        min-height: 103px;
+        font-size: 30px;
+        max-width: 300px;
+        margin: auto;
+    }
+    }
+}

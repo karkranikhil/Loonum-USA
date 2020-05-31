@@ -7,7 +7,7 @@ export default {
             lOGO_HEADING: 'This is our story',
             LOGO: MAIN_LOGO,
             SUB_HEADING: 'Trives on relationships and outcomes.',
-            DESCRIPTION: 'Loonum was co-created by Dananjaya & Nikhil, when they aquatinted as colleagues working for a prject at RMIT. Both felt how passionate they are doing what they love, creating things to improve people’s lives. Humble coffee catch ups and talking hours on how they want design & build products that has value, led to this great venture. With over 15 years of global design & development experience, they’ve been delivering valued outcomes to major organisations. '
+            DESCRIPTION: 'Loonum was co-created by Dananjaya & Nikhil, when they aquatinted as colleagues working for a project at RMIT. Both felt how passionate they are doing what they love, creating things to improve people’s lives. Humble coffee catch ups and talking hours on how they want design & build products that has value, led to this great venture. With over 15 years of global design & development experience, they’ve been delivering valued outcomes to major organisations. '
         },
         FOUNDER_DATA: [
             {

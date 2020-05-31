@@ -14,7 +14,7 @@ const Idea = () => {
                 />
             </Helmet>
             <SimpleIdea />
-            <ContactForm url='/idea'/>
+            <ContactForm url='/idea' color="WHITE" TYPE="IDEA"/>
         </Layout>
     )
 }

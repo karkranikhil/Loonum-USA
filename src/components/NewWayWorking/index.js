@@ -3,13 +3,14 @@
 import React from "react"
 import './newWayWorking.scss'
 import Image from '../Image/image'
-const NewWayWorking = ({ image, heading, description }) => {
+const NewWayWorking = ({ image, heading, description, TYPE }) => {
+    console.log(TYPE)
     return (
-        <section className="section_grey pt-5 pb-5">
+        <section className="section_grey">
             <div className="bg-white container p-5">
-                <div className="row mb-3">
-                    <div className="col-12 col-lg-7">
-                        <h2 className='heading'>{heading}</h2>
+                <div className="row">
+                    <div className="col-12 col-lg-12">
+                        <h2 className={TYPE === 'PRODUCTS' ? 'heading_full wrap_header': 'heading_full'}>{heading}</h2>
                     </div>
                 </div>
                 <div className="row mobile">

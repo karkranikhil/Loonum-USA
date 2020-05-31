@@ -17,7 +17,7 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
     const formRef = useRef(null)
     const handleSubmit = (event) => {
         let formData = {
-            "form-name": "Sticky Email",
+            "form-name": "StickyEmail",
             title: 'Request for Get in touch',
             email: formState
         }
@@ -50,18 +50,19 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
                         <div className="emailtext">{MESSAGE}</div>
                         <form ref={formRef} data-netlify="true"
                             data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
-                            <input type="hidden" name="form-name" value="Sticky Email" aria-label="hidden"/>
-                            <input type="email" required={true} placeholder={PLACHOLDER} className="inputbox" value={formState} onChange={changeHandler} aria-label="Email box" />
+                            <input type="hidden" name="form-name" value="StickyEmail" aria-label="StickyEmail" />
+                            <input type="email" required={true} placeholder={PLACHOLDER} name="email"
+                             className="inputbox" value={formState} onChange={changeHandler} aria-label="Email box" />
                             <button type="submit" className="send_btn" aria-label="submit">{BTN_TEXT}</button>
                         </form>
                     </div>
-                    <div>
+                    <div  className="close_icon">
                         <img src={STICKY_GREY_CROSS} alt="close" onClick={closeHandler} />
                     </div>
 
                 </div> : <div className="d-flex justify-content-between w-100">
                         <div className="m-auto">{SUCCESS_MESSAGE}</div>
-                        <div><img src={STICKY_WHITE_CROSS} alt="close" onClick={closeHandler} /></div>
+                        <div className="close_icon"><img src={STICKY_WHITE_CROSS} alt="close" onClick={closeHandler} /></div>
                     </div>}
             </div>}
         </React.Fragment>

@@ -56,10 +56,10 @@ text-align: center;
     content: '';
     position: absolute;
     top: 43px;
-    left: 10px;
+    left: 14px;
     height: 90%;
-    width: 4px;
-    background: #9b9b9b;
+    width: 2px;
+    background: #a7a7a7;
 
 }
 
@@ -71,7 +71,7 @@ text-align: center;
 }
 @media only screen and (min-width: 1025px) {
     .icon_roadmap{
-         top: -158px;
+         top: -155px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1025px) {

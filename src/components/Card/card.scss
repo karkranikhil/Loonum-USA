@@ -2,20 +2,20 @@
    box-shadow: 0 0 13px 4px rgba(0,0,0,0.06);
 }
 .card_heading{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
-    margin-bottom: 2rem;
+    margin-bottom: 26px;
     font-family: "GothamBook";
 
 }
 .card_text{
     line-height: 25px;
-    margin-top: 2rem;
     font-size: 14px;
-    
+    min-height: 125px;
+    font-family: "GothamLight";
 }
 .card_padding{
-    padding: 38px;
+    padding: 40px 33px 30px;
 }
 .card_border>img{
     min-width: 159px;

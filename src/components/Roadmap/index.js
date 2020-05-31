@@ -8,10 +8,10 @@ import Timeline from '../Timeline/index'
 const RoadMap = (props) => {
     return (
         <section className={props.type === 'BLUE' ? RoadMapStyle.blue_wrapper : RoadMapStyle.grey_wrapper}>
-            <div className={`container pt-5 pb-5 ${props.type === 'BLUE' ? RoadMapStyle.image_cover : RoadMapStyle.image_cover_grey}`}>
+            <div className={`container ${RoadMapStyle.roadmap_wrapper_padding} ${props.type === 'BLUE' ? RoadMapStyle.image_cover : RoadMapStyle.image_cover_grey}`}>
                 <div className="row">
                     <div className="col text-center">
-                        <h2 className={`mt-4 mb-4 ${RoadMapStyle.roadmap_heading}`}>Our Roadmap</h2>
+                        <h2 className={`${RoadMapStyle.roadmap_heading}`}>Our Roadmap</h2>
                     </div>
                 </div>
                 <div className="row">

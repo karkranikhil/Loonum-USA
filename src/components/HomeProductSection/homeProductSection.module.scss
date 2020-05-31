@@ -2,6 +2,15 @@
     background: #F2F2F2;
     color: #084E75;
     font-family: 'GothamLight';
+    .padding_tb_60{
+        padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    .card_spacing{
+        padding: 38px 28px !important;
+        max-width: 370px;
+        margin: auto;
+    }
     .heading{
         line-height: 53px;
         font-weight: 300;
@@ -16,15 +25,36 @@
     .card_heading{
         font-size: 24px;
         line-height: 30px;
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
     }
     .card_text{
         line-height: 25px;
-        margin-top: 2rem;
+        margin-top: 20px;
         color:#000000;
     }
     .card_image{
         max-width: 150px;
         margin:auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section_wrapper{
+    .padding_tb_60{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 103px;
+        font-size: 30px;
+        max-width: 300px;
+        margin: auto;
+        line-height: initial;
+    }
     }
 }

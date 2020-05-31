@@ -19,7 +19,7 @@ const Contact = () => {
                     content="Where we create collobaorative futures. Go ahead and talk to us Want to know more about how we can help? Have a question? Simply fill in the form and I will get back to you within 24 hrs."
                 />
             </Helmet>
-            <section className="pt-5 pb-5">
+            <section>
                 <PageJumbotron {...LOCATION_JUMBO_DATA} />
             </section>
             <ContactForm color="WHITE" TYPE='CONTACT' url='/contact'/>

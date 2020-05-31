@@ -14,12 +14,15 @@ const Tab = (props) => {
     const { activeTab, label } = props;
 
     let className = '';
+    let selectedClassName = ''
     let imageName = ''
     if (activeTab === label) {
         className += 'tab-list-active';
+        selectedClassName = 'selected_list_active'
         imageName = props.tabData.image_active
     } else {
         className = 'tab-list-item'
+        selectedClassName = 'selected_list'
         imageName = props.tabData.image
     }
 
@@ -33,7 +36,7 @@ const Tab = (props) => {
                 <img src={imageName} alt={props.tabData.mobileLabel} height='30px' />
             </div>
             <div className="d-none d-md-block">
-                <div>{props.tabData.label}</div>
+                <div className={selectedClassName}>{props.tabData.label}</div>
             </div>
 
         </li>

@@ -3,25 +3,37 @@
     color:#084E75;
     position: relative;
     min-height: 135px;
+    padding-top: 62px;
+    padding-bottom: 43px;
 }
 .page_heading{
     font-size: 36px;
+    min-height: 53px;
     line-height: 43px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'GothamLight';
+    width: fit-content;
+    margin: 0;
 }
 .page_sub_heading h5{
-    // max-width: 931px;
-    // margin: auto;
       font-size: 20px;
       font-weight: 700;
+          min-height: 53px;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
 }
 .img_icon{
     position: absolute;
-    right: 55px;
-    top: -20px;
+    right: 110px;
+    top: 70px;
 }
 @media only screen and (max-width: 720px) {
     .page_heading, .page_sub_heading{
          text-align: center;
+         justify-content: center;
     }
    
 }

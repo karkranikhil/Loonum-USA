@@ -16,7 +16,7 @@ const Index = () => {
                     content="Loonum offers a complete 360 product set for small business’s digital transformation and process. Our unique blend of user-centric digital products and ROI focused business design approach will deliver meaningful success for customers."
                 />
             </Helmet>
-            <Hero {...PAGE_DATA.HERO_DATA} />
+            <Hero {...PAGE_DATA.HERO_DATA} PAGE="HOME"/>
             <BdpSection {...PAGE_DATA.BDP_SECTION} />
             <DevicesSection {...PAGE_DATA.DEVICE_SECTION} />
             <HomeProductSection {...PAGE_DATA.HOME_PRODUCT_SECTION} />

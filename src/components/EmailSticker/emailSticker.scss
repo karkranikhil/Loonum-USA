@@ -8,7 +8,7 @@
         z-index: 99;
 }
 .new_sticky{
-    border: 1px solid $lnm_lightgrey;
+    border: 0.5px solid #a7a7a7;
   background: $lnm_white;
 }
 .success_sticky{
@@ -23,12 +23,20 @@
     justify-content: center;
     align-items: center;
 }
+.emailtext{
+    font-family: 'gothamlight';
+    letter-spacing: 1px;
+}
+.close_icon{
+    position: absolute;
+    right: 100px;
+}
 .send_btn{
     color: $lnm_white;
-    background: $lnm_blue;
+    background: #4A90E2;
     border-radius: 2px;
     height: 30px;
-    width: 170px;
+    width: 100px;
     text-align: center;
     margin: 0 1rem;
     // line-height: 25px;
@@ -40,4 +48,8 @@
     min-width: 225px;
     margin: 0 1rem;
     padding: 12px;
+    border: 1px solid #979797;
+}
+input.inputbox::placeholder {
+    color: #999;
 }

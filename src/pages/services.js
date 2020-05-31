@@ -16,9 +16,9 @@ const Services = (props) => {
                     content="This is what we do. As experts in the industry we approach clients with empathy to achieve the best solutions for their complex problems. Our practice starts with Busniess & Digital Stratgey, Experience Design and Managed Services to help our client’s customer’s & user experience. We make sure to stay with you every step of the way!"
                 />
             </Helmet>
-            <Hero {...PAGE_DATA.HERO_DATA} />
+            <Hero {...PAGE_DATA.HERO_DATA}  PAGE='GREY'/>
             <ServicesList {...PAGE_DATA.SERVICE_LIST} NEW_WAY_WORKING_DATA={PAGE_DATA.NEW_WAY_WORKING_DATA} {...props} />
-            <ContactForm url='/services' />
+            <ContactForm url='/services' color="WHITE"/>
         </Layout>
     )
 }

@@ -44,8 +44,8 @@ const Founders = ({ HERO_DATA, FOUNDER_DATA }) => {
         <>
             <HERO_CARD {...HERO_DATA} />
             <section className='bg-white wrapper foundersWrapper'>
-                <div className="container pt-5 pb-5 text-center">
-                    <h2>Co-Founders</h2>
+                <div className="container wrapper_padding text-center">
+                    <h2 className="cofounder_heading">Co-Founders</h2>
                     <div className="row">
                         {FOUNDER_DATA.map((item, index) => <FoundersCard {...item} key={index} />)}
                     </div>

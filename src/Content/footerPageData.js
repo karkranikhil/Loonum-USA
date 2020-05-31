@@ -4,6 +4,7 @@ import LINKED_IN from '../images/Home_Page/linkedin.png'
 import LOCATION from '../images/Home_Page/location.png'
 import TWITTER from '../images/Home_Page/twitter.png'
 import YOUTUBE from '../images/Home_Page/youtube.png'
+import INSTAGRAM from '../images/Home_Page/Instagram.svg'
 import FOOTER_LOGO from '../images/Home_Page/FOOTER_LOGO.png'
 
 export const SOCIAL_MEDIA = [
@@ -24,8 +25,13 @@ export const SOCIAL_MEDIA = [
         Links: 'https://www.youtube.com/channel/UC9x_iJEjM2Iu5MOozn8JfXw?view_as=subscriber'
     },
     {
+        image: INSTAGRAM,
+        Links: '#',
+    },
+    {
         image: LOCATION,
-        Links: '#'
+        Links: '#',
+        class: "margin-top-5"
     },
 ]
 export default {

@@ -69,7 +69,7 @@ export default {
                     {
                         logo: Deployment_icon,
                         name: 'Deployment',
-                        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        text: "Loonum always make sure to deliver what we build with our clients, so they can make ends meet for what they spend on. Even if the need is to deploy already been built product elsewhere, we will deploy."
                     }
                 ]
             },
@@ -96,7 +96,8 @@ export default {
                         text: "Our social media experts don’t spray and pray for conversions. We curate who your customer segment are and preferred channel, so we target it for accurate sustainable growth."
                     }
                 ]
-            }, {
+            },
+             {
                 label: 'SUPPORT',
                 mobileLabel: 'Support',
                 image: suppport_outline,

@@ -20,22 +20,21 @@ const FORM_DATA = {
     description: '',
     privacyAccepted: false
 }
-const ContactUsDescription = () => {
-    return (<>
-        <h2 className={`${contactFormStyle.heading} pb-3 mb-3`}>Go ahead and talk to us</h2>
+const ContactUsDescription = (TYPE) => {
+    console.log("TYPE", TYPE)
+    return (<div className={`${contactFormStyle.get_intouch_width}`}>
+        <h2 className={`${contactFormStyle.heading} pb-3 mb-2`}> {TYPE.TYPE === 'CONTACT' ? 'Go ahead and talk to us' : TYPE.TYPE === 'IDEA' ? 'We can help you to achieve more' :'Get in touch'}</h2>
         <div>
-            <div className={`${contactFormStyle.subheading} pb-3 mb-3`}>Want to know more about how we can help? Have a question?</div>
-            <div className={`${contactFormStyle.subheading} pb-3 mb-3`}>Simply fill in the form and I will get back to you within 24 hrs.</div>
+            {TYPE !== 'IDEA' &&
+                <div className={`${contactFormStyle.subheading} pb-3 mb-2`}>Want to know more about <br/>how we can help? Have a question?</div>
+            }
+            
+            <div className={`${contactFormStyle.subheading} pb-3 mb-2`}>Simply fill in the form and I will get <br/> back to you within 24 hrs.</div>
             <div className={`${contactFormStyle.subheading} pb-3`}>- Donna</div>
         </div>
-    </>)
+    </div>)
 }
-const OtherDescription = () => {
-    return (<><h2 className={contactFormStyle.heading}>Get in touch</h2>
-        <div>
-            <div className={contactFormStyle.subheading}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        </div></>)
-}
+
 const ContactForm = ({ color, TYPE, url }) => {
     const [formData, setFormData] = useState(FORM_DATA)
     const [showModal, setModal] = useState(false)
@@ -87,10 +86,10 @@ const ContactForm = ({ color, TYPE, url }) => {
     }
     return (
         <section className={color === 'WHITE' ? "bg-white" : ''}>
-            <div className={`${contactFormStyle.wrapper} container text-center pt-5 pb-5`}>
+            <div className={`${contactFormStyle.wrapper} ${contactFormStyle.padding_tb_62px} container text-center`}>
                 <div className="row">
                     <div className={`col-12 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
-                        {TYPE === 'CONTACT' ? <ContactUsDescription /> : <OtherDescription />}
+                        <ContactUsDescription TYPE={TYPE}/>
                     </div>
                     <div className="col-12  col-lg-6 mt-3 mt-sm-none">
                         <form ref={formRef}  data-netlify="true"
@@ -98,41 +97,41 @@ const ContactForm = ({ color, TYPE, url }) => {
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required aria-labelledby="First Name"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required aria-labelledby="First Name"/>
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="last_name" placeholder="Last Name" name="last_name" value={formData.last_name} onChange={formHandler} required aria-labelledby="Last Name"/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="company" placeholder="Company" name="company" value={formData.company} onChange={formHandler} aria-labelledby="Company" />
-                                </div>
-                                <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="job_title" placeholder="Job title" name="job_title" value={formData.job_title} onChange={formHandler} aria-labelledby="Job title"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="last_name" placeholder="Last Name" name="last_name" value={formData.last_name} onChange={formHandler} required aria-labelledby="Last Name"/>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="email" className="form-control" id="email" placeholder="Work email" name="email" value={formData.email} onChange={formHandler} required aria-labelledby="Work email"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="company" placeholder="Company" name="company" value={formData.company} onChange={formHandler} aria-labelledby="Company" />
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="phone" placeholder="Phone" name="phone" value={formData.phone} onChange={formHandler} required 
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="job_title" placeholder="Job title" name="job_title" value={formData.job_title} onChange={formHandler} aria-labelledby="Job title"/>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-12 col-sm-6 mb-3">
+                                    <input type="email" className={contactFormStyle.loonum_form_control} id="email" placeholder="Work email" name="email" value={formData.email} onChange={formHandler} required aria-labelledby="Work email"/>
+                                </div>
+                                <div className="col-12 col-sm-6 mb-3">
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="phone" placeholder="Phone" name="phone" value={formData.phone} onChange={formHandler} required 
                                         aria-labelledby="Phone"/>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="country" placeholder="Country" name="country" value={formData.country} onChange={formHandler} aria-labelledby="Country"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="country" placeholder="Country" name="country" value={formData.country} onChange={formHandler} aria-labelledby="Country"/>
                                 </div>
                                 <div className="col-12 col-sm-6 mb-3">
-                                    <input type="text" className="form-control" id="businesstype" placeholder="Business type or Industry" name="businesstype" value={formData.businesstype} onChange={formHandler} aria-labelledby="Business type or Industry"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="businesstype" placeholder="Business type or Industry" name="businesstype" value={formData.businesstype} onChange={formHandler} aria-labelledby="Business type or Industry"/>
                                 </div>
                             </div>
 
                             <div className="row">
                                 <div className="col mb-3">
-                                    <textarea className='form-control' rows="5" id="description" placeholder="How can we help you" name="description" value={formData.description} onChange={formHandler} aria-labelledby="How can we help you"/>
+                                    <textarea className={contactFormStyle.loonum_form_control} rows="5" id="description" placeholder="How can we help you" name="description" value={formData.description} onChange={formHandler} aria-labelledby="How can we help you"/>
                                 </div>
                             </div>
                             <div className="row">
