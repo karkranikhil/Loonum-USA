@@ -84,6 +84,17 @@ module.exports = {
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
+    }, {
+        resolve: 'gatsby-plugin-preconnect',
+        options: {
+          domains: ['www.google-analytics.com', 'https://fonts.googleapis.com'],
+        },
+      },
+    {
+      resolve: 'gatsby-plugin-brotli',
+      options: {
+        extensions: ['css', 'html', 'scss', 'js', 'svg', 'png']
+      }
     }
   ],
 }
