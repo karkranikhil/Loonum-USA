@@ -3,7 +3,16 @@
 @import './fonts.scss';
 @import './global.scss';
 
-
+body {
+  margin: 0;
+  font-family: "Raleway-Light", "Raleway-Regular", "Raleway-Medium", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
 
 
 /***Fonts****/
@@ -68,13 +77,13 @@ h2.heading{
     color: #084E75;
     line-height: 53px;
     margin: 0px;
-    font-family: 'GothamLight';
+    font-family: 'Raleway-Light';
     font-weight: 300;
     font-size: 36px;
 }
 .subheading{
     font-size: 24px;
-    font-family: 'GothamLight';
+    font-family: 'Raleway-Light';
     max-width: 600px;
     margin: auto;
     padding-bottom: 2rem;
@@ -86,18 +95,18 @@ h2.heading{
   color: black;
   max-width: 940px;
   margin: auto;
-  font-family: 'GothamLight';
+  font-family: 'Raleway-Light';
 }
 
 /****Font-families*****/
-.gothamBook{
-  font-family: 'GothamBook';
+.ralewayRegular{
+  font-family: 'Raleway-Regular';
 }
-.gothamLight{
-  font-family: 'GothamLight';
+.ralewayLight{
+  font-family: 'Raleway-Light';
 }
-.gothamMedium{
-  font-family: 'GothamMedium';
+.ralewayMedium{
+  font-family: 'Raleway-SemiBold';
 }
 
 .slick-slide img {

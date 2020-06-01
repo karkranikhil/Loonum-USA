@@ -44,15 +44,13 @@ const Modal = ({ closeHandler }) => {
                         </div>
                         <div className="row msg_subheading">
                             <div className="col-12">
-                                We have received your messaged. James will get back to you
-                                within 24 hours.
+                                We have received your message. James will get back to you within 24 hours.
                         </div>
                         </div>
                         <div className="row msg_subheading mb-5">
                             <div className="col-12">
-                                Have you checked what have
-                                we been doing lately?  follow us on
-                        </div>
+                                Have you checked what have we been doing lately? follow us on
+                             </div>
                         </div>
                         <div className="row text-center">
                             <div className="col-12">

@@ -10,9 +10,9 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH, PAGE }) =>
                     <div className="row">
                         <div className="col-12 col-lg-6">
                             <div>
-                                <div className={`gothamLight text-center text-md-left ${PAGE === 'HOME'? 'hero_heading': 'page_hero_heading'}`}>{HERO_HEADING}</div>
-                                <div className="gothamLight hero_subheading text-center text-md-left">{HERO_SUBHEADING}</div>
-                                {PARAGRAPH && <div className="gothamLight hero_subheading mt-4 text-center text-md-left">{PARAGRAPH}</div>}
+                                <div className={`ralewayLight text-center text-md-left ${PAGE === 'HOME'? 'hero_heading': 'page_hero_heading'}`}>{HERO_HEADING}</div>
+                                <div className="ralewayLight hero_subheading text-center text-md-left">{HERO_SUBHEADING}</div>
+                                {PARAGRAPH && <div className="ralewayLight hero_subheading mt-4 text-center text-md-left">{PARAGRAPH}</div>}
                             </div>
                         </div>
                         <div className="d-none d-md-block col-lg-6 text-md-center text-lg-right">

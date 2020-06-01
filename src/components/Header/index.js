@@ -33,7 +33,7 @@ const Header = ({ LOGO_MOBILE, LOGO_WEB, NAV_LIST, RIGHT_ARROW, HAMBERGER, CLOSE
                 <div className="container-fluid header_location_bar text-right">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 gothamLight">
+                            <div className="col-12 ralewayLight">
                                 <Link to="/location/" activeClassName='active_menu_item' aria-label='Our Location'>Our Location</Link>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const Header = ({ LOGO_MOBILE, LOGO_WEB, NAV_LIST, RIGHT_ARROW, HAMBERGER, CLOSE
                         <Link to="/" aria-label='Home page'>
                             <Image filename={LOGO_WEB} alt="loonum web logo image" className="Web_logo" />
                         </Link>
-                        <ul className="d-flex m-auto nav-list gothamMedium align-items-center">
+                        <ul className="d-flex m-auto nav-list ralewayMedium align-items-center">
                             {getNavList(NAV_LIST)}
                         </ul>
                     </div>

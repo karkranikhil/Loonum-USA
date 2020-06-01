@@ -45,9 +45,10 @@ ul.nav-list{
     font-size: 15px;
      padding: 9px 5px;
      white-space: nowrap;
+     letter-spacing: 1px;
 }
 .active_menu_item {
-  padding-bottom: 0;
+   padding: 9px 5px 6px 5px;
   border-bottom: 3px solid $lnm_orange;
 }
 .mobile_navbar{

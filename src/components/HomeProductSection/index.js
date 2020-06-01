@@ -12,7 +12,7 @@ const HomeProductSection = ({ CARD_DETAILS, HEADING, SUB_HEADING }) => {
                     {CARD_DETAILS.map(item => (
                         <div className="col-12 col-md-4 mb-3" key={item.name}>
                             <div className={`bg-white h-100 ${HomeProductStyle.card_spacing}`}>
-                                <div className={`gothamBook ${HomeProductStyle.card_heading}`}>{item.name}</div>
+                                <div className={`ralewayRegular ${HomeProductStyle.card_heading}`}>{item.name}</div>
                                 <Image filename={item.image} alt={item.name} className={HomeProductStyle.card_image} />
                                 <div className={HomeProductStyle.card_text}>{item.text}</div>
                             </div>

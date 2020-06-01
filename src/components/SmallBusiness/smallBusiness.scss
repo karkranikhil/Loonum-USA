@@ -1,5 +1,5 @@
 .tabs_wrapper{
-    font-family: "GothamLight";
+    font-family: "Raleway-Light";
     color:#084E75;
     background:#fff;
     
@@ -20,7 +20,7 @@
 
 .card_heading{
     margin-bottom: 2rem;
-    font-family: "GothamBook";
+    font-family: "Raleway-Regular";
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0;
@@ -36,7 +36,7 @@
     letter-spacing: 0;
     line-height: 25px;
     text-align: center;
-    font-family: 'GothamBook';
+    font-family: 'Raleway-Regular';
     
 }
 
@@ -46,13 +46,13 @@
 }
 .page_sub_heading{
     max-width: 931px;
-    margin: auto;
+     margin: auto !important;
 }
 .responsive_tab_header{
     border-bottom: 1px solid #9b9b9b;
     color: #084E75;
     font-size: 18px;
-    font-family: 'gothamMedium';
+    font-family: 'Raleway-SemiBold';
     text-align: center;
 }
 .tab_box_heading{
@@ -68,6 +68,6 @@
     letter-spacing: 0;
     line-height: 30px;
     text-align: center;
-    font-family: 'GothamLight';
+    font-family: 'Raleway-Light';
 }
 }

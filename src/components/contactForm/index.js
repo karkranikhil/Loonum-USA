@@ -5,7 +5,7 @@ import axios from "axios"
 import * as qs from "query-string"
 import Modal from '../Modal/index'
 import contactFormStyle from './contactForm.module.scss'
-const PRIVACY_TEXT = 'By checking this box and clicking submit, I hereby consent that Loonum sends me via email marketing related information with regard to products and services of Loonum. I understand that, in order to opt-out from receiving such emails in the future, I can use the opt-out mechanism that is described in each such email. Privacy Policy | GDPR'
+const PRIVACY_TEXT = 'By checking this box and clicking submit, I hereby consent that Loonum sends me via email marketing-related information with regard to products and services of Loonum. I understand that, in order to opt-out from receiving such emails in the future, I can use the opt-out mechanism that is described in each such email. Privacy Policy | GDPR'
 const FORM_DATA = {
     "form-name": "contact",
     title: 'Request for Get in touch',

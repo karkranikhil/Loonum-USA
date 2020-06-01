@@ -23,7 +23,7 @@ const RoadMap = (props) => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <h5 className={RoadMapStyle.roadmap_subtext}>Our roadmap is to make life easy for you to integrate with our other products, so you can grow your business without any digitial challenges</h5>
+                        <h5 className={RoadMapStyle.roadmap_subtext}>Our roadmap is to make life easy for you to integrate with our other products so that you can grow your business without any digital challenges</h5>
                     </div>
                 </div>
                 <Timeline Type={props.type} />

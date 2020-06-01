@@ -28,7 +28,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["GothamLight,GothamMedium", "GothamBook"],
+          families: ["Raleway-Medium", "Raleway-Light", "Raleway-Regular", "Raleway-SemiBold"],
           urls: ["/fonts/fonts.css"],
         },
       },
@@ -64,7 +64,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ["GothamLight", "GothamMedium", "GothamBook"]
+          families: ["Raleway"]
         }
       }
     },

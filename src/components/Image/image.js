@@ -3,14 +3,15 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const Image = props => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         images: allFile {
           edges {
             node {
               relativePath
               name
+              publicURL
               childImageSharp {
                 fluid(maxWidth: 1000) {
                   ...GatsbyImageSharpFluid_tracedSVG
@@ -21,18 +22,17 @@ const Image = props => (
         }
       }
     `}
-        render={data => {
-            console.log(data)
-            const image = data.images.edges.find(n => {
-                return n.node.relativePath.includes(props.filename)
-            })
-            if (!image) {
-                return null
-            }
+    render={data => {
+      const image = data.images.edges.find(n => {
+        return n.node.relativePath.includes(props.filename)
+      })
+      if (!image) {
+        return null
+      }
 
-            const imageFluid = image.node.childImageSharp.fluid
-            return <Img alt={props.alt} fluid={imageFluid} className={props.className} />
-        }}
-    />
+      const imageFluid = image.node.childImageSharp.fluid
+      return <Img alt={props.alt} fluid={imageFluid} className={props.className} />
+    }}
+  />
 )
 export default Image

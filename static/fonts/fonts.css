@@ -1,25 +1,21 @@
 @font-face {
-    font-family: GothamLight;
-    src: url('./GothamLight.ttf');
+    font-family: "Raleway-Medium";
+    src: url('./Raleway-Medium.ttf');
     font-display: swap;
 }
 
 @font-face {
-    font-family: GothamMedium;
-    src: url('./GothamMedium.ttf');
+    font-family: "Raleway-Light";
+    src: url('./Raleway-Light.ttf');
     font-display: swap;
 }
 @font-face {
-    font-family: GothamBook;
-    src: url('./GothamBook.ttf');
+    font-family: "Raleway-Regular";
+    src: url('./Raleway-Regular.ttf');
     font-display: swap;
 }
-
-
 @font-face {
-  font-family: Gotham;
-  font-weight: 400;
-  font-style: normal;
-  src: url("GothamLight.ttf") format("ttf"), url("GothamMedium.ttf") format("ttf");
-  font-display: swap;
+    font-family: "Raleway-SemiBold";
+    src: url('./Raleway-SemiBold.ttf');
+    font-display: swap;
 }

@@ -8,24 +8,24 @@ import ARROW_LINE_GREY from '../../images/Products_Page/ARROW_LINE_GREY.svg'
 
 const TIME_LINE_DATA = [
     {
-        HEADINGS: ['Fianancial', 'Management'],
+        HEADINGS: ['Financial', 'Management'],
         year: '2020',
-        description: ['After an extensive research, one of the key finndings was small businesses require customised digital financial support. We are in design pahse of this future product to service our valuble customers.']
+        description: ['After extensive research, one of the critical findings was that small businesses require customised digital financial support. We are in the design phase of this future product to service our valuable customers.']
     },
     {
         HEADINGS: ['Supply Chain', 'Management'],
         year: '2020',
-        description: ['With disruptive nature of businesses today, supply chain always been a challenged industry. Loonum is on the verge of innovating a product to be integrated with our inventory  management system.']
+        description: ['With the disruptive nature of businesses today, the supply chain has always been a challenging industry. Loonum is on the verge of innovating a product to be integrated with our inventory management system.']
     },
     {
         HEADINGS: ['Collaborative', 'Tools'],
         year: '2021',
-        description: ['At Loonum innovation lab, we are designing a product to support remote learning & WFA (work from anywhere). We haven’t forgotton AR & VR, so be on alert to see whats coming out']
+        description: ["At Loonum innovation lab, we are designing a product to support remote learning & WFA (work from anywhere). We haven't forgotten AR & VR, so be on alert to see what's coming out"]
     },
     {
         HEADINGS: ['Loonum', 'Labs'],
         year: '2021 Beyonds',
-        description: ['Global Village', 'IOT', 'AI', 'Sustainable Digitisation', 'Digital Mindfulness']
+        description: ['Global Village', 'IoT', 'AI', 'Sustainable Digitisation', 'Digital Mindfulness']
     }
 ]
 const Timeline = ({ Type }) => {
