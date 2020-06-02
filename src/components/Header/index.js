@@ -34,7 +34,7 @@ const Header = ({ LOGO_MOBILE, LOGO_WEB, NAV_LIST, RIGHT_ARROW, HAMBERGER, CLOSE
                     <div className="container">
                         <div className="row">
                             <div className="col-12 ralewayLight">
-                                <Link to="/location/" activeClassName='active_menu_item' aria-label='Our Location'>Our Location</Link>
+                                <Link to="/contact/" aria-label='Our Location'>Our Location</Link>
                             </div>
                         </div>
                     </div>
