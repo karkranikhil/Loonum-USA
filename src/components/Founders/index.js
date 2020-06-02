@@ -1,15 +1,15 @@
 
 import React from "react"
 import './founders.scss'
-
+import Image from '../Image/image'
 const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION }) => {
+    console.log(LOGO)
     return (
         <>
             <div className="container pt-5 pb-5 foundersWrapper">
                 <div className="row pr-3 pl-3">
                     <div className="hero_wrapper">
-                        <div className='firstname hero_heading_text'>{lOGO_HEADING}</div>
-                        <img src={LOGO} alt={lOGO_HEADING} />
+                        <Image filename={LOGO} alt={lOGO_HEADING} />
                         <div className='hero_subheading'>{SUB_HEADING}</div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ const FoundersCard = (item) => {
         <>
             <div className="col-12 col-md-6 pl-5 pr-5 pb-5">
                 <div className="founder_wrapper ml-auto mr-auto">
-                    <img src={item.img} alt={item.firstname} />
+                    <Image filename={item.img} alt={item.firstname} />
                     <div className="ml-sm-4">
                         <div className='firstname'>{item.firstname}</div>
                         <div className='lastname'>{item.lastname}</div>
@@ -40,6 +40,7 @@ const FoundersCard = (item) => {
     )
 }
 const Founders = ({ HERO_DATA, FOUNDER_DATA }) => {
+    console.log(FOUNDER_DATA)
     return (
         <>
             <HERO_CARD {...HERO_DATA} />

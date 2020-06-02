@@ -27,7 +27,7 @@ const Footer = (props) => {
                             <div className="col col-lg-6">
                                 <div className="footer_heading ralewayMedium">{WHY_LOONUM}</div>
                                 {WHY_LOONUM_LIST.map(item => (
-                                    <div className="small_text ralewayLight pt-1" key={item.name}>
+                                    <div className="small_text ralewayLight pt-1 text_uppercase" key={item.name}>
                                         <Link to={item.url} aria-label={item.name} state={{ "tabLabel": item.state }}>{item.name}</Link>
                                     </div>
 

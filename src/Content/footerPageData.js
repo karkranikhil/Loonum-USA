@@ -1,11 +1,11 @@
 import { NAV_LIST } from './headerPageData'
-import FACEBOOK from '../images/Home_Page/facebook.png'
-import LINKED_IN from '../images/Home_Page/linkedin.png'
-import LOCATION from '../images/Home_Page/location.png'
-import TWITTER from '../images/Home_Page/twitter.png'
-import YOUTUBE from '../images/Home_Page/youtube.png'
-import INSTAGRAM from '../images/Home_Page/Instagram.svg'
-import FOOTER_LOGO from '../images/Home_Page/FOOTER_LOGO.png'
+import FACEBOOK from '../images/Home_Page/SVG/facebook icon.svg'
+import LINKED_IN from '../images/Home_Page/SVG/linkedin icon.svg'
+import LOCATION from '../images/Home_Page/SVG/location icon.svg'
+import TWITTER from '../images/Home_Page/SVG/twitter icon.svg'
+import YOUTUBE from '../images/Home_Page/SVG/youtube icon.svg'
+import INSTAGRAM from '../images/Home_Page/SVG/Instagram icon.svg'
+import FOOTER_LOGO from '../images/Home_Page/SVG/footer Loonum logo.svg'
 
 export const SOCIAL_MEDIA = [
     {
@@ -47,7 +47,7 @@ export default {
             {
                 name: 'Consulting',
                 url: '/services/',
-                state:'CONSULTING'
+                state: 'CONSULTING'
             },
             {
                 name: 'Design & Build',

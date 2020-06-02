@@ -1,10 +1,10 @@
 
 import React from "react"
 import './timeline.scss'
-import ROAD_MAP from '../../images/Products_Page/ROAD_MAP.png'
-import ROAD_MAP_GREY from '../../images/Products_Page/ROAD_MAP_GREY.png'
-import ARROW_LINE from '../../images/Products_Page/ARROW_LINE.svg'
-import ARROW_LINE_GREY from '../../images/Products_Page/ARROW_LINE_GREY.svg'
+import ROAD_MAP from '../../images/Products_Page/SVG/loonum road map milestone white.svg'
+import ROAD_MAP_GREY from '../../images/Our_Story_Page/SVG/loonum our road map milestone icon grey.svg'
+import ARROW_LINE from '../../images/Products_Page/SVG/loonum road map horizontal line with arrow white.svg'
+import ARROW_LINE_GREY from '../../images/Our_Story_Page/SVG/loonum road map horizontal line with arrow grey.svg'
 
 const TIME_LINE_DATA = [
     {
@@ -37,7 +37,7 @@ const Timeline = ({ Type }) => {
                         {Type === 'BLUE' ? <img src={ARROW_LINE} alt="line" className="responsive" /> :
                             <img src={ARROW_LINE_GREY} alt="line" className="responsive" />}
 
-                        {TIME_LINE_DATA.map((item,index) => (
+                        {TIME_LINE_DATA.map((item, index) => (
                             <div className="col-md-3  border_dash text-center" key={index}>
                                 <div className="icon_roadmap" >
                                     <div className="heading_text">

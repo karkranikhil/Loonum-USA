@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import "./Modal.scss"
-import TWITTER from '../../images/Icons/twitter_blue.png'
-import YOUTUBE from '../../images/Icons/youtube_blue.png'
-import LINKEDIN from '../../images/Icons/linkedin_blue.png'
-import FACEBOOK from '../../images/Icons/facebook_blue.png'
-import INSTAGRAM from '../../images/Icons/Instagram_blue.svg'
-import THANK_YOU_CHARACTER from '../../images/Icons/THANK_YOU_CHARACTER.png'
-import CROSS_LARGE from '../../images/Icons/CROSS_LARGE.png'
+import TWITTER from '../../images/Contact_Us_Page/SVG/loonum twitter blue.svg'
+import YOUTUBE from '../../images/Contact_Us_Page/SVG/loonum youtube blue.svg'
+import LINKEDIN from '../../images/Contact_Us_Page/SVG/loonum linkedin blue.svg'
+import FACEBOOK from '../../images/Contact_Us_Page/SVG/loonum facebook blue.svg'
+import INSTAGRAM from '../../images/Contact_Us_Page/SVG/loonum instagram blue.svg'
+import THANK_YOU_CHARACTER from '../../images/Contact_Us_Page/SVG/THANK_YOU_CHARACTER.png'
+import CROSS_LARGE from '../../images/Contact_Us_Page/SVG/CROSS_LARGE.png'
 export const SOCIAL_MEDIA = [
     {
         image: TWITTER,

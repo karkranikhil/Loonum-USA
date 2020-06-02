@@ -87,7 +87,11 @@ module.exports = {
     }, {
         resolve: 'gatsby-plugin-preconnect',
         options: {
-          domains: ['www.google-analytics.com', 'https://fonts.googleapis.com'],
+          domains: [
+            { domain: 'www.google-analytics.com', crossOrigin: true },
+            { domain: 'https://fonts.googleapis.com', crossOrigin: true },
+            { domain: 'https://laughing-meitner-76e159.netlify.app', crossOrigin: true}
+            ],
         },
       },
     {
@@ -95,6 +99,7 @@ module.exports = {
       options: {
         extensions: ['css', 'html', 'scss', 'js', 'svg', 'png']
       }
-    }
+    },
+    'gatsby-plugin-preload-link-crossorigin'
   ],
 }

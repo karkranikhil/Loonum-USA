@@ -5,16 +5,8 @@ import ImageList from './imagesData'
 // import Deployment_icon from '../images/Services_Page/Deployment.png'
 // import LET_US_HELP from '../images/Services_Page/LET_US_HELP.png'
 
-import Consulting_fill from '../images/Tab_Icons/Consulting_fill.svg'
-import Consulting_outline from '../images/Tab_Icons/Consulting_outline.svg'
-import Design_and_Build_fill from '../images/Tab_Icons/Design_and_Build_fill.svg'
-import Design_and_Build_outline from '../images/Tab_Icons/Design_and_Build_outline.svg'
-import digital_marketing_fill from '../images/Tab_Icons/digital_marketing_fill.svg'
-import digital_marketing_outline from '../images/Tab_Icons/digital_marketing_outline.svg'
-import suppport_fill from '../images/Tab_Icons/suppport_fill.svg'
-import suppport_outline from '../images/Tab_Icons/suppport_outline.svg'
 
-const { HERO_IMAGE, UX_UI_icon, Development_icon, Deployment_icon, LET_US_HELP } = ImageList.SERVICES_PAGE_IMAGES
+const { HERO_IMAGE, UX_UI_icon, Development_icon, Deployment_icon, LET_US_HELP, Consulting_fill, Consulting_outline, Design_and_Build_fill, Design_and_Build_outline, digital_marketing_fill, digital_marketing_outline, suppport_fill, suppport_outline } = ImageList.SERVICES_PAGE_IMAGES
 
 export default {
     HERO_DATA: {

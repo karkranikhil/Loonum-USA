@@ -1,6 +1,5 @@
-import MAIN_LOGO from '../images/Our_Story_Page/OUR_STORY_ICON.png'
-import DANANJAYA_IMG from '../images/Our_Story_Page/DANANJAYA_IMG.png'
-import NIKHIL_IMG from '../images/Our_Story_Page/NIKHIL_IMG.png'
+import ImageList from './imagesData'
+const { MAIN_LOGO, DANANJAYA_IMG, NIKHIL_IMG } = ImageList.OUR_STORY
 export default {
     OUR_STORY_DATA:{
         HERO_DATA: {

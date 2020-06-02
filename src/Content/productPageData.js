@@ -1,21 +1,6 @@
 import ImageList from './imagesData'
 
-// import HERO_IMAGE from '../images/Products_Page/HERO_IMG.png'
-// import DIGITAL_LOGO from '../images/Products_Page/digital_logo.png'
-// import CONTENT_LOGO from '../images/Products_Page/content_management_logo.png'
-// import INVENTORY_LOGO from '../images/Products_Page/inventory_logo.png'
-// import ECORMMERCE_WORKING_IMG from '../images/Products_Page/Ecommerce-new-way-of-working.png'
-
-
-import Inventory_fill from '../images/Tab_Icons/Inventory_fill.svg'
-import Inventory_outline from '../images/Tab_Icons/Inventory_outline.svg'
-import SMS_fill from '../images/Tab_Icons/SMS_fill.svg'
-import SMS_outline from '../images/Tab_Icons/SMS_outline.svg'
-import Small_business_fill from '../images/Tab_Icons/Small_business_fill.svg'
-import Small_business_outlilne from '../images/Tab_Icons/Small_business_outlilne.svg'
-import Website_fill from '../images/Tab_Icons/Website_fill.svg'
-import Website_outline from '../images/Tab_Icons/Website_outline.svg'
-const { HERO_IMAGE, DIGITAL_LOGO, CONTENT_LOGO, INVENTORY_LOGO, ECORMMERCE_WORKING_IMG  } = ImageList.PRODUCT_PAGE_IMAGES
+const { HERO_IMAGE, DIGITAL_LOGO, CONTENT_LOGO, INVENTORY_LOGO, ECORMMERCE_WORKING_IMG, Inventory_fill, Inventory_outline, CMS_fill, CMS_outline, Small_business_fill, Small_business_outlilne, Website_fill, Website_outline, ECOMMERCE_LOGO, ESERVICES_LOGO, ASSET_MANAGEMENT_LOGO, COMM_SOCIAL_MEDIA_LOGO, CUSTOMISED_RESPONSIVE_LOGO, PERFORMANCE_LOGO   } = ImageList.PRODUCT_PAGE_IMAGES
 export default {
     HERO_DATA: {
         HERO_HEADING: 'A product set curated just for Small Businesses.',
@@ -55,17 +40,17 @@ export default {
             Description: 'As experts in web design & development, we build simple websites for e-commerce and custom designs. Our design process starts from UX with a user and business understanding. Combine with unique user interfaces and functionality that put you above your competitors.',
             CARDS: [
                 {
-                    logo: DIGITAL_LOGO,
+                    logo: CUSTOMISED_RESPONSIVE_LOGO,
                     name: 'Customised & Responsive',
                     text: "Loonum design and develop websites with service functionality to increase remote & personalised online experience. We specialised in business models with service offerings without physical products."
                 },
                 {
-                    logo: CONTENT_LOGO,
+                    logo: ECOMMERCE_LOGO,
                     name: 'E-commerce',
                     text: "We build customizable e-commerce websites that offer innovative ways to add value to your buyer's shopping experience and ensure they keep coming back for more."
                 },
                 {
-                    logo: INVENTORY_LOGO,
+                    logo: ESERVICES_LOGO,
                     name: 'E-services',
                     text: "Loonum design and develop websites with service functionality to increase remote & personalised online experience. We spcialised in business models with service offerings without physical products."
                 }
@@ -74,22 +59,22 @@ export default {
         {
             label: 'CMS DASHBOARD',
             mobileLabel: 'CMS',
-            image: SMS_outline,
-            image_active: SMS_fill,
+            image: CMS_outline,
+            image_active: CMS_fill,
             Description: 'After talking to so many small businesses, we understood what they need. Their simple desire was, ‘I wish I have more time to grow my business than spending time with systems.’ So the design team innovated something simple, user-friendly, efficient and productive.',
             CARDS: [
                 {
-                    logo: DIGITAL_LOGO,
+                    logo: ASSET_MANAGEMENT_LOGO,
                     name: 'Asset Management',
                     text: "Ecommerce customer value propositions are based on tangible products. We design and build customised cms to manage them with a scope to sustainable and scalable business growth.."
                 },
                 {
-                    logo: CONTENT_LOGO,
+                    logo: COMM_SOCIAL_MEDIA_LOGO,
                     name: 'Comms & Social Media',
                     text: "Today, small businesses are heavily dependent on automated systems to save time & money. Loonum has defined a simplified process to update social media & customer engagement platform."
                 },
                 {
-                    logo: INVENTORY_LOGO,
+                    logo: PERFORMANCE_LOGO,
                     name: 'Reports',
                     text: "Loonum design and develop websites with service functionality to increase remote & personalised online experience. We specialised in business models with service offerings without physical products.."
                 }

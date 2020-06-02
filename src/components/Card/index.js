@@ -3,7 +3,7 @@ import './card.scss'
 import Image from '../Image/image'
 const Card = ({ data }) => {
     return (
-        <div className="row text-center text-black">
+        <div className="row text-center text-black tab_cards">
             {data.map(item => (
                 <div className="col-12 col-md-4 mb-3" key={item.name}>
                     <div className="bg-white card_padding card_border h-100">

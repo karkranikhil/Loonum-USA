@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="28px" viewBox="0 0 22 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-833.000000, -2749.000000)" id="Group-11" stroke="#FFFFFF" stroke-width="2">
+            <g transform="translate(1.000000, 2525.000000)">
+                <g id="Group-13" transform="translate(833.000000, 225.000000)">
+                    <path d="M10,0 C3.30505816,6.02212078 0,10.9483307 0,14.6231874 C0,20.3541427 4.4771525,25 10,25 C15.5228475,25 20,20.3541427 20,14.6231874 C20,10.9483307 16.6949418,6.02212078 10,0 Z" id="Oval" transform="translate(10.000000, 12.500000) rotate(-180.000000) translate(-10.000000, -12.500000) "></path>
+                    <ellipse id="Oval" transform="translate(10.500000, 10.000000) rotate(-180.000000) translate(-10.500000, -10.000000) " cx="10.5" cy="10" rx="2.5" ry="3"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
