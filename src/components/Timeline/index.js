@@ -24,7 +24,7 @@ const TIME_LINE_DATA = [
     },
     {
         HEADINGS: ['Loonum', 'Labs'],
-        year: '2021 Beyonds',
+        year: '2021 Beyond',
         description: ['Global Village', 'IoT', 'AI', 'Sustainable Digitisation', 'Digital Mindfulness']
     }
 ]

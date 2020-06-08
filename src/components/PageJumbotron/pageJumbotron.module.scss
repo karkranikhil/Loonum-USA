@@ -3,8 +3,8 @@
     color:#084E75;
     position: relative;
     min-height: 135px;
-    padding-top: 62px;
-    padding-bottom: 43px;
+    padding-top: 35px;
+    padding-bottom: 15px;
 }
 .page_heading{
     font-size: 36px;
@@ -24,11 +24,13 @@
     display: flex;
     align-items: center;
     line-height: 30px;
+    letter-spacing: 1px;
+    font-family: Arial;
 }
 .img_icon{
     position: absolute;
     right: 110px;
-    top: 70px;
+    top: 16px;
 }
 @media only screen and (max-width: 720px) {
     .page_heading, .page_sub_heading{

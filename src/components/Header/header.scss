@@ -4,6 +4,8 @@
     width: 100%;
     top: 0;
     z-index: 9999;
+    max-width: 1500px;
+    margin: auto;
 }
 .header_location_bar{
   height: 40px;
@@ -20,6 +22,7 @@
     .Web_logo{
       min-height: 38px;
       min-width: 176px;
+      transform: scale(1.1);
     }
     .mobile_logo{
       min-height: 28px;
@@ -29,7 +32,6 @@
 ul.nav-list{
       font-size: 15px;
     font-weight: 500;
-    letter-spacing: 0;
     line-height: 18px;
     position: absolute;
     transform: translatex(-50%);

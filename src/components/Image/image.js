@@ -15,7 +15,7 @@ const Image = props => (
               extension
               childImageSharp {
                 fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid_tracedSVG
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -27,7 +27,7 @@ const Image = props => (
       const image = data.images.edges.find(n => {
         return n.node.relativePath.includes(props.filename)
       })
-      
+
       if (!image) {
         return null
       }

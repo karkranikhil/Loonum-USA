@@ -6,8 +6,7 @@ import ImageList from './imagesData'
 // import LET_US_HELP from '../images/Services_Page/LET_US_HELP.png'
 
 
-const { HERO_IMAGE, UX_UI_icon, Development_icon, Deployment_icon, LET_US_HELP, Consulting_fill, Consulting_outline, Design_and_Build_fill, Design_and_Build_outline, digital_marketing_fill, digital_marketing_outline, suppport_fill, suppport_outline } = ImageList.SERVICES_PAGE_IMAGES
-
+const { HERO_IMAGE, UX_UI_icon, Development_icon, Deployment_icon, LET_US_HELP, Consulting_fill, Consulting_outline, Design_and_Build_fill, Design_and_Build_outline, digital_marketing_fill, digital_marketing_outline, suppport_fill, suppport_outline, SOCIAL_MEDIA, SEO, DIGITAL, DEPLOYMENT_INTEGRATION, DESIGN_DEVELOPMENT, BUSSINESS_MODELING_SUPPORT, DESIGN_STRATEGY, DESIGN_INNOVATION, PRODUCT_DESIGN } = ImageList.SERVICES_PAGE_IMAGES
 export default {
     HERO_DATA: {
         HERO_HEADING: 'This is what we do',
@@ -25,17 +24,17 @@ export default {
                 Description: 'Solving complex business problems never been easy. Loonum ‘Eclipse’ framework helps you kick-start your projects by engaging key stakeholders to collaborate towards key initiatives. We have been successful in delivering beyond expected outcomes.',
                 CARDS: [
                     {
-                        logo: UX_UI_icon,
+                        logo: DESIGN_STRATEGY,
                         name: 'Business Design & Strategy',
                         text: "We will help you simplify the business case and scope by utilising human-centered design methodologies to support the transformation and align mindset shift with collaborating as a group."
                     },
                     {
-                        logo: Development_icon,
+                        logo: DESIGN_INNOVATION,
                         name: 'Service Design & Innovation',
                         text: "All products and services have many touchpoints across many channels. We discover the current state of interaction from customers through to internal process for innovation. You’ll have the future state ready to grow."
                     },
                     {
-                        logo: Deployment_icon,
+                        logo: PRODUCT_DESIGN,
                         name: 'UX & Product Development ',
                         text: "All things at Loonum made out of “User-Centric” methodologies. This leads us to focus on our product development process to deliver the right product/service to your customer."
                     }
@@ -73,17 +72,17 @@ export default {
                 Description: 'Loonum takes a more relevant online marketing approach for our clients. We make sure targeted campaigns have a conversion rate that will give a successful ROI. Since it’s a competitive stream, we have simplified to engage in stages.',
                 CARDS: [
                     {
-                        logo: UX_UI_icon,
+                        logo: DIGITAL,
                         name: 'Digital Strategy',
                         text: "Within a rapidly changing digital landscape, we help clients to simplify their digital process and value proposition by validating business model focusing on their demanding users."
                     },
                     {
-                        logo: Development_icon,
+                        logo: SEO,
                         name: 'SEO',
                         text: "We take a careful approach in selecting the right keywords not only for your website but for an end to end online digital presence. We always align with you and your customers."
                     },
                     {
-                        logo: Deployment_icon,
+                        logo: SOCIAL_MEDIA,
                         name: 'Social Media',
                         text: "Our social media experts don’t spray and pray for conversions. We curate whom your customer segment is and preferred channel, so we target it for proper, sustainable growth."
                     }
@@ -97,17 +96,17 @@ export default {
                 Description: 'Loonum has an extensive support service after completion of any project on any size. We value our after-sales customer engagement as much as per to the beginning. The principle is loyalty and reward we get from our clients and their customers.',
                 CARDS: [
                     {
-                        logo: UX_UI_icon,
+                        logo: BUSSINESS_MODELING_SUPPORT,
                         name: 'Business Strategy',
                         text: "We vowed to stay with our clients every step of the way, and whenever complexity arises. From simple business decisions to complex model changes, we are always at your service."
                     },
                     {
-                        logo: Development_icon,
+                        logo: DESIGN_DEVELOPMENT,
                         name: 'Design & Development',
                         text: "Design & development always have challenges. Loonum support services create simple guidelines as well as personal engagement for any challenge our clients face."
                     },
                     {
-                        logo: Deployment_icon,
+                        logo: DEPLOYMENT_INTEGRATION,
                         name: 'Deployment & Integration',
                         text: "Digital transformation and integration is a complex journey. We do not expect our clients to troubleshoot technical challenges. We engage in every step of the way with a 24/7 support system."
                     }

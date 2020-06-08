@@ -42,7 +42,7 @@ const Footer = (props) => {
                                         <a rel="noreferrer noopener" href={item.Links} aria-label={item.Links} key={item.image} target="_blank" className={`small_text ralewayLight pr-3 pt-3 ${item.class}`} key={item.image}><img src={item.image} alt={item.Links} /></a>
 
                                     ))}
-                                    <span className="small_text ralewayLight pr-0 pr-sm-3 pt-3 l-height-26 ralewayMedium letter_space margin-top-5">37.8136° S | 144.9631° E</span>
+                                    <span className="small_text ralewayLight pr-0 pr-sm-3 pt-3 l-height-26 ralewayMedium letter_space margin-top-5 forntArial">37.8136° S | 144.9631° E</span>
                                 </div>
                             </div>
                         </div>

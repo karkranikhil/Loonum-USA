@@ -7,7 +7,6 @@ footer{
 .small_text{
     font-size: 11px;
     font-weight: 300;
-    letter-spacing: 0;
     line-height: 16px;
 }
 .lightgrey{
@@ -21,7 +20,6 @@ footer{
     width: fit-content;
     font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0;
     line-height: 14px;
     padding-top: 5px;
 }
@@ -42,4 +40,7 @@ footer{
 }
 .text_uppercase{
     text-transform: uppercase;
+}
+.forntArial{
+    font-family: Arial, Helvetica, sans-serif;
 }

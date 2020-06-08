@@ -1,6 +1,6 @@
 import ImageList from './imagesData'
 
-const { HERO_IMAGE, DIGITAL_LOGO, CONTENT_LOGO, INVENTORY_LOGO, ECORMMERCE_WORKING_IMG, Inventory_fill, Inventory_outline, CMS_fill, CMS_outline, Small_business_fill, Small_business_outlilne, Website_fill, Website_outline, ECOMMERCE_LOGO, ESERVICES_LOGO, ASSET_MANAGEMENT_LOGO, COMM_SOCIAL_MEDIA_LOGO, CUSTOMISED_RESPONSIVE_LOGO, PERFORMANCE_LOGO   } = ImageList.PRODUCT_PAGE_IMAGES
+const { HERO_IMAGE, DIGITAL_LOGO, CONTENT_LOGO, INVENTORY_LOGO, ECORMMERCE_WORKING_IMG, Inventory_fill, Inventory_outline, CMS_fill, CMS_outline, Small_business_fill, Small_business_outlilne, Website_fill, Website_outline, ECOMMERCE_LOGO, ESERVICES_LOGO, ASSET_MANAGEMENT_LOGO, COMM_SOCIAL_MEDIA_LOGO, CUSTOMISED_RESPONSIVE_LOGO, PERFORMANCE_LOGO, SUPPLIER_MANAGEMENT, PRODUCT_MANINTAINANCE, STOCK_ENTRY   } = ImageList.PRODUCT_PAGE_IMAGES
 export default {
     HERO_DATA: {
         HERO_HEADING: 'A product set curated just for Small Businesses.',
@@ -87,17 +87,17 @@ export default {
             Description: 'Inventory management software tools let you keep track of stock levels and values on a daily basis. Loonum system calculates the value of the goods you have on hand using a cost-effective method. This simple tracking software is great for independent small e-commerce businesses.',
             CARDS: [
                 {
-                    logo: DIGITAL_LOGO,
+                    logo: STOCK_ENTRY,
                     name: 'Stock Entry',
                     text: "Get your inventory up and running fast by quickly importing a large number of inventory items from a spreadsheet. We provide a simple user flow to complete your transition. "
                 },
                 {
-                    logo: CONTENT_LOGO,
+                    logo: PRODUCT_MANINTAINANCE,
                     name: 'Maintenance',
                     text: "Using a stock management system helps you to spend less time on data entry. You can easily keep track of what you buy from your vendors to what you sell to your customers."
                 },
                 {
-                    logo: INVENTORY_LOGO,
+                    logo: SUPPLIER_MANAGEMENT,
                     name: 'Supplier Management',
                     text: "One of the key challenges businesses face is supplier orders and delivery management. We can help you to overcome these critical challenges with a system simplified to your needs."
                 }
