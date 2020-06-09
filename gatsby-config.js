@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Loonum',
+    siteUrl: 'https://www.loonum.com/',
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -24,6 +25,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-sitemap',
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -101,6 +103,14 @@ module.exports = {
         extensions: ['css', 'html', 'scss', 'js', 'svg', 'png']
       }
     },
-    'gatsby-plugin-preload-link-crossorigin'
+    'gatsby-plugin-preload-link-crossorigin',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.loonum.com/',
+        sitemap: 'https://www.loonum.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }

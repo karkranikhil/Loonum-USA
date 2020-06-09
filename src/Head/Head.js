@@ -25,7 +25,8 @@ const HEAD = () => {
             <meta property="twitter:title" content="Loonum - Grow with an improved business model and adaptable web solutions." />
             <meta property="twitter:description" content="Loonum offers a complete 360 product set for small business’s digital transformation and process. Our unique blend of user-centric digital products and ROI focused business design approach will deliver meaningful success for customers." />
             <meta property="twitter:image" content={META_IMAGE} />
-
+            <meta name="google-site-verification" content="lpPoMtZGiIkedJHkBiXg7IocxecaNTKkKmSuLHPSB3s"/>
+            <link rel="canonical" href="https://www.loonum.com/" />
         </Helmet>
     )
 }
