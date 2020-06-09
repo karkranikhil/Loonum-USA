@@ -9,7 +9,7 @@ const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION }) => {
             <div className="container pt-5 pb-5 foundersWrapper">
                 <div className="row pr-3 pl-3">
                     <div className="hero_wrapper">
-                        <Image filename={LOGO} alt={lOGO_HEADING} />
+                        <Image filename={LOGO} alt={lOGO_HEADING} className="img-fluid" />
                         <div className='hero_subheading'>{SUB_HEADING}</div>
                     </div>
                 </div>

@@ -1,3 +1,22 @@
+
+import Inventory_fill from '../images/Products_Page/SVG/loonum products inventory management icon white mobile.svg'
+import Inventory_outline from '../images/Products_Page/SVG/loonum products inventory management icon grey mobile.svg'
+import CMS_outline from '../images/Products_Page/SVG/loonum products cms icon grey mobile.svg'
+import CMS_fill from '../images/Products_Page/SVG/loonum products cms icon white mobile.svg'
+import Small_business_fill from '../images/Products_Page/SVG/loonum products small business icon white mobile.svg'
+import Small_business_outlilne from '../images/Products_Page/SVG/loonum products small business icon grey mobile.svg'
+import Website_fill from '../images/Products_Page/SVG/loonum products website icon white mobile.svg'
+import Website_outline from '../images/Products_Page/SVG/loonum products website icon grey mobile.svg'
+
+import Consulting_fill from '../images/Services_Page/SVG/loonum services consulting icon white mobile.svg'
+import Consulting_outline from '../images/Services_Page/SVG/loonum services consulting icon grey mobile.svg'
+import Design_and_Build_fill from '../images/Services_Page/SVG/loonum services design and build icon white mobile.svg'
+import Design_and_Build_outline from '../images/Services_Page/SVG/loonum services design and build icon grey mobile.svg'
+import digital_marketing_fill from '../images/Services_Page/SVG/loonum services digital marketing icon white mobile.svg'
+import digital_marketing_outline from '../images/Services_Page/SVG/loonum services digital marketing icon grey mobile.svg'
+import suppport_fill from '../images/Services_Page/SVG/loonum services support icon white mobile.svg'
+import suppport_outline from '../images/Services_Page/SVG/loonum services support icon grey mobile.svg'
+
 export const ImageList = {
     HOME_PAGE_IMAGES: {
         LOONUM_LOGO_WEB: 'images/Home_Page/SVG/Loonum Logo.svg',
@@ -24,14 +43,14 @@ export const ImageList = {
     },
     PRODUCT_PAGE_IMAGES: {
         ECORMMERCE_WORKING_IMG: 'images/Products_Page/SVG/Ecommerce-new-way-of-worling.svg',
-        Inventory_fill: 'images/Products_Page/SVG/loonum products inventory management icon white mobile.svg',
-        Inventory_outline: 'images/Products_Page/SVG/loonum products inventory management icon grey mobile.svg',
-        CMS_fill: 'images/Products_Page/SVG/loonum products cms icon grey mobile.svg',
-        CMS_outline: 'images/Products_Page/SVG/loonum products cms icon white mobile.svg',
-        Small_business_fill: 'images/Products_Page/SVG/loonum products small business icon white mobile.svg',
-        Small_business_outlilne: 'images/Products_Page/SVG/loonum products small business icon grey mobile.svg',
-        Website_fill: 'iimages/Products_Page/SVG/loonum products website icon white mobile.svg',
-        Website_outline: 'images/Products_Page/SVG/loonum products website icon grey mobile.svg',
+        Inventory_fill: Inventory_fill,
+        Inventory_outline: Inventory_outline,
+        CMS_fill: CMS_fill,
+        CMS_outline: CMS_outline,
+        Small_business_fill: Small_business_fill,
+        Small_business_outlilne: Small_business_outlilne,
+        Website_fill: Website_fill,
+        Website_outline: Website_outline,
         HERO_IMAGE: 'images/Products_Page/SVG/loonum products page hero.svg',
         DIGITAL_LOGO: 'images/Products_Page/SVG/loonum products digital representation.svg',
         CONTENT_LOGO: 'images/Products_Page/SVG/loonum products content managemnt.svg',
@@ -72,14 +91,14 @@ export const ImageList = {
 
 
         LET_US_HELP: 'images/Services_Page/SVG/loonum services simplify your business.svg',
-        Consulting_fill: 'images/Services_Page/SVG/loonum services consulting icon white mobile.svg',
-        Consulting_outline: 'images/Services_Page/SVG/loonum services consulting icon grey mobile.svg',
-        Design_and_Build_fill: 'images/Services_Page/SVG/loonum services design and build icon white mobile.svg',
-        Design_and_Build_outline: 'images/Services_Page/SVG/loonum services design and build icon grey mobile.svg',
-        digital_marketing_fill: 'images/Services_Page/SVG/loonum services digital marketing icon white mobile.svg',
-        digital_marketing_outline: 'images/Services_Page/SVG/loonum services digital marketing icon grey mobile.svg',
-        suppport_fill: 'images/Services_Page/SVG/loonum services support icon white mobile.svg',
-        suppport_outline: 'images/Services_Page/SVG/loonum services support icon grey mobile.svg',
+        Consulting_fill: Consulting_fill,
+        Consulting_outline: Consulting_outline,
+        Design_and_Build_fill: Design_and_Build_fill,
+        Design_and_Build_outline:Design_and_Build_outline,
+        digital_marketing_fill: digital_marketing_fill,
+        digital_marketing_outline:digital_marketing_outline,
+        suppport_fill: suppport_fill,
+        suppport_outline: suppport_outline
     },
     OUR_STORY:{
         MAIN_LOGO:'images/Our_Story_Page/SVG/Loonum our story hero.svg',

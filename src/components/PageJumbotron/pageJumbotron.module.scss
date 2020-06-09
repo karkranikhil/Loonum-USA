@@ -36,6 +36,10 @@
     .page_heading, .page_sub_heading{
          text-align: center;
          justify-content: center;
+        h5{
+            width: fit-content;
+            margin: auto;
+        }
     }
    
 }

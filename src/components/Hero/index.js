@@ -7,8 +7,8 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH, PAGE }) =>
     return (
         <>
             <div className={`hero_container container-fluid ${PAGE === 'HOME' ? 'heroImg_Wrapper' : PAGE === 'GREY' ? 'grey_page_wrapper' : 'white_page_wrapper'}`}>
-                <div className="container d-flex h-100 justify-content-between">
-                    <div className="row pb-3 w-100">
+                <div className="container d-flex h-100 justify-content-between pl-0 pr-0">
+                    <div className="d-flex pb-3 w-100">
                         <div className="col-12 col-lg-6 pb-3">
                             <div>
                                 <div className={`ralewayLight letter1px text-center text-lg-left ${PAGE === 'HOME' ? 'hero_heading' : 'page_hero_heading'}`}>{HERO_HEADING}</div>
