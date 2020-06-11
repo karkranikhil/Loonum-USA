@@ -10,7 +10,7 @@ import FOOTER_LOGO from '../images/Home_Page/SVG/footer Loonum logo.svg'
 export const SOCIAL_MEDIA = [
     {
         image: TWITTER,
-        Links: '#'
+        Links: 'https://twitter.com/Loonum_'
     },
     {
         image: LINKED_IN,
@@ -26,7 +26,7 @@ export const SOCIAL_MEDIA = [
     },
     {
         image: INSTAGRAM,
-        Links: '#',
+        Links: 'https://www.instagram.com/loonum_/',
     },
     {
         image: LOCATION,

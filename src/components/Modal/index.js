@@ -10,7 +10,7 @@ import CROSS_LARGE from '../../images/Contact_Us_Page/SVG/CROSS_LARGE.png'
 export const SOCIAL_MEDIA = [
     {
         image: TWITTER,
-        Links: '#'
+        Links: 'https://twitter.com/Loonum_'
     },
     {
         image: LINKEDIN,
@@ -26,7 +26,7 @@ export const SOCIAL_MEDIA = [
     },
     {
         image: INSTAGRAM,
-        Links: '#'
+        Links: 'https://www.instagram.com/loonum_/'
     }
 ]
 const Modal = ({ closeHandler }) => {

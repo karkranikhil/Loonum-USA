@@ -11,15 +11,15 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH, PAGE }) =>
                     <div className="d-flex pb-3 w-100">
                         <div className="col-12 col-lg-6 pb-3">
                             <div>
-                                <div className={`ralewayLight letter1px text-center text-lg-left ${PAGE === 'HOME' ? 'hero_heading' : 'page_hero_heading'}`}>{HERO_HEADING}</div>
-                                <div className={`ralewayLight  text-center text-lg-left ${PAGE === 'GREY' ? 'hero_subheading-grey' : 'hero_subheading'}`}>{HERO_SUBHEADING}</div>
+                                <h1 className={`ralewayLight letter1px text-center text-lg-left ${PAGE === 'HOME' ? 'hero_heading' : 'page_hero_heading'}`}>{HERO_HEADING}</h1>
+                                <div className={`ralewayLight  text-center text-lg-left ${PAGE === 'GREY' ? 'hero_subheading-grey' : PAGE === 'PRODUCT' ? 'hero_subheading-product' : 'hero_subheading'}`}>{HERO_SUBHEADING}</div>
                                 {PARAGRAPH && <div className={`ralewayLight mt-4 text-center text-md-left ${PAGE === 'GREY' ? 'hero_subheading-grey' : 'hero_subheading'}`}>{PARAGRAPH}</div>}
                             </div>
                         </div>
                         <div className="d-none d-md-block col-lg-6 text-md-center text-lg-right pb-3">
                             <div className="row">
                                 <div className="col-10 margin-image p-3 p-lg-auto">
-                                    <Image filename={HERO_IMAGE} alt="hero image" className="responsive hero_img" />
+                                    <Image filename={HERO_IMAGE} alt="hero image" className={`responsive ${PAGE === 'HOME' ? 'hero_img' :'hero_img_scale'}`}/>
                                 </div>
                             </div>
                         </div>

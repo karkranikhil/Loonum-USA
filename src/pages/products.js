@@ -16,7 +16,7 @@ const Product = () => {
                 />
             </Helmet>
             <HEAD />
-            <Hero {...PAGE_DATA.HERO_DATA} />
+            <Hero {...PAGE_DATA.HERO_DATA} PAGE="PRODUCT"/>
             <SmallBusiness TAB_LIST={PAGE_DATA.TAB_LIST} NEW_WAY_WORKING_DATA= {PAGE_DATA.NEW_WAY_WORKING_DATA} />
 
         </Layout>
