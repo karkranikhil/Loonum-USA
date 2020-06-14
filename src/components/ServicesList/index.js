@@ -8,7 +8,7 @@ import Tabs from '../Tabs/index.js'
 
 const ServicesList = (props) => {
     const { TAB_LIST, NEW_WAY_WORKING_DATA } = props
-    let defaultTab = props.location && props.location.state && (props.location.state.tabLabel || TAB_LIST[1].label)
+    let defaultTab = (props.location && props.location.state && props.location.state.tabLabel) || TAB_LIST[1].label
     return (
         <section className='wrapper'>
             <Tabs>
