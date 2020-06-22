@@ -15,7 +15,7 @@ export default {
                 lastname: 'Perera',
                 designation: 'Design Director & CXO',
                 description1: "Dananjaya started his career in 2003 as a freelance web designer while he was at university. Always passionate and eager to learn new things helped him with his career growth. When he transitioned himself to a human-centered designer, his design world got bigger, solving business problems through digital transformation. Dananjaya always brings a wealth of knowledge to any conversation.",
-                description2: "He has a charismatic personality to keep his clients engaged throughout and projects and deliver outcomes beyond what promised. In recent years he has been a public speaker and a mentor to fellow designs around the globe. Dananjaya is an enthusiastic cyclist, loves reading, traveling, and outdoor adventures. If you want to know more, he is always a message away for a quick coffee."
+                description2: "He has a charismatic personality to keep his clients engaged throughout and projects and deliver outcomes beyond what promised. In recent years he has been a public speaker and a mentor to fellow designers around the globe. Dananjaya is an enthusiastic cyclist, loves reading, traveling, and outdoor adventures. If you want to know more, he is always a message away for a quick coffee."
             },
             {
                 img: NIKHIL_IMG,

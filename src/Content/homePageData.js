@@ -29,7 +29,7 @@ export const CARD_DETAILS = [
 export default {
     HERO_DATA: {
         HERO_HEADING: 'Grow with an improved business model and adaptable web solutions.',
-        HERO_SUBHEADING: "Loonum offers a complete 360 product set for small business’s digital transformation and process. Our unique blend of user-centric digital products and ROI focused business design approach will deliver meaningful success for customers.",
+        HERO_SUBHEADING: "Loonum offers a complete 360 product set for small to medium business’s digital transformation and process. Our unique blend of user-centric digital products and ROI focused business design approach will deliver meaningful success for customers.",
         HERO_IMAGE: HERO_IMAGE
     },
     BDP_SECTION: {
