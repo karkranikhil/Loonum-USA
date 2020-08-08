@@ -13,46 +13,46 @@ export const CARD_DETAILS = [
     {
         name: 'Website',
         image: WEBSITE_IMAGE,
-        text: "We design and build your website to improve credibility, increase enquiries and generate revenue. Our strategists, UX designers and developers will create features and functionalities visually desires your customers."
+        text: "We design and develop websites that build trust and demonstrate credibility, while generating new revenue streams. Our strategists, and user experience development teams will create features and functionalities that are expected by your customers."
     },
     {
         name: 'CMS',
         image: CMS_IMAGE,
-        text: "You don’t need to adapt to a Content Management System like before. We will design your CMS according to your business process to and align the dashboard to your activities so its seamless to your BAU tasks."
+        text: "We will build your content management system (CMS) that is specific to your needs. You’ll never need to learn another CMS program, as when you use our custom system everything will be business as usual. "
     },
     {
         name: 'Inventory',
         image: INVENTORY_IMAGE,
-        text: "After understanding your product range and storing method, Loonum will design a system for your business rather than waste time and cost with training yourself and staff for an off-the-shelve product."
+        text: "Loonum will construct a working inventory system that is unique to your business. It will track sales, incoming supplier orders, and adjust your stock file so you’ll have total control over your inventory systems."
     }
 ]
 export default {
     HERO_DATA: {
-        HERO_HEADING: 'Grow with an improved business model and adaptable web solutions.',
-        HERO_SUBHEADING: "Loonum offers a complete 360 product set for small to medium business’s digital transformation and process. Our unique blend of user-centric digital products and ROI focused business design approach will deliver meaningful success for customers.",
+        HERO_HEADING: 'GROW YOUR BUSINESS FURTHER WITH LOONUM',
+        HERO_SUBHEADING: "Loonum offers a complete product set for businesses to develop and transform their current (or new) digital presence. Our unique blend of building user experience systems balanced with secure ROI targets, means higher turnover and increased growth.",
         HERO_IMAGE: HERO_IMAGE
     },
     BDP_SECTION: {
-        HEADING: "What is Business & Digital Design Solutions",
-        PARAGRAPH: "At Loonum we don’t build digital products so businesses can use them. We help our clients to understand their businesses and find where it needs the digital channel to support growth. In the process of our services, we collaborate with our clients to build what their customers desire. When you work with us, you are the one who designing your business platform as you know your customers better than anyone else. That’s why we call this is Business Design Platform. "
+        HEADING: "BUSINESS & DIGITAL DESIGN SOLUTIONS",
+        PARAGRAPH: "At Loonum we create solutions that support your business. We examine your current systems to find out how to improve and (re)build so you can use the digital processes in an improved economical way. We collaborate with our clients to be sure that our solution is optimized to your customer base and that the improvements offered are structured to their needs.We know that you understand your clients best, and while we provide the road, you’ll be driving the car.That's why we call this process the Business Design Platform."
     },
     DEVICE_SECTION: {
-        HEADING: "One solution multiple devices",
+        HEADING: "ONE SOLUTION MULTIPLE DEVICES",
         SUB_HEADING: {
             One: 'With Loonum Business & Digital Design Solutions',
             Two: ' you will have 360 complete transparency Anytime Anywhere'
         },
-        PARAGRAPH: "The markets are evolving at the speed of thought and innovating towards mobility is the way to stay on top of the competition. We see revolutionary developments in small business mobility and remote engagement trends, and we know digital transformation is the most significant adaptation for small businesses to gain competitive advantage. Loonum makes  sure your customers can access you on all channels and devices.",
+        PARAGRAPH: "The digital marketplace is evolving at the speed of thought and innovating towards mobility is the way to stay on top of the competition. When you work with Loonum it will give you a 360 degree solution platform, you can offer services to your clients anywhere and at any time. We see revolutionary developments in small business mobility and remote engagement trends, and we know digital transformation is the most significant adaptation for small businesses to gain competitive advantage. Loonum makes sure your customers can access you on all channels and devices.",
         DEVICE_SECTION_MOBILE: DEVICE_SECTION_MOBILE,
         DEVICE_SECTION_WEB: DEVICE_SECTION_WEB
     },
     HOME_PRODUCT_SECTION: {
         CARD_DETAILS: CARD_DETAILS,
-        HEADING: "Simple and easy to use experience",
-        SUB_HEADING: "Three pillar system interaction for your peace of mind"
+        HEADING: "SIMPLE AND EASY TO USE EXPERIENCE",
+        SUB_HEADING: "At Loonum we follow the 3 Pillar Framework for digital success."
     },
     STICKY_FOOTER: {
-        MESSAGE: 'Just send your email address we will reach out to you',
+        MESSAGE: 'Please send us your email address and we’ll contact you',
         SUCCESS_MESSAGE: 'We have received your message. James will get back to you within 24 hours.',
         PLACHOLDER: 'Type your email address',
         BTN_TEXT: 'Send',

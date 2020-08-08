@@ -11,7 +11,7 @@ const RoadMap = (props) => {
             <div className={`container ${RoadMapStyle.roadmap_wrapper_padding} ${props.type === 'BLUE' ? RoadMapStyle.image_cover : RoadMapStyle.image_cover_grey}`}>
                 <div className="row">
                     <div className="col text-center">
-                        <h2 className={`${RoadMapStyle.roadmap_heading}`}>Our Roadmap</h2>
+                        <h2 className={`${RoadMapStyle.roadmap_heading}`}>Our Roadmap - Planning Loonum into the Future</h2>
                     </div>
                 </div>
                 <div className="row">
@@ -23,7 +23,7 @@ const RoadMap = (props) => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <h5 className={RoadMapStyle.roadmap_subtext}>Our roadmap is to make life easy for you to integrate with our other products so that you can grow your business without any digital challenges</h5>
+                        <h5 className={RoadMapStyle.roadmap_subtext}>All businesses should have a plan to follow as they lead the charge in their field. This is Loonum’s plan, will you come along for the journey?</h5>
                     </div>
                 </div>
                 <Timeline Type={props.type} />

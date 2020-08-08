@@ -37,8 +37,8 @@ export const SOCIAL_MEDIA = [
 export default {
     FOOTER_DATA: {
         FOOTER_LOGO: FOOTER_LOGO,
-        FOOTER_SUBTEXT_ONE: 'Sometimes you have to let go of things, to make room for new things and thoughts.',
-        FOOTER_SUBTEXT_TWO: 'We are Loonum, develop by design together with people like us.',
+        FOOTER_SUBTEXT_ONE: 'Break free from the norm and take the journey to create something incredible.',
+        FOOTER_SUBTEXT_TWO: 'We are Loonum - designing together and forming partnerships for successful enterprises.',
         PRIVACY_TEXT: 'Copyright © 2020 Loonum. All rights reserved. | Privacy Policy | GDPR | Modern Slavery Statement',
         NEW_TO_LOONUM: 'New to Loonum?',
         PRODUCT_LIST: NAV_LIST,

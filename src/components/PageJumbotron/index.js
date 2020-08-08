@@ -23,7 +23,7 @@ const PageJumbotron = ({ icon, heading, subtext, image }) => {
                 </div>
             </div>
             {image && <div className={`d-none d-md-block ${pageJumboStyle.img_icon}`} >
-                <img src={image} alt="image icon" />
+                <img src={image} alt="jumbo icon" />
             </div>}
         </div>
     )

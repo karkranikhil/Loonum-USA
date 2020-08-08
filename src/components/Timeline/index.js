@@ -10,22 +10,22 @@ const TIME_LINE_DATA = [
     {
         HEADINGS: ['Financial', 'Management'],
         year: '2020',
-        description: ['After extensive research, one of the critical findings was that small businesses require customised digital financial support. We are in the design phase of this future product to service our valuable customers.']
+        description: ['A common problem for many businesses is that they require customized digital financial support. At Loonum we’re developing new ways to enhance your financial management, with plans to deploy it in 2020 it will be ready to integrate with all our existing software platforms.']
     },
     {
-        HEADINGS: ['Supply Chain', 'Management'],
+        HEADINGS: ['Logistics', 'Management'],
         year: '2020',
-        description: ['With the disruptive nature of businesses today, the supply chain has always been a challenging industry. Loonum is on the verge of innovating a product to be integrated with our inventory management system.']
+        description: ['Understanding your supply chain is key to the just in time (JIT) stock approach. However, keeping track of everything can be a tough task. Loonum is developing an innovative product, so you know what is happening every step of the way.']
     },
     {
         HEADINGS: ['Collaborative', 'Tools'],
         year: '2021',
-        description: ["At Loonum innovation lab, we are designing a product to support remote learning & WFA (work from anywhere). We haven't forgotten AR & VR, so be on alert to see what's coming out"]
+        description: ["We are designing a product that supports remote learning & work from anywhere (WFA). If your business is able to tap the global talent pool the sky is your limit!"]
     },
     {
         HEADINGS: ['Loonum', 'Labs'],
-        year: '2021 Beyond',
-        description: ['Global Village', 'IoT', 'AI', 'Sustainable Digitisation', 'Digital Mindfulness']
+        year: '2021 & Beyond',
+        description: ['Loonum is excited to see what the future brings. It may contain interesting developments such as drone harvesting, automated package delivery, VR shop fronts, is your business future proof?']
     }
 ]
 const Timeline = ({ Type }) => {
