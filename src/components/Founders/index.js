@@ -2,7 +2,7 @@
 import React from "react"
 import './founders.scss'
 import Image from '../Image/image'
-const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION }) => {
+const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION1, DESCRIPTION2, DESCRIPTION3}) => {
     console.log(LOGO)
     return (
         <>
@@ -14,7 +14,9 @@ const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION }) => {
                     </div>
                 </div>
                 <div className="row pr-3 pl-3">
-                    <div className="hero_description mt-4">{DESCRIPTION}</div>
+                    <div className="hero_description mt-4">{DESCRIPTION1}</div>
+                    <div className="hero_description mt-4">{DESCRIPTION2}</div>
+                    <div className="hero_description mt-4">{DESCRIPTION3}</div>
                 </div>
             </div>
         </>

@@ -117,7 +117,8 @@ export default {
     NEW_WAY_WORKING_DATA: {
         heading: 'LET US HELP YOU TO SIMPLIFY YOUR BUSINESS CHALLENGES',
         image: LET_US_HELP,
-        description: "At Loonum we know that the digital world is only a part of your business. It is the tool that allows you to foster relationships with your customers and build on existing brand profiles. Allow us to be your guide to the ideologies of the operating in the digital realm. We can show you new and exciting ways of developing your business and prepare it for the future and beyond!"
+        description1: "At Loonum we know that the digital world is only a part of your business. It is the tool that allows you to foster relationships with your customers and build on existing brand profiles.",
+        description2: "Allow us to be your guide to the ideologies of the operating in the digital realm. We can show you new and exciting ways of developing your business and prepare it for the future and beyond!"
 
     }
 

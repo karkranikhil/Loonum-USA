@@ -106,6 +106,8 @@ export default {
     NEW_WAY_WORKING_DATA: {
         heading: 'A WEBSITE IS THE BEATING HEART OF ANY ENTERPRISE',
         image: ECORMMERCE_WORKING_IMG,
-        description: "With the ever-changing world of digital, the current climate has given opportunities to reimagine the way we engage with our customers and how we operate as a business. At Loonum, we approach with empathy and speed to action, which fast track your digital representation come to life so your customers can continue to engage with your business."
+        description1: "Are you ready for the ‘new way of working’? At Loonum we understand how customers prefer to interact with your brand; most of the time this begins with your website, and then branches out to other service areas.",
+        description2: "But, a website is much more than that, at Loonum we see it as the lifeblood and beating heart of your enterprise. Often people won’t deal with a company that has a malfunctioning website (or worse none at all!). Is it time that you gave yours a checkup?",
+        description3: "Sales are just one thing that can be done, with other services thrown into the build your online presence can lead the charge and offer solutions to all sorts of problems. At Loonum we plot these out and show you how to improve your current systems to provide a better experience for your customers and your business. We’re here for the long haul and we want our clients to be successful!"
     }
 }

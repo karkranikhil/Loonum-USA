@@ -26,10 +26,9 @@ const ContactUsDescription = (TYPE) => {
         <h2 className={`${contactFormStyle.heading} pb-3 mb-2`}> {TYPE.TYPE === 'CONTACT' ? 'Go ahead and talk to us' : TYPE.TYPE === 'IDEA' ? 'We can help you to achieve more' :'Get in touch'}</h2>
         <div>
             {TYPE !== 'IDEA' &&
-                <div className={`${contactFormStyle.subheading} pb-3 mb-2`}>Want to know more about <br/>how we can help? Have a question?</div>
+                <div className={`${contactFormStyle.subheading} pb-3 mb-2`}>For an in depth discussion on your current digital presence and where you’d like to take your business, please fill out this form and we’ll get in contact within 24 hours.</div>
             }
             
-            <div className={`${contactFormStyle.subheading} pb-3 mb-2`}>Simply fill in the form and I will get <br/> back to you within 24 hrs.</div>
             <div className={`${contactFormStyle.subheading} pb-3`}>- Donna</div>
         </div>
     </div>)
