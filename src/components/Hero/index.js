@@ -18,7 +18,7 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH, PAGE }) =>
                         </div>
                         <div className="d-none d-md-block col-lg-6 text-md-center text-lg-right pb-3">
                             <div className="row">
-                                <div className="col-10 margin-image p-3 p-lg-auto">
+                                <div className="col-10  p-3 p-lg-auto">
                                     <Image filename={HERO_IMAGE} alt="hero image" className={`responsive ${PAGE === 'HOME' ? 'hero_img' :'hero_img_scale'}`}/>
                                 </div>
                             </div>

@@ -25,7 +25,7 @@ const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION1, DESCRIPTION2
 const FoundersCard = (item) => {
     return (
         <>
-            <div className="col-12 col-md-6 pl-5 pr-5 pb-5">
+            <div className="col-12 col-md-6 pl-5 pr-5 pb-5 max-width-605">
                 <div className="founder_wrapper ml-auto mr-auto">
                     <Image filename={item.img} alt={item.firstname} />
                     <div className="ml-sm-4">

@@ -49,7 +49,7 @@ export default {
     HOME_PRODUCT_SECTION: {
         CARD_DETAILS: CARD_DETAILS,
         HEADING: "SIMPLE AND EASY TO USE EXPERIENCE",
-        SUB_HEADING: "At Loonum we follow the 3 Pillar Framework for digital success."
+        SUB_HEADING: "At Loonum we follow the Three Pillar Framework for digital success."
     },
     STICKY_FOOTER: {
         MESSAGE: 'Please send us your email address and we’ll contact you',
