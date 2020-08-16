@@ -11,9 +11,9 @@ const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH, PAGE }) =>
                     <div className="d-flex pb-3 w-100">
                         <div className="col-12 col-lg-6 pb-3 m-auto">
                             <div>
-                                <h1 className={`ralewayLight letter1px text-center text-lg-left margin-auto-small ${PAGE === 'HOME' ? 'hero_heading' : 'page_hero_heading'}`}>{HERO_HEADING}</h1>
+                                <h1 className={`ralewayLight letter1px text-center text-lg-left margin-auto-small justify-content-auto-small ${PAGE === 'HOME' ? 'hero_heading' : 'page_hero_heading'}`}>{HERO_HEADING}</h1>
                                 <div className={`ralewayLight  text-center text-lg-left margin-auto-small  ${PAGE === 'GREY' ? 'hero_subheading-grey' : PAGE === 'PRODUCT' ? 'hero_subheading-product' : 'hero_subheading'}`}>{HERO_SUBHEADING}</div>
-                                {PARAGRAPH && <div className={`ralewayLight mt-4 text-center text-md-left ${PAGE === 'GREY' ? 'hero_subheading-grey' : 'hero_subheading'}`}>{PARAGRAPH}</div>}
+                                {PARAGRAPH && <div className={`ralewayLight mt-4 text-center text-lg-left  margin-auto-small ${PAGE === 'GREY' ? 'hero_subheading-grey' : 'hero_subheading'}`}>{PARAGRAPH}</div>}
                             </div>
                         </div>
                         <div className="d-none d-lg-block col-lg-6 text-md-center text-lg-right pb-3">
