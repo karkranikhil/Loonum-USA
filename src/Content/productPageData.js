@@ -80,7 +80,7 @@ export default {
                 }
             ]
         }, {
-            label: 'INVENORY MANAGEMENT',
+            label: 'INVENTORY MANAGEMENT',
             mobileLabel: 'INVENTORY',
             image: Inventory_outline,
             image_active: Inventory_fill,
