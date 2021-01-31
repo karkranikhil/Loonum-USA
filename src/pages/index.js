@@ -7,7 +7,10 @@ import DevicesSection from '../components/DevicesSection/index'
 import HomeProductSection from '../components/HomeProductSection/index'
 import PAGE_DATA from '../Content/homePageData'
 import HEAD from '../Head/Head'
+import HelpYouGrow from "../components/HelpYouGrow"
+import WorkWithSection from '../components/WorkWithSection'
 const Index = () => {
+    console.log("PAGE_DATA", PAGE_DATA)
     return (
         <Layout>
             <Helmet>
@@ -15,8 +18,10 @@ const Index = () => {
             </Helmet>
             <HEAD />
             <Hero {...PAGE_DATA.HERO_DATA} PAGE="HOME" />
+            <HelpYouGrow {...PAGE_DATA.HELP_YOU_GROW}/>
             <BdpSection {...PAGE_DATA.BDP_SECTION} />
             <DevicesSection {...PAGE_DATA.DEVICE_SECTION} />
+            <WorkWithSection {...PAGE_DATA.WHO_WE_WORK_WITH_DATA}/>
             <HomeProductSection {...PAGE_DATA.HOME_PRODUCT_SECTION} />
         </Layout>
     )

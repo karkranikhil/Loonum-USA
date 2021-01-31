@@ -1,0 +1,43 @@
+@import '../../styles/style.scss';
+.helpyougrow_section {
+    min-height: 404px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imageStyle{
+        height: 70px;
+        width: 120px;
+    }
+    .padding-tb-64{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .imageSubtext{
+        color:#000000;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .heading{
+        color: #0C7DBA;
+        line-height: 53px;
+        margin: 0px;
+        font-family: 'Raleway-Light';
+        font-weight: 300;
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .helpyougrow_section {
+        .padding-tb-64{
+            padding-top: 38px;
+        padding-bottom: 38px;
+        }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    }
+}
+

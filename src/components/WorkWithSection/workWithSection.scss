@@ -1,0 +1,51 @@
+@import '../../styles/style.scss';
+.workwith_section {
+    min-height: 404px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imageStyle{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-template-rows: 1fr;
+        gap: 94px 16px;
+      }
+    .imageSubtext{
+        color:#000000;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .heading{
+        color: #525252;
+        line-height: 53px;
+        margin: 0px;
+        font-family: 'Raleway-Light';
+        font-weight: 300;
+        font-size: 36px;
+    }
+    .padding-tb-64{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .workwith_section {
+        .padding-tb-64{
+            padding-top: 38px;
+        padding-bottom: 38px;
+        }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    }
+}
+

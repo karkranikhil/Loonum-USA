@@ -9,6 +9,7 @@ import STICKY_GREY_CROSS from '../images/Home_Page/STICKY_GREY_CROSS.png'
 // import DEVICE_SECTION_MOBILE from '../images/Home_Page/DEVICE_SECTION_MOBILE.png'
 
 const { HERO_IMAGE, DEVICE_SECTION_WEB, DEVICE_SECTION_MOBILE, WEBSITE_IMAGE, CMS_IMAGE, INVENTORY_IMAGE } = ImageList.HOME_PAGE_IMAGES
+const {HELP_YOU_GROW_IMAGES, COMPANIES_LOGO_IMAGES} = ImageList
 export const CARD_DETAILS = [
     {
         name: 'Website',
@@ -26,6 +27,8 @@ export const CARD_DETAILS = [
         text: "Loonum will construct a working inventory system that is unique to your business. It will track sales, incoming supplier orders, and adjust your stock file so you’ll have total control over your inventory systems."
     }
 ]
+
+
 export default {
     HERO_DATA: {
         HERO_HEADING: 'GROW YOUR BUSINESS FURTHER WITH LOONUM',
@@ -35,6 +38,34 @@ export default {
     BDP_SECTION: {
         HEADING: "BUSINESS & DIGITAL DESIGN SOLUTIONS",
         PARAGRAPH: "At Loonum we create solutions that support your business. We examine your current systems to find out how to improve and (re)build so you can use the digital processes in an improved economical way. We collaborate with our clients to be sure that our solution is optimized to your customer base and that the improvements offered are structured to their needs.We know that you understand your clients best, and while we provide the road, you’ll be driving the car.That's why we call this process the Business Design Platform."
+    },
+    HELP_YOU_GROW:{
+        HEADING: "HOW WE CAN HELP YOU GROW",
+        LIST:[
+            {label:"Consulting",image:HELP_YOU_GROW_IMAGES.loonum_consulting_sml, url: '/services/',state: 'CONSULTING'},
+            {label:"Design & Build",image:HELP_YOU_GROW_IMAGES.loonum_design_and_build_sml, url: '/services/',state: 'DESIGN & BUILD'},
+            {label:"Digital Marketing",image:HELP_YOU_GROW_IMAGES.loonum_digital_marketing_sml, url: '/services/',state: 'DIGITAL MARKETING'},
+            {label:"Support",image:HELP_YOU_GROW_IMAGES.loonum_support_sml, url: '/services/',state: 'DIGITAL MARKETING'},
+            {label:"Optimisation",image:HELP_YOU_GROW_IMAGES.loonum_optimisation_sml, url: '/services/',state: 'CONSULTING'},
+            {label:"Website",image:HELP_YOU_GROW_IMAGES.loonum_websites_sml, url: '/products/',state: 'WEBSITES'},
+            {label:"CMS",image:HELP_YOU_GROW_IMAGES.loonum_cms_sml, url: '/products/',state: 'CMS DASHBOARD'},
+            {label:"Inventory",image:HELP_YOU_GROW_IMAGES.loonum_inventory_sml, url: '/products/',state: 'INVENTORY MANAGEMENT'},
+        ]
+    },
+    WHO_WE_WORK_WITH_DATA:{
+        HEADING: "WHO WE WORK WITH",
+        LIST:[
+            {label:"Bank of America",image:COMPANIES_LOGO_IMAGES.loonum_bank_of_america_sml},
+            {label:"NSW Government",image:COMPANIES_LOGO_IMAGES.loonum_nsw_government_sml},
+            {label:"AGL",image:COMPANIES_LOGO_IMAGES.loonum_agl_energy_sml},
+            {label:"RMIT University",image:COMPANIES_LOGO_IMAGES.loonum_rmit_university_sml},
+            {label:"ANZ",image:COMPANIES_LOGO_IMAGES.loonum_anz_bank_sml},
+            {label:"Australia post",image:COMPANIES_LOGO_IMAGES.loonum_australia_post_sml},
+            {label:"NAB",image:COMPANIES_LOGO_IMAGES.loonum_nab_sml},
+            {label:"Standard Chartered",image:COMPANIES_LOGO_IMAGES.loonum_standard_charteed_sml},
+            {label:"KOJO",image:COMPANIES_LOGO_IMAGES.loonum_kojo_sml},
+            {label:"Bupa",image:COMPANIES_LOGO_IMAGES.loonum_bupa_sml},
+        ]
     },
     DEVICE_SECTION: {
         HEADING: "ONE SOLUTION MULTIPLE DEVICES",

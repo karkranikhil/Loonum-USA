@@ -17,6 +17,10 @@ import digital_marketing_outline from '../images/Services_Page/SVG/loonum servic
 import suppport_fill from '../images/Services_Page/SVG/loonum services support icon white mobile.svg'
 import suppport_outline from '../images/Services_Page/SVG/loonum services support icon grey mobile.svg'
 
+
+
+
+
 export const ImageList = {
     HOME_PAGE_IMAGES: {
         LOONUM_LOGO_WEB: 'images/Home_Page/SVG/Loonum Logo.svg',
@@ -35,6 +39,28 @@ export const ImageList = {
         STICKY_GREY_CROSS: 'images/Home_Page/STICKY_GREY_CROSS.png',
         DEVICE_SECTION_WEB: 'images/Home_Page/SVG/one solution multiple devices.svg',
         DEVICE_SECTION_MOBILE: 'images/Home_Page/SVG/one solution multiple devices mobile.svg',
+    },
+    HELP_YOU_GROW_IMAGES:{
+        loonum_cms_sml :'images/Help_you_grow_icons/loonum_cms_sml.svg',
+        loonum_consulting_sml :'images/Help_you_grow_icons/loonum_consulting_sml.svg',
+        loonum_design_and_build_sml :'images/Help_you_grow_icons/loonum_design_and_build_sml.svg',
+        loonum_digital_marketing_sml :'images/Help_you_grow_icons/loonum_digital_marketing_sml.svg',
+        loonum_inventory_sml :'images/Help_you_grow_icons/loonum_inventory_sml.svg',
+        loonum_optimisation_sml :'images/Help_you_grow_icons/loonum_optimisation_sml.svg',
+        loonum_support_sml :'images/Help_you_grow_icons/loonum_support_sml.svg',
+        loonum_websites_sml :'images/Help_you_grow_icons/loonum_websites_sml.svg'
+    },
+    COMPANIES_LOGO_IMAGES:{
+        loonum_agl_energy_sml :'images/Companies_logos/loonum_agl_energy_sml.svg',
+        loonum_anz_bank_sml :'images/Companies_logos/loonum_anz_bank_sml.svg',
+        loonum_australia_post_sml :'images/Companies_logos/loonum_australia_post_sml.svg',
+        loonum_bank_of_america_sml :'images/Companies_logos/loonum_bank_of_america_sml.svg',
+        loonum_bupa_sml :'images/Companies_logos/loonum_bupa_sml.svg',
+        loonum_kojo_sml :'images/Companies_logos/loonum_kojo_sml.svg',
+        loonum_nab_sml :'images/Companies_logos/loonum_nab_sml.svg',
+        loonum_nsw_government_sml :'images/Companies_logos/loonum_nsw_government_sml.svg',
+        loonum_rmit_university_sml :'images/Companies_logos/loonum_rmit_university_sml.svg',
+        loonum_standard_charteed_sml :'images/Companies_logos/loonum_standard_charteed_sml.svg'
     },
     OUR_STORY_PAGE_IMAGES: {
         MAIN_LOGO: 'images/Our_Story_Page/OUR_STORY_ICON.png',
