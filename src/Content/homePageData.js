@@ -56,15 +56,16 @@ export default {
         HEADING: "WHO WE WORK WITH",
         LIST:[
             {label:"Bank of America",image:COMPANIES_LOGO_IMAGES.loonum_bank_of_america_sml},
-            {label:"NSW Government",image:COMPANIES_LOGO_IMAGES.loonum_nsw_government_sml},
+            {label:"HVA Ceylon",image:COMPANIES_LOGO_IMAGES.loonum_HVACeylon_sml},
             {label:"AGL",image:COMPANIES_LOGO_IMAGES.loonum_agl_energy_sml},
-            {label:"RMIT University",image:COMPANIES_LOGO_IMAGES.loonum_rmit_university_sml},
             {label:"ANZ",image:COMPANIES_LOGO_IMAGES.loonum_anz_bank_sml},
             {label:"Australia post",image:COMPANIES_LOGO_IMAGES.loonum_australia_post_sml},
-            {label:"NAB",image:COMPANIES_LOGO_IMAGES.loonum_nab_sml},
+            {label:"RMIT University",image:COMPANIES_LOGO_IMAGES.loonum_rmit_university_sml},
             {label:"Standard Chartered",image:COMPANIES_LOGO_IMAGES.loonum_standard_charteed_sml},
             {label:"KOJO",image:COMPANIES_LOGO_IMAGES.loonum_kojo_sml},
             {label:"Bupa",image:COMPANIES_LOGO_IMAGES.loonum_bupa_sml},
+            {label:"NAB",image:COMPANIES_LOGO_IMAGES.loonum_nab_sml},
+            {label:"NSW Government",image:COMPANIES_LOGO_IMAGES.loonum_nsw_government_sml},
         ]
     },
     DEVICE_SECTION: {

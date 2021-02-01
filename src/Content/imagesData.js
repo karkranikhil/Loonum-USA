@@ -52,6 +52,7 @@ export const ImageList = {
     },
     COMPANIES_LOGO_IMAGES:{
         loonum_agl_energy_sml :'images/Companies_logos/loonum_agl_energy_sml.svg',
+        loonum_HVACeylon_sml:'images/Companies_logos/loonum_HVACeylon_sml.svg',
         loonum_anz_bank_sml :'images/Companies_logos/loonum_anz_bank_sml.svg',
         loonum_australia_post_sml :'images/Companies_logos/loonum_australia_post_sml.svg',
         loonum_bank_of_america_sml :'images/Companies_logos/loonum_bank_of_america_sml.svg',

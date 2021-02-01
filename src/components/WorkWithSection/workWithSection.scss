@@ -5,16 +5,32 @@
     justify-content: center;
     align-items: center;
     .imageStyle{
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        vertical-align: middle;
+        // object-fit: cover;
+        // width: 100%;
+        // height: auto;
+        // vertical-align: middle;
     }
     .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        grid-template-rows: 1fr;
-        gap: 94px 16px;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        // grid-template-rows: 1fr;
+        // gap: 50px 16px;
+        // justify-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: normal;
+        align-content: space-around;
+      }
+      .grid-container>div {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 300px;
+        align-self: center;
+        order: 0;
+        padding: 30px 30px;
       }
     .imageSubtext{
         color:#000000;
@@ -34,6 +50,7 @@
         padding-bottom: 64px;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .workwith_section {
         .padding-tb-64{
