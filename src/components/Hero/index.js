@@ -3,7 +3,6 @@ import React from "react"
 import './hero.scss'
 import Image from '../Image/image'
 const Hero = ({ HERO_HEADING, HERO_SUBHEADING, HERO_IMAGE, PARAGRAPH, PAGE }) => {
-    console.log(HERO_IMAGE)
     return (
         <>
             <div className={`hero_container container-fluid ${PAGE === 'HOME' ? 'heroImg_Wrapper' : PAGE === 'GREY' ? 'grey_page_wrapper' : 'white_page_wrapper'}`}>

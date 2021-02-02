@@ -4,7 +4,6 @@ import React from "react"
 import './newWayWorking.scss'
 import Image from '../Image/image'
 const NewWayWorking = ({ image, heading, description1, description2, description3, TYPE }) => {
-    console.log(TYPE)
     return (
         <section className="section_grey">
             <div className="bg-white container p-5">

@@ -3,7 +3,6 @@ import React from "react"
 import './workWithSection.scss'
 import Image from '../Image/image'
 const WorkWithSection = ({ HEADING, LIST }) => {
-    console.log(LIST)
     return (
         <section className='workwith_section bg_white'>
             <div className="container text-center  padding-tb-64 pl-3 pr-3 ">
