@@ -35,7 +35,6 @@ const EmailSticker = ({ BTN_TEXT, PLACHOLDER, MESSAGE, STICKY_WHITE_CROSS, STICK
         axios(axiosOptions)
             .then(response => {
                 formRef.current.reset()
-                console.log("success", response)
                 setSuccess(true)
             })
             .catch(err =>

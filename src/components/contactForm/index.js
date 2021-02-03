@@ -21,7 +21,6 @@ const FORM_DATA = {
     privacyAccepted: false
 }
 const ContactUsDescription = (TYPE) => {
-    console.log("TYPE", TYPE)
     return (<div className={`${contactFormStyle.get_intouch_width}`}>
         <h2 className={`${contactFormStyle.heading} pb-3 mb-2`}> {TYPE.TYPE === 'CONTACT' ? 'Go ahead and talk to us' : TYPE.TYPE === 'IDEA' ? 'We can help you to achieve more' :'Get in touch'}</h2>
         <div>
@@ -68,7 +67,6 @@ const ContactForm = ({ color, TYPE, url }) => {
             .then(response => {
                 setFormData(FORM_DATA)
                 setModal(true)
-                console.log("success", response)
             })
             .catch(err =>
                 console.log("error", err)

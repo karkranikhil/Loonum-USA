@@ -3,7 +3,6 @@ import React from "react"
 import './founders.scss'
 import Image from '../Image/image'
 const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION1, DESCRIPTION2, DESCRIPTION3}) => {
-    console.log(LOGO)
     return (
         <>
             <div className="container p-top-bottom-72px foundersWrapper">
@@ -42,7 +41,6 @@ const FoundersCard = (item) => {
     )
 }
 const Founders = ({ HERO_DATA, FOUNDER_DATA }) => {
-    console.log(FOUNDER_DATA)
     return (
         <>
             <HERO_CARD {...HERO_DATA} />

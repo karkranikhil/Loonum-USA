@@ -10,7 +10,6 @@ import HEAD from '../Head/Head'
 import HelpYouGrow from "../components/HelpYouGrow"
 import WorkWithSection from '../components/WorkWithSection'
 const Index = () => {
-    console.log("PAGE_DATA", PAGE_DATA)
     return (
         <Layout>
             <Helmet>

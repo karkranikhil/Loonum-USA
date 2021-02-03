@@ -46,7 +46,7 @@ export default {
             {label:"Design & Build",image:HELP_YOU_GROW_IMAGES.loonum_design_and_build_sml, url: '/services/',state: 'DESIGN & BUILD'},
             {label:"Digital Marketing",image:HELP_YOU_GROW_IMAGES.loonum_digital_marketing_sml, url: '/services/',state: 'DIGITAL MARKETING'},
             {label:"Support",image:HELP_YOU_GROW_IMAGES.loonum_support_sml, url: '/services/',state: 'DIGITAL MARKETING'},
-            {label:"Optimisation",image:HELP_YOU_GROW_IMAGES.loonum_optimisation_sml, url: '/services/',state: 'CONSULTING'},
+            {label:"Optimisation",image:HELP_YOU_GROW_IMAGES.loonum_optimisation_sml, url: '/services/',state: 'DIGITAL MARKETING'},
             {label:"Website",image:HELP_YOU_GROW_IMAGES.loonum_websites_sml, url: '/products/',state: 'WEBSITES'},
             {label:"CMS",image:HELP_YOU_GROW_IMAGES.loonum_cms_sml, url: '/products/',state: 'CMS DASHBOARD'},
             {label:"Inventory",image:HELP_YOU_GROW_IMAGES.loonum_inventory_sml, url: '/products/',state: 'INVENTORY MANAGEMENT'},

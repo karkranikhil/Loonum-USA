@@ -10,7 +10,7 @@ const HelpYouGrow = ({ HEADING, LIST }) => {
                 <h2 className='heading letter1px pt-3 pb-3'>{HEADING}</h2>
                 <div className="row pt-5">
                     {LIST.map(item=>{
-                        return(<Link to={item.url} aria-label={item.name} state={{ tab: item.state }} className="col-6 col-md-4 col-lg-3 text-center pb-3 pb-md-4 pb-lg-5" key={item.label}>
+                        return(<Link to={item.url} aria-label={item.name} state={{ tabLabel: item.state }} className="col-6 col-md-4 col-lg-3 text-center pb-3 pb-md-4 pb-lg-5" key={item.label}>
                             <Image filename={item.image} alt={`Image ${item.label}`} className="imageStyle"/>
                             <div className="imageSubtext pt-3 pb-3">{item.label}</div>
                         </Link>)

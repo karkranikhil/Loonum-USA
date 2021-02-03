@@ -5,7 +5,7 @@ import SmallBusiness from '../components/SmallBusiness/index'
 import PAGE_DATA from '../Content/productPageData'
 import Hero from '../components/Hero/index'
 import HEAD from '../Head/Head'
-const Product = () => {
+const Product = (props) => {
     return (
         <Layout>
             <Helmet>
@@ -17,7 +17,7 @@ const Product = () => {
             </Helmet>
             <HEAD />
             <Hero {...PAGE_DATA.HERO_DATA} PAGE="PRODUCT"/>
-            <SmallBusiness TAB_LIST={PAGE_DATA.TAB_LIST} NEW_WAY_WORKING_DATA= {PAGE_DATA.NEW_WAY_WORKING_DATA} />
+            <SmallBusiness TAB_LIST={PAGE_DATA.TAB_LIST} NEW_WAY_WORKING_DATA= {PAGE_DATA.NEW_WAY_WORKING_DATA}  {...props} />
 
         </Layout>
     )

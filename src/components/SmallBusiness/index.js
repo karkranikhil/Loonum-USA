@@ -9,14 +9,13 @@ import PAGE_DATA from '../../Content/homePageData'
 import './smallBusiness.scss'
 import Tabs from '../Tabs/index.js'
 
-const SmallBusiness = ({NEW_WAY_WORKING_DATA, TAB_LIST }) => {
+const SmallBusiness = ({NEW_WAY_WORKING_DATA, TAB_LIST, location }) => {
+    let defaultTab = (location && location.state && location.state.tabLabel) || TAB_LIST[0].label
     return (
         <section className="tabs_wrapper">
-
-           
                     <Tabs>
                         {TAB_LIST.map(item => (
-                            <div DEFAULT={TAB_LIST[0].label} label={item.label} key={item.label} data={item}>
+                            <div DEFAULT={defaultTab} label={item.label} key={item.label} data={item}>
                                 <div className="d-block d-md-none responsive_tab_header">
                                     <div className="tab_box_heading">{item.label}</div></div>
                                 <div className="row page_sub_heading">
