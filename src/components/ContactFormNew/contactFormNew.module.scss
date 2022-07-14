@@ -1,0 +1,133 @@
+
+.wrapper{
+  // background:#fff;
+  font-family: 'Raleway-Light'
+}
+.sansFamily{
+  font-family: sans-serif;
+  color: #084E75;
+}
+a{
+  color: #084E75 !important;
+}
+
+.privacy_text{
+  font-family: 'Raleway-Light';
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+  color: #084E75;
+}
+.get_in_touch_wrapper{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway-Light';
+  color: #084E75;
+}
+.heading{
+  font-size: 38px;
+  line-height: 43px;
+  color: #084E75;
+}
+.location{
+  font-size: 20px;
+  font-weight: 700;
+  color: #084E75;
+  font-family: 'Raleway-Medium';
+}
+
+.mt3rem{
+  margin-top: 3rem;
+}
+.email{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px !important;
+}
+.minheading{
+  font-size: 28px;
+  line-height: 34px;
+}
+.subheading{
+  max-width: 470px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.subheadingAdd{
+  margin: auto;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #084E75 !important;
+}
+
+.loonum_form_control{
+  vertical-align: middle;
+margin: 5px 10px 5px 0;
+padding: 10px;
+background-color: #fff;
+border: 1px solid #ddd;
+box-sizing: border-box;
+min-height: 43px;
+width:100%;
+border: 1px solid #979797;
+border-radius: 5px;
+}
+.submit_btn{
+  border-radius: 5px !important;
+  background-color: #F5A623 !important;
+  font-size: 19px;
+  width: 140px;
+  border: none;
+  color: #fff !important;
+  min-height: 35px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.custom-control-label::before {
+  top: .25rem;
+  left: -1.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: none;
+}
+.custom-control-label::after {
+  top: .30rem;
+  left: -1.45rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.get_intouch_width{
+  max-width: 470px;
+  text-align: left;
+
+}
+.padding_tb_62px{
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+@media only screen and (max-width: 992px) {
+  .padding_tb_62px{
+    padding-top: 0px;
+    padding-bottom: 32px;
+  }
+  .heading{
+    font-size: 32px;
+    line-height: 38px;
+    color: #084E75;
+  }
+  .get_intouch_width{
+    max-width: 100%;
+    text-align: center;
+  
+  }
+  .privacy_text{
+    text-align: center;
+  }
+}

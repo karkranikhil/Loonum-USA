@@ -24,7 +24,7 @@ const HERO_CARD = ({ lOGO_HEADING, LOGO, SUB_HEADING, DESCRIPTION1, DESCRIPTION2
 const FoundersCard = (item) => {
     return (
         <>
-            <div className="col-12 col-md-6 pl-5 pr-5 pb-5 max-width-605">
+            {/* <div className="col-12 col-md-6 pl-5 pr-5 pb-5 max-width-605">
                 <div className="founder_wrapper ml-auto mr-auto">
                     <Image filename={item.img} alt={item.firstname} />
                     <div className="ml-sm-4">
@@ -35,7 +35,21 @@ const FoundersCard = (item) => {
                 </div>
                 <div className='founder_description'>{item.description1}</div>
                 <div className='founder_description mt-4'>{item.description2}</div>
+            </div> */}
+            <>
+            <div className="col-12 col-md-4">
+                <Image filename={item.img} alt={item.firstname} /> 
+                <div className="ml-sm-4">
+                    <div className='firstname'>{item.firstname}</div>
+                    <div className='lastname'>{item.lastname}</div>
+                    <div className='designation'>{item.designation}</div>
+                </div> 
             </div>
+            <div className="col-12 col-md-7">
+             <div className='founder_description'>{item.description1}</div>
+             <div className='founder_description mt-4'>{item.description2}</div>
+            </div>
+            </>
 
         </>
     )
@@ -46,7 +60,7 @@ const Founders = ({ HERO_DATA, FOUNDER_DATA }) => {
             <HERO_CARD {...HERO_DATA} />
             <section className='bg-white wrapper foundersWrapper'>
                 <div className="container wrapper_padding text-center">
-                    <h2 className="cofounder_heading">Co-Founders</h2>
+                    <h2 className="cofounder_heading">About our CEO</h2>
                     <div className="row">
                         {FOUNDER_DATA.map((item, index) => <FoundersCard {...item} key={index} />)}
                     </div>

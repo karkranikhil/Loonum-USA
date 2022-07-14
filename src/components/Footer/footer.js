@@ -7,10 +7,13 @@ const Footer = (props) => {
         <footer className="pt-5 pb-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 sansFamily">
                         <img src={FOOTER_LOGO} alt="footer logo" className="mb-3" />
-                        <p className="small_text ralewayLight white">{FOOTER_SUBTEXT_ONE}</p>
-                        <p className="small_text ralewayLight white">{FOOTER_SUBTEXT_TWO}</p>
+                        <p className="small_text sansFamily white">{FOOTER_SUBTEXT_ONE}</p>
+                        <p className="small_text sansFamily white">hello@loonum.com</p>
+                        <p className="small_text sansFamily white mb-3 "> 28358 Constellation Road, Unit 600, Valencia, CA 91355, USA</p>
+                        <a className="small_text white sansFamily" href="tel:+1(661)7493778">+1 (661) 749 3778</a>
+
                     </div>
                     <div className="d-none d-lg-flex col-lg-3"></div>
                     <div className="col-lg-6">
@@ -42,7 +45,7 @@ const Footer = (props) => {
                                         <a rel="noreferrer noopener" href={item.Links} aria-label={item.Links} key={item.image} target="_blank" className={`small_text ralewayLight pr-3 pt-3 ${item.class}`} key={item.image}><img src={item.image} alt={item.Links} /></a>
 
                                     ))}
-                                    <span className="small_text ralewayLight pr-0 pr-sm-3 pt-3 l-height-26 ralewayMedium letter_space margin-top-5 forntArial">37.8136° S | 144.9631° E</span>
+                                    {/* <span className="small_text ralewayLight pr-0 pr-sm-3 pt-3 l-height-26 ralewayMedium letter_space margin-top-5 forntArial">37.8136° S | 144.9631° E</span> */}
                                 </div>
                             </div>
                         </div>

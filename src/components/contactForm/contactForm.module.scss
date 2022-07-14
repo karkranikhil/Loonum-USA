@@ -22,11 +22,21 @@
     color: #084E75;
 }
 .heading{
-        font-size: 36px;
+    font-size: 44px;
     line-height: 43px;
 }
+.email{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px !important;
+    font-family: 'Raleway-Medium';
+}
+.minheading{
+    font-size: 28px;
+    line-height: 34px;
+}
 .subheading{
-    max-width: 390px;
+    max-width: 470px;
     margin: auto;
     font-size: 18px;
     line-height: 30px;
@@ -45,7 +55,7 @@
   border-radius: 5px;
 }
 .submit_btn{
-    border-radius: 17.5px !important;
+    border-radius: 5px !important;
     background-color: #F5A623 !important;
     font-size: 19px;
     width: 140px;
@@ -72,6 +82,8 @@
     height: 1.2rem;
 }
 .get_intouch_width{
-    max-width: 422px;
+    max-width: 460px;
     margin: auto;
+    text-align: left;
+
 }

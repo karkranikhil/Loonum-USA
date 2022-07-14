@@ -1,13 +1,13 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/index"
-import ContactForm from '../components/contactForm/index'
+import ContactFormNew from '../components/ContactFormNew/index'
 import PageJumbotron from '../components/PageJumbotron/index'
 import HEAD from '../Head/Head'
 import LOCATION_IMAGE from '../images/Contact_Us_Page/SVG/loonum Contact Us Hero.svg'
 const LOCATION_JUMBO_DATA = {
-    heading: 'Where we create collaborative futures',
-    subtext: '37.8136° S | 144.9631° E',
+    heading: 'Get in touch',
+    subtext: 'hello@loonum.com',
     image: LOCATION_IMAGE
 }
 const Contact = () => {
@@ -21,10 +21,10 @@ const Contact = () => {
                 />
             </Helmet>
             <HEAD />
-            <section>
+            <section className="bg-white">
                 <PageJumbotron {...LOCATION_JUMBO_DATA} />
             </section>
-            <ContactForm color="WHITE" TYPE='CONTACT' url='/contact'/>
+            <ContactFormNew color="WHITE" TYPE='CONTACT' url='/contact'/>
         </Layout>
     )
 }

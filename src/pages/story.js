@@ -21,7 +21,7 @@ const Story = () => {
             <HEAD/>
             <Founders {...PAGE_DATA.OUR_STORY_DATA} />
             <WorkWithSection {...HOME_PAGE_DATA.WHO_WE_WORK_WITH_DATA}/>
-            <RoadMap/>
+            {/* <RoadMap/> */}
             <ContactForm color="WHITE" url='/story' />
         </Layout>
     )

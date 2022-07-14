@@ -13,16 +13,16 @@ const PageJumbotron = ({ icon, heading, subtext, image }) => {
                 </div>
             </div>}
             <div className="row">
-                <div className="col-12 col-md-8 col-lg-12">
+                <div className="col-12 col-lg-12">
                     <h2 className={pageJumboStyle.page_heading}>{heading}</h2>
                 </div>
             </div>
             <div className={`row ${pageJumboStyle.page_sub_heading}`}>
-                <div className="col mt-4">
+                <div className="col">
                     <h5>{subtext}</h5>
                 </div>
             </div>
-            {image && <div className={`d-none d-md-block ${pageJumboStyle.img_icon}`} >
+            {image && <div className={`d-none d-lg-block ${pageJumboStyle.img_icon}`} >
                 <img src={image} alt="jumbo icon" />
             </div>}
         </div>
