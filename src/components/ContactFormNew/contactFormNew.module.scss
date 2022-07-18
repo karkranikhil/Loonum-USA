@@ -112,6 +112,10 @@ border-radius: 5px;
   padding-top: 62px;
   padding-bottom: 62px;
 }
+.addressWrapper{
+  max-width: 470px;
+  margin: auto;
+}
 @media only screen and (max-width: 992px) {
   .padding_tb_62px{
     padding-top: 0px;
