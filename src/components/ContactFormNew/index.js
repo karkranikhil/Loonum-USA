@@ -58,9 +58,9 @@ const ContactFormNew = ({ color, TYPE, url }) => {
                 <div className="row">
                     <div className={`col-12 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
                         <ContactUsDescription TYPE={TYPE}/>
-                        <form ref={formRef}  data-netlify="true"
-                            data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form ref={formRef}  method="POST" data-netlify="true"
+                            data-netlify-honeypot="bot-field" name="Contact" onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="Contact" />
                             <div className="row">
                                 <div className="col-12 mb-3">
                                     <input type="text" className={contactFormStyle.loonum_form_control} id="full_name" placeholder="What is your name?" name="full_name" value={formData.full_name} onChange={formHandler} required aria-labelledby="Full Name"/>
@@ -90,7 +90,7 @@ const ContactFormNew = ({ color, TYPE, url }) => {
                             </div>
                         </form>
                     </div>
-                    <div className="col-12  col-lg-6 mt-3 mt-sm-none text-left">
+                    <div className="col-12  col-lg-6 mt-3 mt-sm-none text-left addressWrapper">
                     <h3 className={`${contactFormStyle.location} mt-5`}>CONTACT LOONUM’S LOS ANGELES OFFICE</h3>
                     <div className={`${contactFormStyle.sansFamily} mt-3`}>
                       <div className={`${contactFormStyle.subheadingAdd}`}>28358 Constellation Road, Unit 600, </div>
