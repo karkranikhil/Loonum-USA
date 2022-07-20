@@ -28,11 +28,11 @@ export const SOCIAL_MEDIA = [
         image: INSTAGRAM,
         Links: 'https://www.instagram.com/loonum_/',
     },
-    {
-        image: LOCATION,
-        Links: '#',
-        class: "margin-top-5"
-    },
+//     {
+//         image: LOCATION,
+//         Links: '#',
+//         class: "margin-top-5"
+//     },
 ]
 export default {
     FOOTER_DATA: {
