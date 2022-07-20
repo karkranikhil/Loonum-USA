@@ -98,7 +98,7 @@ const ContactForm = ({ color, TYPE, url }) => {
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="row">
                                 <div className="col-12 mb-3">
-                                    <input type="text" className={contactFormStyle.loonum_form_control} id="first_name" placeholder="First Name" name="first_name" value={formData.full_name} onChange={formHandler} required aria-labelledby="First Name"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="full_name" placeholder="What is your name?" name="full_name" value={formData.full_name} onChange={formHandler} required aria-labelledby="Full Name"/>
                                 </div>
                                 {/* <div className="col-12 col-sm-6 mb-3">
                                     <input type="text" className={contactFormStyle.loonum_form_control} id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required aria-labelledby="First Name"/>
