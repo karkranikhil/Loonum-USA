@@ -24,7 +24,7 @@ const FORM_DATA = {
 const ContactUsDescription = (TYPE) => {
     return (<div className={`${contactFormStyle.get_intouch_width}`}>
         <h2 className={`${contactFormStyle.heading}`}> {TYPE.TYPE === 'CONTACT' ? 'Go ahead and talk to us' : TYPE.TYPE === 'IDEA' ? 'We can help you to achieve more' :'Get in touch'}</h2>
-        <h3 className={`${contactFormStyle.email} pb-3`}><strong>Hello@loonum.com</strong></h3>
+        <h3 className={`${contactFormStyle.email} pb-3`}><strong>admin@loonum.com</strong></h3>
         <p className={`${contactFormStyle.minheading}`}>Tell us about your project</p>
         <p className={`${contactFormStyle.subheading} pb-3`}>We want to know more about how we can help?</p>
         <div>
@@ -93,12 +93,12 @@ const ContactForm = ({ color, TYPE, url }) => {
                         <ContactUsDescription TYPE={TYPE}/>
                     </div>
                     <div className="col-12  col-lg-6 mt-3 mt-sm-none">
-                        <form ref={formRef}  data-netlify="true"
-                            data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form ref={formRef}  data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}
+                         name="loonumusawebsite" >
+                            <input type="hidden" name="form-name" value="loonumusawebsite" />
                             <div className="row">
                                 <div className="col-12 mb-3">
-                                    <input type="text" className={contactFormStyle.loonum_form_control} id="first_name" placeholder="First Name" name="first_name" value={formData.full_name} onChange={formHandler} required aria-labelledby="First Name"/>
+                                    <input type="text" className={contactFormStyle.loonum_form_control} id="full_name" placeholder="What is your name?" name="full_name" value={formData.full_name} onChange={formHandler} required aria-labelledby="Full Name"/>
                                 </div>
                                 {/* <div className="col-12 col-sm-6 mb-3">
                                     <input type="text" className={contactFormStyle.loonum_form_control} id="first_name" placeholder="First Name" name="first_name" value={formData.first_name} onChange={formHandler} required aria-labelledby="First Name"/>

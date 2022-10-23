@@ -7,7 +7,7 @@ import HEAD from '../Head/Head'
 import LOCATION_IMAGE from '../images/Contact_Us_Page/SVG/loonum Contact Us Hero.svg'
 const LOCATION_JUMBO_DATA = {
     heading: 'Get in touch',
-    subtext: 'hello@loonum.com',
+    subtext: 'admin@loonum.com',
     image: LOCATION_IMAGE
 }
 const Contact = () => {

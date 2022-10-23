@@ -10,7 +10,7 @@ const Footer = (props) => {
                     <div className="col-lg-3 sansFamily">
                         <img src={FOOTER_LOGO} alt="footer logo" className="mb-3" />
                         <p className="small_text sansFamily white">{FOOTER_SUBTEXT_ONE}</p>
-                        <p className="small_text sansFamily white">hello@loonum.com</p>
+                        <p className="small_text sansFamily white">admin@loonum.com</p>
                         <p className="small_text sansFamily white mb-3 "> 28358 Constellation Road, Unit 600, Valencia, CA 91355, USA</p>
                         <a className="small_text white sansFamily" href="tel:+1(661)7493778">+1 (661) 749 3778</a>
 
