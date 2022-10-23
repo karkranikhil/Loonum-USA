@@ -6,7 +6,7 @@ import * as qs from "query-string"
 import Modal from '../Modal/index'
 import contactFormStyle from './contactFormNew.module.scss'
 const FORM_DATA = {
-    "form-name": "contact",
+    "form-name": "loonumusa",
     title: 'Request for Get in touch',
     full_name:'',
     email: '',
@@ -58,9 +58,8 @@ const ContactFormNew = ({ color, TYPE, url }) => {
                 <div className="row">
                     <div className={`col-12 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
                         <ContactUsDescription TYPE={TYPE}/>
-                        <form ref={formRef}  method="POST" data-netlify="true"
-                            data-netlify-honeypot="bot-field" name="Contact" onSubmit={handleSubmit}>
-                            <input type="hidden" name="form-name" value="Contact" />
+                        <form ref={formRef} name="loonumusa" method="post" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="loonumusa" />
                             <div className="row">
                                 <div className="col-12 mb-3">
                                     <input type="text" className={contactFormStyle.loonum_form_control} id="full_name" placeholder="What is your name?" name="full_name" value={formData.full_name} onChange={formHandler} required aria-labelledby="Full Name"/>
@@ -95,7 +94,7 @@ const ContactFormNew = ({ color, TYPE, url }) => {
                     <div className={`${contactFormStyle.sansFamily} mt-3`}>
                       <div className={`${contactFormStyle.subheadingAdd}`}>28358 Constellation Road, Unit 600, </div>
                       <div className={`${contactFormStyle.subheadingAdd}`}>Valencia, CA 91355, USA</div>
-                      <div><a href="mailto:hello@loonum.com" className={`${contactFormStyle.subheadingAdd}`}>hello@loonum.com</a></div>
+                      <div><a href="mailto:admin@loonum.com" className={`${contactFormStyle.subheadingAdd}`}>admin@loonum.com</a></div>
                       <div><a href="tel:+1 (661) 749 3778" className={`${contactFormStyle.subheadingAdd}`}>+1 (661) 749 3778</a></div>
                     </div>
                     <h3 className={`${contactFormStyle.location} mt-4 mb-3`}>CONTACT LOONUM’S MELBOURNE OFFICE</h3>
@@ -106,7 +105,7 @@ const ContactFormNew = ({ color, TYPE, url }) => {
                       <div><a href="tel:+61 432 244 111"  className={`${contactFormStyle.subheadingAdd} mb-3`} >+61 432 244 111</a></div>
                     </div>
                     <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.999413182451!2d-118.57751848447403!3d34.45216278049898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c27de0ebd5ea99%3A0x5814a69242b59618!2s28358%20Constellation%20Rd%2C%20Valencia%2C%20CA%2091355%2C%20USA!5e0!3m2!1sen!2sau!4v1657707648026!5m2!1sen!2sau" width="100%" height="350" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.999413182451!2d-118.57751848447403!3d34.45216278049898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c27de0ebd5ea99%3A0x5814a69242b59618!2s28358%20Constellation%20Rd%2C%20Valencia%2C%20CA%2091355%2C%20USA!5e0!3m2!1sen!2sau!4v1657707648026!5m2!1sen!2sau" width="100%" height="350" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   
                     </div>
