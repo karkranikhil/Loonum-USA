@@ -6,7 +6,7 @@ import * as qs from "query-string"
 import Modal from '../Modal/index'
 import contactFormStyle from './contactFormNew.module.scss'
 const FORM_DATA = {
-    "form-name": "contact",
+    "form-name": "loonumusa",
     title: 'Request for Get in touch',
     full_name:'',
     email: '',
@@ -58,7 +58,7 @@ const ContactFormNew = ({ color, TYPE, url }) => {
                 <div className="row">
                     <div className={`col-12 col-lg-6 ${contactFormStyle.get_in_touch_wrapper}`}>
                         <ContactUsDescription TYPE={TYPE}/>
-                        <form ref={formRef}  method="POST" data-netlify="true" data-netlify-honeypot="bot-field" name="loonumusa" onSubmit={handleSubmit}>
+                        <form ref={formRef} name="loonumusa" method="post" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={handleSubmit}>
                             <input type="hidden" name="form-name" value="loonumusa" />
                             <div className="row">
                                 <div className="col-12 mb-3">

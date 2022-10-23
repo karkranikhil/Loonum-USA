@@ -7,7 +7,7 @@ import Modal from '../Modal/index'
 import contactFormStyle from './contactForm.module.scss'
 const PRIVACY_TEXT = 'By checking the box on this form, you’re consenting to receive emails from Loonum about our services, and products, and other updates. Loonum will not share your details with third-parties. If you no longer wish to receive emails from Loonum click the unsubscribe link in the email. Privacy Policy | GDPR'
 const FORM_DATA = {
-    "form-name": "contact",
+    "form-name": "loonumusawebsite",
     title: 'Request for Get in touch',
     // first_name: '',
     // last_name: '',
